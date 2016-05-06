@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+{% block body %}{% endblock %}
+<p>
+    <a href="{{ path('fb_profile') }}">Profile</a>
+    <a href="{{ path('fb_perf') }}">Perf</a>
+    <a href="{{ path('fb_activity') }}">Activity</a>
+    <a href="{{ path('fb_sleep') }}">Sleep</a>
+</p>
+{% block javascripts %}{% endblock %}
+</body>
+</html>

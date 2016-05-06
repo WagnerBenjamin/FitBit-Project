@@ -1,0 +1,12 @@
+fb_profile:
+    resource: "@FBProfileBundle/Resources/config/routing.yml"
+    prefix:   /
+
+homepage:
+    path:     /
+    defaults:
+        _controller: FBProfileBundle:Default:index
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

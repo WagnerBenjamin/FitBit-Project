@@ -1,0 +1,19 @@
+fb_profile_homepage:
+    path:     /
+    defaults: { _controller: FBProfileBundle:Default:index }
+
+fb_profile:
+    path:     /profile
+    defaults: { _controller: FBProfileBundle:Profile:index }
+
+fb_perf:
+    path:     /perf
+    defaults: { _controller: FBProfileBundle:Perf:index }
+
+fb_activity:
+    path:     /activity
+    defaults: { _controller: FBProfileBundle:Activity:index }
+
+fb_sleep:
+    path:     /sleep
+    defaults: { _controller: FBProfileBundle:Sleep:index }
