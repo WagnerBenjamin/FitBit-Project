@@ -10,25 +10,13 @@ angular.module('app.routes', [])
     
   
 
-      .state('signup', {
-    url: '/signup',
-    templateUrl: 'templates/signup.html',
-    controller: 'signupCtrl'
+  .state('profile', {
+    url: '/profile',
+    templateUrl: 'templates/profile.html',
+    controller: 'profileCtrl'
   })
 
-  .state('login', {
-    url: '/login',
-    templateUrl: 'templates/login.html',
-    controller: 'loginCtrl'
-  })
-
-  .state('myAccount', {
-    url: '/account',
-    templateUrl: 'templates/myAccount.html',
-    controller: 'myAccountCtrl'
-  })
-
-$urlRouterProvider.otherwise('/login')
+$urlRouterProvider.otherwise('/profile')
 
   
 
