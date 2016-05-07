@@ -10,13 +10,53 @@ angular.module('app.routes', [])
     
   
 
-  .state('profile', {
+      .state('tabsController.profile', {
     url: '/profile',
-    templateUrl: 'templates/profile.html',
-    controller: 'profileCtrl'
+    views: {
+      'tab1': {
+        templateUrl: 'templates/profile.html',
+        controller: 'profileCtrl'
+      }
+    }
   })
 
-$urlRouterProvider.otherwise('/profile')
+  .state('tabsController.activity', {
+    url: '/activity',
+    views: {
+      'tab2': {
+        templateUrl: 'templates/activity.html',
+        controller: 'activityCtrl'
+      }
+    }
+  })
+
+  .state('tabsController.performance', {
+    url: '/performance',
+    views: {
+      'tab3': {
+        templateUrl: 'templates/performance.html',
+        controller: 'performanceCtrl'
+      }
+    }
+  })
+
+  .state('tabsController', {
+    url: '/page1',
+    templateUrl: 'templates/tabsController.html',
+    abstract:true
+  })
+
+  .state('tabsController.sleep', {
+    url: '/sleep',
+    views: {
+      'tab4': {
+        templateUrl: 'templates/sleep.html',
+        controller: 'sleepCtrl'
+      }
+    }
+  })
+
+$urlRouterProvider.otherwise('/page1/profile')
 
   
 
