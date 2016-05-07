@@ -41,7 +41,7 @@ angular.module('app.routes', [])
   })
 
   .state('tabsController', {
-    url: '/page1',
+    url: '/tab',
     templateUrl: 'templates/tabsController.html',
     abstract:true
   })
@@ -56,7 +56,7 @@ angular.module('app.routes', [])
     }
   })
 
-$urlRouterProvider.otherwise('/page1/profile')
+$urlRouterProvider.otherwise('/tab/profile')
 
   
 
