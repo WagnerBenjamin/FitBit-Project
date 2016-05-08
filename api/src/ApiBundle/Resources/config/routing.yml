@@ -1,0 +1,15 @@
+api_profile:
+    path:     /profile
+    defaults: { _controller: ApiBundle:Profile:index }
+
+api_perf:
+    path:     /perf
+    defaults: { _controller: ApiBundle:Perf:index }
+
+api_activity:
+    path:     /activity
+    defaults: { _controller: ApiBundle:Activity:index }
+
+api_sleep:
+    path:     /sleep
+    defaults: { _controller: ApiBundle:Sleep:index }
