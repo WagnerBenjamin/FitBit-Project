@@ -7,10 +7,8 @@ angular.module('app.routes', [])
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-    
-  
 
-      .state('tabsController.profile', {
+    .state('tabsController.profile', {
     url: '/profile',
     views: {
       'tab1': {
@@ -41,7 +39,7 @@ angular.module('app.routes', [])
   })
 
   .state('tabsController', {
-    url: '/tab',
+    url: '/user',
     templateUrl: 'templates/tabsController.html',
     abstract:true
   })
@@ -56,8 +54,8 @@ angular.module('app.routes', [])
     }
   })
 
-$urlRouterProvider.otherwise('/tab/profile')
+$urlRouterProvider.otherwise('/user/profile')
 
-  
+
 
 });
