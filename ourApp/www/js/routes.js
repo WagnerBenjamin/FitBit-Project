@@ -56,6 +56,5 @@ angular.module('app.routes', [])
 
 $urlRouterProvider.otherwise('/user/profile')
 
-
-
+  
 });
