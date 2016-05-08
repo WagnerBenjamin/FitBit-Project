@@ -39,7 +39,7 @@
     -->
 
   </head>
-  <body ng-app="app" animation="slide-left-right-ios7">
+  <body ng-app="app" animation="slide-left-right-ios7" ng-controller="settingCtrl">
   <div>
     <div>
       <ion-side-menus>
@@ -50,7 +50,7 @@
               </button>
             </ion-nav-buttons>
             <ion-nav-buttons side="right">
-              <button class="button icon ion-gear-a"></button>
+              <button class="button icon ion-gear-a" ng-click="showConfirm()"></button>
             </ion-nav-buttons>
           </ion-nav-bar>
           <ion-nav-view></ion-nav-view>
