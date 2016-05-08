@@ -1,5 +1,12 @@
 <ion-view view-title="Profile" id="page2">
 	<ion-content padding="true" class="has-header">
+    <div class="row">
+      <div class="col-50" ng-controller="weightCtrl">
+        <canvas id="doughnut" class="chart chart-doughnut"
+                chart-data="data" chart-labels="labels">
+        </canvas>
+      </div>
+    </div>
 
   </ion-content>
 </ion-view>

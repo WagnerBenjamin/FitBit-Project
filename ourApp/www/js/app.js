@@ -23,3 +23,31 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 })
 
 
+/*.controller("weightCtrl", function ($scope,$http) {
+  $http.get('datasets/profile_default.JSON').success(function (data) {
+    $scope.weight_hist = data["weight_hist"];
+    for(var i = 0; i < data["weight_hist"].length; i++){
+      if (i == (data["weight_hist"].length - 1)) {
+        $scope.data = [ data["weight_hist"][i]["Weight"] ];
+      }
+    }
+    $scope.labels = ["Weight_Actual"];
+    console.log($scope.data);
+  })
+})
+*/
+
+.controller("weightCtrl", [function ($scope,profile) {
+  $scope.profile = profile.data;
+  $scope.weight_hist = $scope.profile["weight_hist"];
+  for(var i = 0; i < $scope.profile["weight_hist"].length; i++){
+    if (i == ($scope.profile["weight_hist"].length - 1)) {
+      $scope.data = [ $scope.profile["weight_hist"][i]["Weight"] ];
+     }
+   }
+  $scope.labels = ["Weight_Actual"];
+  console.log($scope.data);
+ }])
+
+
+
