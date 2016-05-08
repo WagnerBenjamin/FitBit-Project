@@ -1,8 +1,8 @@
-## FitBit-Project
+#FitBit-Project
 
-#SUJET :
+##SUJET :
 
-Contexte :
+###Contexte :
 
 Projet Pédagogique
 Bachelor 2 - Sujet 4
