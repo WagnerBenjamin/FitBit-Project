@@ -1,1 +1,14 @@
 /* Empty. Add your own CSS if you like */
+.container {
+  background: #e3e3e3;
+  padding-right: 50%;
+  padding-bottom: 10em;
+  border-radius: 1em;
+  max-height: 10em;
+}
+
+.container-bottom{
+  background: #e3e3e3;
+  padding-right: 100%;
+  border-radius: 1em;
+}
