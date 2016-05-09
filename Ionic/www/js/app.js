@@ -21,6 +21,11 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     }
   });
 })
+.config(['$ionicConfigProvider', function($ionicConfigProvider) {
+
+  $ionicConfigProvider.tabs.position('bottom'); // other values: top
+
+}]);
 
 
 /*.controller("weightCtrl", function ($scope,$http) {
