@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "Chart.js": "^2.1.1",
-    "angular-chart.js": "^0.10.2"
+    "angular-chart.js": "^0.10.2",
+    "highcharts-ng": "^0.0.11"
   }
 }
