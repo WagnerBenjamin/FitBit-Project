@@ -99,10 +99,32 @@
     </div>
     <br>
     <div class="row padding" ng-controller="performanceCtrl">
-      <canvas id="line3" class="chart chart-line" chart-data="data"
-              chart-labels="labels" chart-legend="true" chart-series="series"
-              chart-click="onClick" >
-      </canvas>
+      <div class="chart-container">
+        <canvas id="line2" class="chart chart-bar" chart-data="data"
+                chart-labels="labels" chart-legend="false" chart-series="series"
+                chart-click="onClick">
+        </canvas>
+        <chart-legend>
+          <ul class="line-legend">
+            <li>
+              <span class="line-legend-icon" style="background-color:rgba(151,187,205,1)"></span>
+              <span class="line-legend-text">Sleeping</span>
+            </li>
+            <li>
+              <span class="line-legend-icon" style="background-color:rgba(220,220,220,1)"></span>
+              <span class="line-legend-text">Awake</span>
+            </li>
+            <li>
+              <span class="line-legend-icon" style="background-color:rgba(220,220,220,1)"></span>
+              <span class="line-legend-text">Awakening</span>
+            </li>
+            <li>
+              <span class="line-legend-icon" style="background-color:rgba(151,187,205,1)"></span>
+              <span class="line-legend-text">In_Bed</span>
+            </li>
+          </ul>
+        </chart-legend>
+      </div>
     </div>
   </ion-content>
 </ion-view>
