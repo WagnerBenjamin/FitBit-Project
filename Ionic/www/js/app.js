@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives','chart.js'])
+angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives','chart.js','highcharts-ng'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -25,7 +25,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
   $ionicConfigProvider.tabs.position('bottom'); // other values: top
 
-}]);
+}])
 
 
 /*.controller("weightCtrl", function ($scope,$http) {
@@ -41,6 +41,12 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
   })
 })
 */
+
+//See: https://github.com/pablojim/highcharts-ng
+
+
+
+
 
 
 
