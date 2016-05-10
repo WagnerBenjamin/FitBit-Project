@@ -1,0 +1,3 @@
+api_test:
+    path:     /test
+    defaults: { _controller: ApiBundle:Test:index, _format: json }
