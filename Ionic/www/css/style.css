@@ -28,3 +28,8 @@
   padding-right: 100%;
   border-radius: 1em;
 }
+
+.lol{
+  border: 1px solid grey;
+  box-shadow: grey 2px 2px 4px;
+}

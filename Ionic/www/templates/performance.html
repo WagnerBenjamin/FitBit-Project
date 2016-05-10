@@ -1,32 +1,88 @@
 <ion-view title="Performance" id="page4">
   <ion-content padding="true" class="has-header">
     <div class="row padding">
-      <div class="col-50">
-        <div class="row responsive-sm">
-          <div class="container"> blblblblbl </div>
+      <div class="col-50 padding">
+        <div class="row responsive-sm padding lol">
+          <round-progress
+            max="100"
+            current="70"
+            color="#ef473a"
+            bgcolor="#eaeaea"
+            radius="100"
+            stroke="30"
+            semi="true"
+            rounded="true"
+            clockwise="true"
+            responsive="true"
+            duration="800"
+            animation="easeInOutQuart"
+            animation-delay="0"></round-progress>
         </div>
       </div>
-      <div class="col-50">
-        <div class="row responsive-sm">
-          <div class="container">blblblblbl</div>
+      <div class="col-50 padding">
+        <div class="row responsive-sm padding lol">
+          <round-progress
+            max="100"
+            current="70"
+            color="#ffc900"
+            bgcolor="#eaeaea"
+            radius="100"
+            stroke="30"
+            semi="true"
+            rounded="true"
+            clockwise="true"
+            responsive="true"
+            duration="800"
+            animation="easeInOutQuart"
+            animation-delay="0"></round-progress>
         </div>
       </div>
     </div>
 
-    <div class="row padding">
-      <div class="col-50">
-        <div class="row responsive-sm">
-          <div class="container"> blblblblbl </div>
+    <div class="row padding padding">
+      <div class="col-50 padding">
+        <div class="row responsive-sm padding lol">
+          <round-progress
+            max="100"
+            current="70"
+            color="#387ef5"
+            bgcolor="#eaeaea"
+            radius="100"
+            stroke="30"
+            semi="true"
+            rounded="true"
+            clockwise="true"
+            responsive="true"
+            duration="800"
+            animation="easeInOutQuart"
+            animation-delay="0"></round-progress>
         </div>
       </div>
-      <div class="col-50">
-        <div class="row responsive-sm">
-          <div class="container">blblblblbl</div>
+      <div class="col-50 padding">
+        <div class="row responsive-sm padding lol">
+          <round-progress
+            max="100"
+            current="70"
+            color="#33cd5f"
+            bgcolor="#eaeaea"
+            radius="100"
+            stroke="30"
+            semi="true"
+            rounded="true"
+            clockwise="true"
+            responsive="true"
+            duration="800"
+            animation="easeInOutQuart"
+            animation-delay="0"></round-progress>
         </div>
       </div>
     </div>
-    <div class="row padding">
-      <div class="container-bottom"> blblblblbl </div>
+    <br>
+    <div class="row padding lol" ng-controller="performanceCtrl">
+      <canvas id="line3" class="chart chart-line" chart-data="data"
+              chart-labels="labels" chart-legend="true" chart-series="series"
+              chart-click="onClick" >
+      </canvas>
     </div>
   </ion-content>
 </ion-view>
