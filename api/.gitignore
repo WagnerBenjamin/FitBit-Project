@@ -14,3 +14,7 @@
 !var/SymfonyRequirements.php
 /vendor/
 /web/bundles/
+.idea/*
+.idea/workspace.xml
+.idea/tasks.xml
+/src/ApiBundle/Controller/TestController.php

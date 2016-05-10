@@ -3,11 +3,11 @@
     <div class="row padding">
       <div class="col-50 padding">
         <div class="row responsive-sm lol padding">
-          <div>Sedentary</div>
+          <div class="title">Sedentary</div>
           <div class="progress-wrapper">
             <round-progress
             max="100"
-            current="70"
+            current="80"
             color="#45ccce"
             bgcolor="#eaeaea"
             radius="100"
@@ -19,19 +19,19 @@
             duration="800"
             animation="easeInOutQuart"
             animation-delay="0">  </round-progress>
-
-            <div class="text">90</div>
+            <div class="icon ion-ios-star-outline"></div>
+            <div class="text">578</div>
           </div>
         </div>
       </div>
       <div class="col-50 padding">
         <div class="row responsive-sm lol padding">
-          <div>Mobile</div>
+          <div class="title">Mobile</div>
           <div class="progress-wrapper">
           <round-progress
             max="100"
-            current="70"
-            color="#45ccce"
+            current="30"
+            color="#33cd5f"
             bgcolor="#eaeaea"
             radius="100"
             stroke="30"
@@ -42,8 +42,8 @@
             duration="800"
             animation="easeInOutQuart"
             animation-delay="0"></round-progress>
-
-            <div class="text">3</div>
+            <div class="icon ion-ios-star-half"></div>
+            <div class="text">76</div>
           </div>
         </div>
       </div>
@@ -52,12 +52,12 @@
     <div class="row padding">
       <div class="col-50 padding">
         <div class="row responsive-sm lol padding">
-          <div>Active</div>
+          <div class="title">Active</div>
           <div class="progress-wrapper">
           <round-progress
             max="100"
-            current="70"
-            color="#45ccce"
+            current="35"
+            color="#ef473a"
             bgcolor="#eaeaea"
             radius="100"
             stroke="30"
@@ -68,19 +68,19 @@
             duration="800"
             animation="easeInOutQuart"
             animation-delay="0"></round-progress>
-
-          <div class="text"></div>
+            <div class="icon ion-ios-star"></div>
+          <div class="text">105</div>
         </div>
         </div>
       </div>
       <div class="col-50 padding">
         <div class="row responsive-sm lol padding">
-          <div>Very Active</div>
+          <div class="title">Very Active</div>
           <div class="progress-wrapper">
           <round-progress
             max="100"
-            current="70"
-            color="#45ccce"
+            current="65"
+            color="#ffc900"
             bgcolor="#eaeaea"
             radius="100"
             stroke="30"
@@ -91,18 +91,52 @@
             duration="800"
             animation="easeInOutQuart"
             animation-delay="0"></round-progress>
-
-            <div class="text"></div>
+            <div class="icon ion-flash"></div>
+            <div class="text">357</div>
           </div>
         </div>
       </div>
     </div>
-    <br>
-    <div class="row padding lol" ng-controller="activityCtrl">
-      <canvas id="line2" class="chart chart-line" chart-data="data"
-              chart-labels="labels" chart-legend="true" chart-series="series"
-              chart-click="onClick" >
-      </canvas>
+    <div class="row">
+      <span class="padding">
+        <button class="button button-small button-assertive">
+          Default
+        </button>
+        <button class="button button-small button-assertive">
+          Lastyear
+        </button>
+        <button class="button button-small button-assertive">
+          Lastmonth
+        </button>
+        <button class="button button-small button-assertive">
+          Mean_years
+        </button>
+      </span>
+    </div>
+    <div class="row padding" ng-controller="activityCtrl">
+      <div class="chart-container">
+        <canvas id="line" class="chart chart-bar ng-isolate-scope" chart-data="data" chart-labels="labels" chart-legend="false" chart-click="onClick" chart-hover="onHover" chart-series="series"></canvas>
+        <chart-legend>
+          <ul class="line-legend">
+            <li>
+              <span class="line-legend-icon" style="background-color:#45ccce"></span>
+              <span class="line-legend-text">Sedentary</span>
+            </li>
+            <li>
+              <span class="line-legend-icon" style="background-color:#33cd5f"></span>
+              <span class="line-legend-text">Mobile</span>
+            </li>
+            <li>
+              <span class="line-legend-icon" style="background-color:#ef473a"></span>
+              <span class="line-legend-text">Active</span>
+            </li>
+            <li>
+              <span class="line-legend-icon" style="background-color:#ffc900"></span>
+              <span class="line-legend-text">V_Active</span>
+            </li>
+          </ul>
+        </chart-legend>
+      </div>
     </div>
   </ion-content>
 </ion-view>
