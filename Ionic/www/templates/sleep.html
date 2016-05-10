@@ -1,34 +1,107 @@
 <ion-view title="Sleep" id="page6">
   <ion-content padding="true" class="has-header">
     <div class="row padding">
-      <div class="col-50">
-        <div class="row responsive-sm">
-          <div class="container"> blblblblbl </div>
+      <div class="col-50 padding">
+        <div class="row responsive-sm lol padding">
+          <div>Sleeping</div>
+          <div class="progress-wrapper">
+            <round-progress
+              max="100"
+              current="70"
+              color="#002B93"
+              bgcolor="#eaeaea"
+              radius="100"
+              stroke="30"
+              semi="true"
+              rounded="true"
+              clockwise="true"
+              responsive="true"
+              duration="800"
+              animation="easeInOutQuart"
+              animation-delay="0">  </round-progress>
+            <div class="icon ion-ios-moon"></div>
+            <div class="text"> 90 </div>
+          </div>
         </div>
       </div>
-      <div class="col-50">
-        <div class="row responsive-sm">
-          <div class="container">blblblblbl</div>
+      <div class="col-50 padding">
+        <div class="row responsive-sm lol padding">
+          <div>Awake</div>
+          <div class="progress-wrapper">
+            <round-progress
+              max="100"
+              current="70"
+              color="#45ccce"
+              bgcolor="#eaeaea"
+              radius="100"
+              stroke="30"
+              semi="true"
+              rounded="true"
+              clockwise="true"
+              responsive="true"
+              duration="800"
+              animation="easeInOutQuart"
+              animation-delay="0"></round-progress>
+            <div class="icon ion-ios-timer"></div>
+            <div class="text">3</div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="row padding">
-      <div class="col-50">
-        <div class="row responsive-sm">
-          <div class="container"> blblblblbl </div>
+      <div class="col-50 padding">
+        <div class="row responsive-sm lol padding">
+          <div>Awakening</div>
+          <div class="progress-wrapper">
+            <round-progress
+              max="100"
+              current="70"
+              color="#45ccce"
+              bgcolor="#eaeaea"
+              radius="100"
+              stroke="30"
+              semi="true"
+              rounded="true"
+              clockwise="true"
+              responsive="true"
+              duration="800"
+              animation="easeInOutQuart"
+              animation-delay="0"></round-progress>
+            <div class="icon ion-ios-alarm"></div>
+            <div class="text"></div>
+          </div>
         </div>
       </div>
-      <div class="col-50">
-        <div class="row responsive-sm">
-          <div class="container">blblblblbl</div>
+      <div class="col-50 padding">
+        <div class="row responsive-sm lol padding">
+          <div>In Bed</div>
+          <div class="progress-wrapper">
+            <round-progress
+              max="100"
+              current="70"
+              color="#45ccce"
+              bgcolor="#eaeaea"
+              radius="100"
+              stroke="30"
+              semi="true"
+              rounded="true"
+              clockwise="true"
+              responsive="true"
+              duration="800"
+              animation="easeInOutQuart"
+              animation-delay="0"></round-progress>
+            <div class="icon ion-ios-body"></div>
+            <div class="text"></div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="row padding lol">
-      <canvas id="line1" class="chart chart-line" chart-data="data"
+    <br>
+    <div class="row padding lol" ng-controller="activityCtrl">
+      <canvas id="line2" class="chart chart-line" chart-data="data"
               chart-labels="labels" chart-legend="true" chart-series="series"
-              chart-click="onClick">
+              chart-click="onClick" >
       </canvas>
     </div>
   </ion-content>
