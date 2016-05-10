@@ -14,9 +14,9 @@ use JsonSerializable;
 class Datasets implements JsonSerializable
 {
     /**
-     * @var string
+     * @var \DateTime
      *
-     * @ORM\Column(name="date", type="text", length=65535, nullable=false)
+     * @ORM\Column(name="date", type="date", nullable=false)
      */
     private $date;
 
@@ -127,32 +127,12 @@ class Datasets implements JsonSerializable
      */
     private $id;
 
-    function jsonSerialize()
-    {
-        return array(
-            'date' => $this->date,
-            'weight' => $this->weight,
-            'bmi' => $this->bmi,
-            'sleeping' => $this->sleeping,
-            'awake' => $this->awake,
-            'awakening' => $this->awakening,
-            'in_bed' => $this->inBed,
-            'calories' => $this->calories,
-            'steps' => $this->steps,
-            'distance' => $this->distance,
-            'floors' => $this->floors,
-            'sedentary' => $this->sedentary,
-            'mobile' => $this->mobile,
-            'active' => $this->active,
-            'very_active' => $this->veryActive
-        );
-    }
 
 
     /**
      * Set date
      *
-     * @param string $date
+     * @param \DateTime $date
      *
      * @return Datasets
      */
@@ -166,7 +146,7 @@ class Datasets implements JsonSerializable
     /**
      * Get date
      *
-     * @return string
+     * @return \DateTime
      */
     public function getDate()
     {
@@ -517,5 +497,26 @@ class Datasets implements JsonSerializable
     public function getId()
     {
         return $this->id;
+    }
+
+    function jsonSerialize()
+    {
+        return array(
+            'date' => $this->date->format('Y-m-d'),
+            'weight' => $this->weight,
+            'bmi' => $this->bmi,
+            'sleeping' => $this->sleeping,
+            'awake' => $this->awake,
+            'awakening' => $this->awakening,
+            'in_bed' => $this->inBed,
+            'calories' => $this->calories,
+            'steps' => $this->steps,
+            'distance' => $this->distance,
+            'floors' => $this->floors,
+            'sedentary' => $this->sedentary,
+            'mobile' => $this->mobile,
+            'active' => $this->active,
+            'very_active' => $this->veryActive
+        );
     }
 }

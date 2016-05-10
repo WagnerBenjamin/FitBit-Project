@@ -4,7 +4,7 @@ api_default:
 
 api_profile:
     path:     /profile
-    defaults: { _controller: ApiBundle:Profile:index }
+    defaults: { _controller: ApiBundle:Profile:index, _format: json }
 
 api_perf:
     path:     /perf

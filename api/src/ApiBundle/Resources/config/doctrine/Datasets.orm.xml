@@ -4,11 +4,7 @@
     <id name="id" type="integer" column="id">
       <generator strategy="IDENTITY"/>
     </id>
-    <field name="date" type="text" column="date" length="65535" nullable="false">
-      <options>
-        <option name="fixed"/>
-      </options>
-    </field>
+    <field name="date" type="date" column="date" nullable="false"/>
     <field name="weight" type="smallint" column="weight" nullable="false">
       <options>
         <option name="unsigned"/>
