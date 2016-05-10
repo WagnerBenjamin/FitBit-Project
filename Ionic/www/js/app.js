@@ -42,31 +42,61 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 })
 */
 
-  .controller("profileCtrl", function ($scope) {
+  .controller("profileCtrl",function ($scope,$http) {
+    $http.get('datasets/profile/profile_means_weight.JSON').success(function (data) {
+      console.log($scope.data);
+      $scope.data = [
+        data["Mean_weight_years"][0]["Mean_Weight"],
+        data["Mean_weight_years"][1]["Mean_Weight"],
+        data["Mean_weight_years"][2]["Mean_Weight"],
+        data["Mean_weight_years"][3]["Mean_Weight"],
+        data["Mean_weight_years"][4]["Mean_Weight"],
+        data["Mean_weight_years"][5]["Mean_Weight"],
+        data["Mean_weight_years"][6]["Mean_Weight"]
+      ];
 
-    $scope.labels = ["2010", "2011", "2012", "2013", "2014", "2015", "2016"];
-    $scope.series = ['Weight'];
-    $scope.data = [
-      [65, 59, 80, 81, 56, 55, 40]
-    ];
-    $scope.onClick = function (points, evt) {
-      console.log(points, evt);
-    };
+      $scope.series = ["Weight"];
+
+      $scope.labels = [
+        data["Mean_weight_years"][0]["Year"],
+        data["Mean_weight_years"][1]["Year"],
+        data["Mean_weight_years"][2]["Year"],
+        data["Mean_weight_years"][3]["Year"],
+        data["Mean_weight_years"][4]["Year"],
+        data["Mean_weight_years"][5]["Year"],
+        data["Mean_weight_years"][6]["Year"]
+      ];
+
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
+    })
   })
 
-  .controller("activityCtrl", function ($scope) {
 
-    $scope.labels = ["2010", "2011", "2012", "2013", "2014", "2015", "2016"];
-    $scope.series = ['Sedentary','Mobile','Active','Very_Active'];
-    $scope.data = [
-      [65, 59, 80, 81, 56, 35, 40],
-      [14, 34, 80, 81, 96, 59, 60],
-      [65, 59, 38, 81, 56, 25, 20],
-      [65, 79, 10, 81, 56, 15, 10]
-    ];
-    $scope.onClick = function (points, evt) {
-      console.log(points, evt);
-    };
+  .controller("activityCtrl", function ($scope,$http) {
+    $http.get('datasets/activity/activity_mean_years.JSON').success(function (data) {
+      console.log($scope.data);
+      $scope.data = [
+        [data[0]["mean_sedentary"],data[1]["mean_sedentary"],data[2]["mean_sedentary"],data[3]["mean_sedentary"],data[4]["mean_sedentary"],data[5]["mean_sedentary"],data[6]["mean_sedentary"]],
+        [data[0]["mean_mobile"],data[1]["mean_mobile"],data[2]["mean_mobile"],data[3]["mean_mobile"],data[4]["mean_mobile"],data[5]["mean_mobile"],data[6]["mean_mobile"]],
+        [data[0]["mean_active"],data[1]["mean_active"],data[2]["mean_active"],data[3]["mean_active"],data[4]["mean_active"],data[5]["mean_active"],data[6]["mean_active"]],
+        [data[0]["mean_very_active"],data[1]["mean_very_active"],data[2]["mean_very_active"],data[3]["mean_very_active"],data[4]["mean_very_active"],data[5]["mean_very_active"],data[6]["mean_very_active"]]
+        ];
+      $scope.labels = [
+        data[0]["years"],data[1]["years"],data[2]["years"],data[3]["years"],data[4]["years"],data[5]["years"],data[6]["years"]
+      ];
+      $scope.series = [
+        ["Sedentary"],
+        ["Mobile"],
+        ["Active"],
+        ["Very_Active"]
+      ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
+    })
+
   })
 
   .controller("performanceCtrl", function ($scope) {
