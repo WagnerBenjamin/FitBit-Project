@@ -26,16 +26,87 @@ class ProfileController extends Controller
             $tmp = $dataset["date"]->format("Y-m-d");
             $arrayWeight[] = ["date" => $tmp, "weight" => $dataset["weight"]];
         }
+        $arrayBMI = array();
         foreach($bmi as $dataset){
             $tmp = $dataset["date"]->format("Y-m-d");
             $arrayBMI[] = ["date" => $tmp, "bmi" => $dataset["bmi"]];
         }
-        //var_dump($data[1]["date"]->format('Y-m-d'));
+
         $data = $arrayWeight;
         $bmi = $arrayBMI;
         $data = array(
             'weight_hist' => $data,
             'bmi_actual' => $bmi
+        );
+        $data = json_encode($data);
+        //return new Response($this->render('ApiBundle:Test:index.html.twig', array('data' => $data)));
+        return new Response($data);
+    }
+
+    public function lastMonthAction()
+    {
+        $weight = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('ApiBundle:Datasets')
+            ->getWeightHistLastMonth();
+
+        $arrayWeight = array();
+        foreach($weight as $dataset){
+            $tmp = $dataset["date"]->format("Y-m-d");
+            $arrayWeight[] = ["date" => $tmp, "weight" => $dataset["weight"]];
+        }
+
+        $data = $arrayWeight;
+        $data = array(
+            'weight_hist' => $data,
+        );
+        $data = json_encode($data);
+        return new Response($data);
+    }
+
+    public function lastYearAction()
+    {
+        $weight = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('ApiBundle:Datasets')
+            ->getWeightHistLastYear();
+
+        $arrayWeight = array();
+        $arrayWeight2 = array();
+        $arrayWeight3 = array();
+        foreach($weight as $dataset){
+            $tmp = $dataset["date"]->format("Y-m");
+            if($tmp == "2016-01") $arrayWeight[] = ["date" => $tmp, "weight" => $dataset["weight"]];
+            if($tmp == "2016-02") $arrayWeight2[] = ["date" => $tmp, "weight" => $dataset["weight"]];
+            if($tmp == "2016-03") $arrayWeight3[] = ["date" => $tmp, "weight" => $dataset["weight"]];
+        }
+
+        $cumul=0;
+        foreach($arrayWeight as $key=>$val)
+        {
+            $cumul += $val["weight"];
+        }
+        $weight_moy=$cumul/count($arrayWeight);
+        $data = array(array("date" => "2016-01", "weight" => $weight_moy));
+
+        $cumul=0;
+        foreach($arrayWeight2 as $key=>$val)
+        {
+            $cumul += $val["weight"];
+        }
+        $weight_moy=$cumul/count($arrayWeight2);
+        $data[] = array("date" => "2016-02", "weight" => $weight_moy);
+
+        $cumul=0;
+        foreach($arrayWeight3 as $key=>$val)
+        {
+            $cumul += $val["weight"];
+        }
+        $weight_moy=$cumul/count($arrayWeight3);
+        $data[] = array("date" => "2016-03", "weight" => $weight_moy);
+
+        $data = array(
+            'lastyear' => $data,
         );
         $data = json_encode($data);
         //return new Response($this->render('ApiBundle:Test:index.html.twig', array('data' => $data)));
