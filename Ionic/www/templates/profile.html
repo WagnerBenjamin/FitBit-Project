@@ -1,33 +1,53 @@
 <ion-view view-title="Profile" id="page2">
-	<ion-content padding="true" class="has-header" ng-app="app">
-    <div class="row padding">
-      <div class="col-50">
-        <div class="row responsive-sm">
-          <div class="container-profile">blblblblbl</div>
+  <ion-content padding="true" class="has-header">
+    <br>
+    <div class="row padding lol">
+      <div class="col-50 padding">
+        <div class="row responsive-sm padding">
+          <round-progress
+            max="100"
+            current="70"
+            color="#45ccce"
+            bgcolor="#eaeaea"
+            radius="100"
+            stroke="30"
+            semi="false"
+            rounded="true"
+            clockwise="false"
+            responsive="true"
+            duration="800"
+            animation="easeInOutQuart"
+            animation-delay="0"></round-progress>
         </div>
       </div>
-      <div class="col-50">
-        <div class="row responsive-sm">
-          <div class="container-profile">blblblblbl</div>
-       </div>
+      <div class="col-50 padding">
+        <div class="row responsive-sm padding">
+          <round-progress
+            max="100"
+            current="50"
+            color="#45ccce"
+            bgcolor="#eaeaea"
+            radius="100"
+            stroke="30"
+            semi="false"
+            rounded="true"
+            clockwise="false"
+            responsive="true"
+            duration="800"
+            animation="easeInOutQuart"
+            animation-delay="0"></round-progress>
+        </div>
       </div>
     </div>
-
-    <div class="row padding">
-      <div class="col-50">
-        <div class="row responsive-sm">
-          <div class="container-blank"></div>
-        </div>
-      </div>
-      <div class="col-50">
-        <div class="row responsive-sm">
-          <div class="container-blank"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row padding">
-        <div class="container-bottom"> blblblblbl </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row responsive-sm padding lol">
+      <canvas id="line1" class="chart chart-line" chart-data="data"
+              chart-labels="labels" chart-legend="true" chart-series="series"
+              chart-click="onClick" >
+      </canvas>
     </div>
   </ion-content>
 </ion-view>

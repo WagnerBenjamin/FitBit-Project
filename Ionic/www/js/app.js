@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives','chart.js'])
+angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives','chart.js','angular-svg-round-progressbar'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -25,7 +25,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
   $ionicConfigProvider.tabs.position('bottom'); // other values: top
 
-}]);
+}])
 
 
 /*.controller("weightCtrl", function ($scope,$http) {
@@ -41,6 +41,65 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
   })
 })
 */
+
+  .controller("profileCtrl", function ($scope) {
+
+    $scope.labels = ["2010", "2011", "2012", "2013", "2014", "2015", "2016"];
+    $scope.series = ['Weight'];
+    $scope.data = [
+      [65, 59, 80, 81, 56, 55, 40]
+    ];
+    $scope.onClick = function (points, evt) {
+      console.log(points, evt);
+    };
+  })
+
+  .controller("activityCtrl", function ($scope) {
+
+    $scope.labels = ["2010", "2011", "2012", "2013", "2014", "2015", "2016"];
+    $scope.series = ['Sedentary','Mobile','Active','Very_Active'];
+    $scope.data = [
+      [65, 59, 80, 81, 56, 35, 40],
+      [14, 34, 80, 81, 96, 59, 60],
+      [65, 59, 38, 81, 56, 25, 20],
+      [65, 79, 10, 81, 56, 15, 10]
+    ];
+    $scope.onClick = function (points, evt) {
+      console.log(points, evt);
+    };
+  })
+
+  .controller("performanceCtrl", function ($scope) {
+
+    $scope.labels = ["2010", "2011", "2012", "2013", "2014", "2015", "2016"];
+    $scope.series = ['Steps','Floors','Distance','Calories'];
+    $scope.data = [
+      [65, 59, 80, 81, 56, 35, 40],
+      [14, 34, 80, 81, 96, 59, 60],
+      [65, 59, 38, 81, 56, 25, 20],
+      [65, 79, 10, 81, 56, 15, 10]
+    ];
+    $scope.onClick = function (points, evt) {
+      console.log(points, evt);
+    };
+  })
+
+  .controller("sleepCtrl", function ($scope) {
+
+    $scope.labels = ["2010", "2011", "2012", "2013", "2014", "2015", "2016"];
+    $scope.series = ['Sleeping','Awake','Awakening','In_Bed'];
+    $scope.data = [
+      [65, 59, 80, 81, 56, 35, 40],
+      [14, 34, 80, 81, 96, 59, 60],
+      [65, 59, 38, 81, 56, 25, 20],
+      [65, 79, 10, 81, 56, 15, 10]
+    ];
+    $scope.onClick = function (points, evt) {
+      console.log(points, evt);
+    };
+  })
+
+
 
 
 
