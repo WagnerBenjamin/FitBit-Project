@@ -26,39 +26,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
   $ionicConfigProvider.tabs.position('bottom'); // other values: top
 
 }])
-
-  .controller("profileCtrl",function ($scope,$http) {
-    $http.get('datasets/profile/profile_means_weight.JSON').success(function (data) {
-      $scope.data = [
-        data["Mean_weight_years"][0]["Mean_Weight"],
-        data["Mean_weight_years"][1]["Mean_Weight"],
-        data["Mean_weight_years"][2]["Mean_Weight"],
-        data["Mean_weight_years"][3]["Mean_Weight"],
-        data["Mean_weight_years"][4]["Mean_Weight"],
-        data["Mean_weight_years"][5]["Mean_Weight"],
-        data["Mean_weight_years"][6]["Mean_Weight"]
-      ];
-
-      $scope.series = [
-        "Weight"
-      ];
-
-      $scope.labels = [
-        data["Mean_weight_years"][0]["Year"],
-        data["Mean_weight_years"][1]["Year"],
-        data["Mean_weight_years"][2]["Year"],
-        data["Mean_weight_years"][3]["Year"],
-        data["Mean_weight_years"][4]["Year"],
-        data["Mean_weight_years"][5]["Year"],
-        data["Mean_weight_years"][6]["Year"]
-      ];
-      console.log($scope.labels);
-      $scope.onClick = function (points, evt) {
-        console.log(points, evt);
-      };
-    })
-  })
-
+  
   .controller("activityCtrl", function ($scope,$http) {
     $http.get('datasets/activity/activity_mean_years.JSON').success(function (data) {
       $scope.data = [

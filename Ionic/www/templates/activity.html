@@ -1,5 +1,5 @@
 <ion-view title="Activity" id="page3">
-  <ion-content padding="true" class="has-header">
+  <ion-content padding="true" class="has-header responsive-sm">
     <div class="row padding">
       <div class="col-50 padding">
         <div class="row responsive-sm lol padding">
@@ -98,11 +98,11 @@
       </div>
     </div>
     <br>
-    <div class="row responsive-sm padding" ng-controller="activityCtrl">
+    <div class="row padding" ng-controller="activityCtrl">
       <div class="chart-container">
         <canvas id="line" class="chart chart-bar ng-isolate-scope" chart-data="data" chart-labels="labels" chart-legend="false" chart-click="onClick" chart-hover="onHover" chart-series="series"></canvas>
         <chart-legend>
-          <ul class="line-legend padding">
+          <ul class="line-legend">
             <li>
               <span class="line-legend-icon" style="background-color:rgba(151,187,205,1)"></span>
               <span class="line-legend-text">Sedentary</span>
@@ -117,7 +117,7 @@
             </li>
             <li>
               <span class="line-legend-icon" style="background-color:rgba(151,187,205,1)"></span>
-              <span class="line-legend-text">Very_Active</span>
+              <span class="line-legend-text">V_Active</span>
             </li>
           </ul>
         </chart-legend>
