@@ -33,6 +33,7 @@
 .lol{
   border: 1px solid grey;
   box-shadow: grey 2px 2px 4px;
+  border-radius: 1em;
 }
 
 .progress-wrapper{
@@ -59,4 +60,9 @@
   text-align: center;
   width: 100%;
   z-index: 2;
+}
+
+.title
+{
+  text-align: center
 }
