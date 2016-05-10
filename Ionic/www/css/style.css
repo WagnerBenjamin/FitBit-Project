@@ -25,6 +25,7 @@
 }
 .container-bottom{
   background: #e3e3e3;
+  padding-bottom: 50%;
   padding-right: 100%;
   border-radius: 1em;
 }
