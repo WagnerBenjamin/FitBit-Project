@@ -6,6 +6,14 @@ api_profile:
     path:     /profile
     defaults: { _controller: ApiBundle:Profile:index, _format: json }
 
+api_profile_lastMonth:
+    path:     /profile/lastmonth
+    defaults: { _controller: ApiBundle:Profile:lastMonth, _format: json }
+
+api_profile_lastYear:
+    path:     /profile/lastyear
+    defaults: { _controller: ApiBundle:Profile:lastYear, _format: json }
+
 api_perf:
     path:     /perf
     defaults: { _controller: ApiBundle:Perf:index }

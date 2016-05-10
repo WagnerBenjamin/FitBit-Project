@@ -5,16 +5,8 @@
       <generator strategy="IDENTITY"/>
     </id>
     <field name="date" type="date" column="date" nullable="false"/>
-    <field name="weight" type="smallint" column="weight" nullable="false">
-      <options>
-        <option name="unsigned"/>
-      </options>
-    </field>
-    <field name="bmi" type="smallint" column="bmi" nullable="false">
-      <options>
-        <option name="unsigned"/>
-      </options>
-    </field>
+    <field name="weight" type="float" column="weight" precision="10" scale="0" nullable="false"/>
+    <field name="bmi" type="float" column="bmi" precision="10" scale="0" nullable="false"/>
     <field name="sleeping" type="integer" column="sleeping" nullable="false">
       <options>
         <option name="unsigned"/>

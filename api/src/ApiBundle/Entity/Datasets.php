@@ -21,16 +21,16 @@ class Datasets implements JsonSerializable
     private $date;
 
     /**
-     * @var integer
+     * @var float
      *
-     * @ORM\Column(name="weight", type="smallint", nullable=false)
+     * @ORM\Column(name="weight", type="float", precision=10, scale=0, nullable=false)
      */
     private $weight;
 
     /**
-     * @var integer
+     * @var float
      *
-     * @ORM\Column(name="bmi", type="smallint", nullable=false)
+     * @ORM\Column(name="bmi", type="float", precision=10, scale=0, nullable=false)
      */
     private $bmi;
 
@@ -156,7 +156,7 @@ class Datasets implements JsonSerializable
     /**
      * Set weight
      *
-     * @param integer $weight
+     * @param float $weight
      *
      * @return Datasets
      */
@@ -170,7 +170,7 @@ class Datasets implements JsonSerializable
     /**
      * Get weight
      *
-     * @return integer
+     * @return float
      */
     public function getWeight()
     {
@@ -180,7 +180,7 @@ class Datasets implements JsonSerializable
     /**
      * Set bmi
      *
-     * @param integer $bmi
+     * @param float $bmi
      *
      * @return Datasets
      */
@@ -194,7 +194,7 @@ class Datasets implements JsonSerializable
     /**
      * Get bmi
      *
-     * @return integer
+     * @return float
      */
     public function getBmi()
     {

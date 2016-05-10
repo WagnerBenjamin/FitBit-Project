@@ -20,16 +20,16 @@ class Datasets
     private $date;
 
     /**
-     * @var integer
+     * @var float
      *
-     * @ORM\Column(name="weight", type="smallint", nullable=false)
+     * @ORM\Column(name="weight", type="float", precision=10, scale=0, nullable=false)
      */
     private $weight;
 
     /**
-     * @var integer
+     * @var float
      *
-     * @ORM\Column(name="bmi", type="smallint", nullable=false)
+     * @ORM\Column(name="bmi", type="float", precision=10, scale=0, nullable=false)
      */
     private $bmi;
 
