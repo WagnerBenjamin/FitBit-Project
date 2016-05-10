@@ -27,20 +27,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
 }])
 
-
-/*.controller("weightCtrl", function ($scope,$http) {
-  $http.get('datasets/profile_default.JSON').success(function (data) {
-    $scope.weight_hist = data["weight_hist"];
-    for(var i = 0; i < data["weight_hist"].length; i++){
-      if (i == (data["weight_hist"].length - 1)) {
-        $scope.data = [ data["weight_hist"][i]["Weight"] ];
-      }
-    }
-    $scope.labels = ["Weight_Actual"];
-    console.log($scope.data);
-  })
-})
-*/
   .controller("profileCtrl",function ($scope,$http) {
     $http.get('datasets/profile/profile_means_weight.JSON').success(function (data) {
       $scope.data = [
@@ -66,7 +52,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         data["Mean_weight_years"][5]["Year"],
         data["Mean_weight_years"][6]["Year"]
       ];
-
+      console.log($scope.labels);
       $scope.onClick = function (points, evt) {
         console.log(points, evt);
       };
