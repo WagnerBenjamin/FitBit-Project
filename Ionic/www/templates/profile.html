@@ -58,6 +58,7 @@
     </div>
 
     <div class="row">
+      <div class="button-graph">
       <span class="padding">
         <button class="button button-small button-assertive">
           Default
@@ -72,8 +73,9 @@
           Mean_years
         </button>
       </span>
+      </div>
     </div>
-    <div class="row padding responsive-sm" ng-controller="profileCtrl">
+    <div class="row padding responsive-sm" ng-controller="performanceCtrl">
       <div class="chart-container" style="width: 100%;">
         <canvas id="line2" class="chart chart-bar" chart-data="data"
                 chart-labels="labels" chart-legend="false" chart-series="series"
