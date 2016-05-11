@@ -7,10 +7,10 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-screen-orientation": {
+        "cordova-plugin-device-orientation": {
             "PACKAGE_NAME": "com.ionicframework.starter"
         },
-        "cordova-plugin-device-orientation": {
+        "cordova-plugin-screen-orientation": {
             "PACKAGE_NAME": "com.ionicframework.starter"
         }
     },
