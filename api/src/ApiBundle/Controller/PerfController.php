@@ -39,8 +39,7 @@ class PerfController extends Controller
             ->getRepository('ApiBundle:Datasets')
             ->getPerfLYear();
 
-        $data = array( "lastyear" => $perfy);
-        $data = json_encode($data);
+        $data = json_encode($perfy);
         return new Response($data);
     }
 
