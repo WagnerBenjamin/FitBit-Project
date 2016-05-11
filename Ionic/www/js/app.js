@@ -27,6 +27,13 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
 }])
 
+<<<<<<< HEAD
+=======
+  .controller("OrientationCtrl", function($scope){
+
+  })
+
+>>>>>>> 6156b2f542e911451bc63b76cfd31ee4b6a3739a
   .controller("profileDefaultCtrl",function (profileDefault,$scope) {
     profileDefault.getData(function (data) {
       $scope.data = [
@@ -36,7 +43,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
       ];
       $scope.series = [
-        "Weight"
+        "weight"
       ];
       $scope.onClick = function (points, evt) {
         console.log(points, evt);
@@ -48,20 +55,23 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
   })
 
   .controller("profileLastMonthCtrl",function (profileDefault,$scope) {
-    profileDefault.getData(function (data) {
+    profileLastMonth.getData(function (data) {
       $scope.data = [
-        data["weight_hist"][0]["Weight"], data["weight_hist"][1]["Weight"], data["weight_hist"][2]["Weight"], data["weight_hist"][3]["Weight"], data["weight_hist"][4]["Weight"], data["weight_hist"][5]["Weight"], data["weight_hist"][6]["Weight"],
-        data["weight_hist"][7]["Weight"], data["weight_hist"][8]["Weight"], data["weight_hist"][9]["Weight"], data["weight_hist"][10]["Weight"], data["weight_hist"][11]["Weight"], data["weight_hist"][12]["Weight"], data["weight_hist"][13]["Weight"],
-        data["weight_hist"][14]["Weight"], data["weight_hist"][15]["Weight"], data["weight_hist"][16]["Weight"], data["weight_hist"][17]["Weight"], data["weight_hist"][18]["Weight"], data["weight_hist"][19]["Weight"], data["weight_hist"][20]["Weight"], data["weight_hist"][21]["Weight"], data["weight_hist"][22]["Weight"],
-        data["weight_hist"][23]["Weight"], data["weight_hist"][24]["Weight"], data["weight_hist"][25]["Weight"], data["weight_hist"][26]["Weight"], data["weight_hist"][27]["Weight"], data["weight_hist"][28]["Weight"], data["weight_hist"][29]["Weight"],
-        data["weight_hist"][30]["Weight"], data["weight_hist"][31]["Weight"]
+        data["weight_hist"][0]["Weight"], data["weight_hist"][1]["weight"], data["weight_hist"][2]["weight"], data["weight_hist"][3]["weight"], data["weight_hist"][4]["weight"], data["weight_hist"][5]["weight"], data["weight_hist"][6]["weight"],
+        data["weight_hist"][7]["weight"], data["weight_hist"][8]["weight"], data["weight_hist"][9]["weight"], data["weight_hist"][10]["weight"], data["weight_hist"][11]["weight"], data["weight_hist"][12]["weight"], data["weight_hist"][13]["weight"],
+        data["weight_hist"][14]["weight"], data["weight_hist"][15]["weight"], data["weight_hist"][16]["weight"], data["weight_hist"][17]["weight"], data["weight_hist"][18]["weight"], data["weight_hist"][19]["weight"], data["weight_hist"][20]["weight"], data["weight_hist"][21]["weight"], data["weight_hist"][22]["weight"],
+        data["weight_hist"][23]["weight"], data["weight_hist"][24]["weight"], data["weight_hist"][25]["weight"], data["weight_hist"][26]["weight"], data["weight_hist"][27]["weight"], data["weight_hist"][28]["weight"], data["weight_hist"][29]["weight"],
+        data["weight_hist"][30]["weight"]
       ];
       $scope.labels = [
-        "03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
+        "03-01", "03-02", "03-03", "03-04", "03-05", "03-06", "03-07", "03-08", "03-09", "03-10", "03-11", "03-12", "03-13", "03-14", "03-15", "03-16", "03-17","03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
       ];
       $scope.series = [
-        "Weight"
+        "weight"
       ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
     })
   })
 
@@ -73,7 +83,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       $scope.labels = ["2016-01","2016-02","2016-03"];
 
       $scope.series = [
-        "Weight"
+        "weight"
       ];
     })
   })
