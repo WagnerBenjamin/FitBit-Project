@@ -41,7 +41,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       $scope.onClick = function (points, evt) {
         console.log(points, evt);
       };
-
+      
       document.getElementById("weightWidget").textContent = data["weight_hist"][6]["weight"];
       document.getElementById("bmiWidget").textContent = data["bmi_actual"][0]["bmi"];
     })
@@ -192,6 +192,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       $scope.onClick = function (points, evt) {
         console.log(points, evt);
       };
+
       document.getElementById("sleepingWidget").textContent = data["sleep_lastday"][0]["sleeping"];
       document.getElementById("awakeWidget").textContent = data["sleep_lastday"][0]["awake"];
       document.getElementById("awakeningWidget").textContent = data["sleep_lastday"][0]["awakening"];
