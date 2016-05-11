@@ -296,6 +296,25 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         console.log(points, evt);
       };
     })
-  });
+  })
+
+    .controller("SleepGraphCtrl",function ($scope) {
+      $scope.onTouchDefaultGraph = function()
+      {
+        console.log('clicked');
+      }
+      $scope.onTouchLastYearGraph = function()
+      {
+        console.log('clicked');
+      }
+      $scope.onTouchLastMonthGraph = function()
+      {
+        console.log('clicked');
+      }
+      $scope.onTouchMeanYearsGraph = function()
+      {
+        console.log('clicked');
+      }
+    });
 
 
