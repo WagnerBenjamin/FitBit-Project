@@ -16,7 +16,8 @@ class PerfController extends Controller
             ->getRepository('ApiBundle:Datasets')
             ->getPerfDefault();
 
-        $data = json_encode($perfw);
+        $data = array( "perf_hist" => $perfw);
+        $data = json_encode($data);
         return new Response($data);
     }
 
@@ -27,7 +28,8 @@ class PerfController extends Controller
             ->getRepository('ApiBundle:Datasets')
             ->getPerfThisMonth();
 
-        $data = json_encode($perfm);
+        $data = array( "perf_hist" => $perfm);
+        $data = json_encode($data);
         return new Response($data);
     }
 
@@ -37,7 +39,8 @@ class PerfController extends Controller
             ->getRepository('ApiBundle:Datasets')
             ->getPerfLYear();
 
-        $data = json_encode($perfy);
+        $data = array( "lastyear" => $perfy);
+        $data = json_encode($data);
         return new Response($data);
     }
 
@@ -47,7 +50,8 @@ class PerfController extends Controller
             ->getRepository('ApiBundle:Datasets')
             ->getPerfAllYear();
 
-        $data = json_encode($perfally);
+        $data = array( "mean_perf_year" => $perfally);
+        $data = json_encode($data);
         return new Response($data);
     }
 }
