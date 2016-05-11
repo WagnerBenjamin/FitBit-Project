@@ -2,24 +2,21 @@
 .container {
   background: #e3e3e3;
   padding-right: 50%;
-  padding-bottom: 10em;
+  padding-bottom: 5em;
   border-radius: 1em;
   max-height: 10em;
 }
 
 .container-profile {
-  background: #e3e3e3;
-  margin-top: 5em;
-  padding-right: 50%;
-  padding-bottom: 10em;
+  border: 1px solid grey;
+  box-shadow: grey 2px 2px 4px;
   border-radius: 1em;
-  max-height: 10em;
+  margin-top: 2em;
 }
 
 .container-blank{
   background: #ffffff;
   padding-right: 50%;
-  padding-bottom: 5em;
   border-radius: 1em;
   max-height: 10em;
 }
@@ -51,6 +48,17 @@
   z-index: 1;
 }
 
+.progress-wrapper .text-profile{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
 .progress-wrapper .icon{
   position: absolute;
   top: 50%;
@@ -64,5 +72,10 @@
 
 .title
 {
-  text-align: center
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.button-graph{
+ padding-left: 9%;
 }
