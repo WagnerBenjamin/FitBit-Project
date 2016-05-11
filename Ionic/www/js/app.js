@@ -7,7 +7,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives','chart.js','angular-svg-round-progressbar'])
 
-.run(function($ionicPlatform) {
+  .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -21,16 +21,11 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     }
   });
 })
-.config(['$ionicConfigProvider', function($ionicConfigProvider) {
+  .config(['$ionicConfigProvider', function($ionicConfigProvider) {
 
   $ionicConfigProvider.tabs.position('bottom'); // other values: top
 
 }])
-  .controller("OrientationCtrl", function($scope){
-    
-  })
-
-
 
   //activity_default
   .controller("activityDefaultCtrl",function (activityDefault,$scope) {
