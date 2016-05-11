@@ -20,7 +20,7 @@ class ActivityController extends Controller
         return new Response($data);
     }
 
-    public function thisMonthAction()
+    public function lastMonthAction()
     {
         $Actm = $this->getDoctrine()
             ->getManager()
@@ -31,7 +31,7 @@ class ActivityController extends Controller
         return new Response($data);
     }
 
-    public function thisYearAction(){
+    public function lastYearAction(){
         $Acty = $this->getDoctrine()
             ->getManager()
             ->getRepository('ApiBundle:Datasets')
@@ -41,7 +41,7 @@ class ActivityController extends Controller
         return new Response($data);
     }
 
-    public function allYearAction(){
+    public function meanYearAction(){
         $Actally = $this->getDoctrine()
             ->getManager()
             ->getRepository('ApiBundle:Datasets')

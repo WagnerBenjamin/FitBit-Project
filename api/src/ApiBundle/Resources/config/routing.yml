@@ -20,27 +20,35 @@ api_profile_meanWeightYears:
 
 api_perf:
     path:     /perf
-    defaults: { _controller: ApiBundle:Perf:index }
+    defaults: { _controller: ApiBundle:Perf:index, _format: json }
 
 api_perf_month:
-    path:     /perf/month
-    defaults: { _controller: ApiBundle:Perf:thisMonth, _format: json }
+    path:     /perf/lastmonth
+    defaults: { _controller: ApiBundle:Perf:lastMonth, _format: json }
 
 api_perf_year:
-    path:     /perf/year
-    defaults: { _controller: ApiBundle:Perf:thisYear, _format: json }
+    path:     /perf/lastyear
+    defaults: { _controller: ApiBundle:Perf:lastYear, _format: json }
 
-api_activity:
+api_perf_mean_year:
+    path:     /perf/perfmeanyear
+    defaults: { _controller: ApiBundle:Perf:meanYear, _format: json }
+
+api_act:
     path:     /activity
-    defaults: { _controller: ApiBundle:Activity:index }
+    defaults: { _controller: ApiBundle:Activity:index, _format: json }
     
 api_act_month:
-    path:     /activity/month
-    defaults: { _controller: ApiBundle:Activity:thisMonth, _format: json }
+    path:     /activity/lastmonth
+    defaults: { _controller: ApiBundle:Activity:lastMonth, _format: json }
 
 api_act_year:
-    path:     /activity/year
-    defaults: { _controller: ApiBundle:Activity:thisYear, _format: json }
+    path:     /activity/lastyear
+    defaults: { _controller: ApiBundle:Activity:lastYear, _format: json }
+
+api_act_mean_year:
+    path:     /activity/actmeanyear
+    defaults: { _controller: ApiBundle:Activity:meanYear, _format: json }
 
 api_sleep:
     path:     /sleep

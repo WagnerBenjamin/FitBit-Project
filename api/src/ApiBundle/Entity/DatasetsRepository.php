@@ -79,10 +79,10 @@ class DatasetsRepository extends EntityRepository
             ->getResult();
     }
 
-    public function getPerfDefault()
+    public function getPerfDefault() //modif
     {
         $qb = $this->_em->createQueryBuilder()
-            ->select('SUBSTRING(d.date, 1, 9) as date, d.steps, d.floors, d.distance, d.calories')
+            ->select('SUBSTRING(d.date, 1, 10) as date, d.steps, d.floors, d.distance, d.calories')
             ->from($this->_entityName, 'd')
             ->where("d.date BETWEEN DATE_SUB(:end, 6, 'day') AND :end")
             ->setParameter('end', date('2016-03-31'))
@@ -150,7 +150,7 @@ class DatasetsRepository extends EntityRepository
     public function getActDefault()
     {
         $qb = $this->_em->createQueryBuilder()
-            ->select('SUBSTRING(d.date, 1, 9) as date, d.sedentary, d.mobile, d.active, d.veryActive')
+            ->select('SUBSTRING(d.date, 1, 10) as date, d.sedentary, d.mobile, d.active, d.veryActive')
             ->from($this->_entityName, 'd')
             ->where("d.date BETWEEN DATE_SUB(:end, 6, 'day') AND :end")
             ->setParameter('end', date('2016-03-31'))
@@ -162,7 +162,7 @@ class DatasetsRepository extends EntityRepository
     public function getActThisMonth()
     {
         $qb = $this->_em->createQueryBuilder()
-            ->select('SUBSTRING(d.date, 1, 9) as date, d.sedentary, d.mobile, d.active, d.veryActive')
+            ->select('SUBSTRING(d.date, 1, 10) as date, d.sedentary, d.mobile, d.active, d.veryActive')
             ->from($this->_entityName, 'd')
             ->where("d.date BETWEEN DATE_SUB(:end, 1, 'MONTH')+1 AND :end")
             ->setParameter('end', date('2016-03-31'))

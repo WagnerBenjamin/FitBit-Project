@@ -55,11 +55,11 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     profileDefault.getData(function (data) {
       $scope.data = [
         data["weight_hist"][0]["Weight"], data["weight_hist"][1]["Weight"], data["weight_hist"][2]["Weight"], data["weight_hist"][3]["Weight"], data["weight_hist"][4]["Weight"], data["weight_hist"][5]["Weight"], data["weight_hist"][6]["Weight"],
-        data["weight_hist"][7]["Weight"]], data["weight_hist"][8]["Weight"], data["weight_hist"][9]["Weight"], data["weight_hist"][10]["Weight"], data["weight_hist"][11]["Weight"], data["weight_hist"][12]["Weight"], data["weight_hist"][13]["Weight"],
+        data["weight_hist"][7]["Weight"], data["weight_hist"][8]["Weight"], data["weight_hist"][9]["Weight"], data["weight_hist"][10]["Weight"], data["weight_hist"][11]["Weight"], data["weight_hist"][12]["Weight"], data["weight_hist"][13]["Weight"],
         data["weight_hist"][14]["Weight"], data["weight_hist"][15]["Weight"], data["weight_hist"][16]["Weight"], data["weight_hist"][17]["Weight"], data["weight_hist"][18]["Weight"], data["weight_hist"][19]["Weight"], data["weight_hist"][20]["Weight"], data["weight_hist"][21]["Weight"], data["weight_hist"][22]["Weight"],
         data["weight_hist"][23]["Weight"], data["weight_hist"][24]["Weight"], data["weight_hist"][25]["Weight"], data["weight_hist"][26]["Weight"], data["weight_hist"][27]["Weight"], data["weight_hist"][28]["Weight"], data["weight_hist"][29]["Weight"],
         data["weight_hist"][30]["Weight"], data["weight_hist"][31]["Weight"]
-      ]
+      ];
       $scope.labels = [
         "03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
       ];
@@ -68,6 +68,20 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       ];
     })
   })
+
+  .controller("profileLastYearCtrl",function (profileLastYear,$scope) {
+    profileLastYear.getData(function (data) {
+      $scope.data = [
+        data["lastyear"][0]["weight"],data["lastyear"][1]["weight"],data["lastyear"][3]["weight"]
+      ];
+      $scope.labels = ["2016-01","2016-02","2016-03"];
+
+      $scope.series = [
+        "Weight"
+      ];
+    })
+  })
+
 
   //activity_default
   .controller("activityDefaultCtrl",function (activityDefault,$scope) {
@@ -137,6 +151,26 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     };
   })
 })
+
+  .controller("performanceDefaultCtrl",function ($scope,performanceDefault) {
+    performanceDefault.getData(function (data) {
+      $scope.data = [
+        [data[0]["steps"],data[1]["steps"],data[2]["steps"],data[3]["steps"],data[4]["steps"],data[5]["steps"],data[6]["steps"],data[7]["steps"]],
+        [data[0]["floors"],data[1]["floors"],data[2]["floors"],data[3]["floors"],data[4]["floors"],data[5]["floors"],data[6]["floors"],data[7]["floors"]],
+        [data[0]["distance"],data[1]["distance"],data[2]["distance"],data[3]["distance"],data[4]["distance"],data[5]["distance"],data[6]["distance"],data[7]["distance"]],
+        [data[0]["calories"],data[1]["calories"],data[2]["calories"],data[3]["calories"],data[4]["calories"],data[5]["calories"],data[6]["calories"],data[7]["calories"]]
+      ];
+      $scope.labels = [
+        "2016-03-25", "2016-03-26", "2016-03-27", "2016-03-28", "2016-03-29", "2016-03-30", "2016-03-31"
+      ];
+      $scope.series = [
+        "Steps","Floors","Distance","Calories"
+      ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
+    })
+  })
   //sleep_default
 
   .controller("SleepDefaultCtrl",function (sleepDefault,$scope) {
@@ -156,6 +190,9 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         "Awakening",
         "In_Bed"
       ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
       document.getElementById("sleepingWidget").textContent = data["sleep_lastday"][0]["sleeping"];
       document.getElementById("awakeWidget").textContent = data["sleep_lastday"][0]["awake"];
       document.getElementById("awakeningWidget").textContent = data["sleep_lastday"][0]["awakening"];
@@ -166,13 +203,12 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     .controller("SleepLastMonthCtrl",function (sleepDefault,$scope) {
       sleepDefault.getData(function (data) {
         $scope.data = [
-          [data["sleep_hist"][0]["sleeping"], data["sleep_hist"][1]["sleeping"], data["sleep_hist"][2]["sleeping"], data["sleep_hist"][3]["sleeping"], data["sleep_hist"][4]["sleeping"], data["sleep_hist"][5]["sleeping"], data["sleep_hist"][6]["sleeping"]],
-          [data["sleep_hist"][0]["awake"], data["sleep_hist"][1]["awake"], data["sleep_hist"][2]["awake"], data["sleep_hist"][3]["awake"], data["sleep_hist"][4]["awake"], data["sleep_hist"][5]["awake"], data["sleep_hist"][6]["awake"]],
-          [data["sleep_hist"][0]["awakening"], data["sleep_hist"][1]["awakening"], data["sleep_hist"][2]["awakening"], data["sleep_hist"][3]["awakening"], data["sleep_hist"][4]["awakening"], data["sleep_hist"][5]["awakening"], data["sleep_hist"][6]["awakening"]],
-          [data["sleep_hist"][0]["inBed"], data["sleep_hist"][1]["inBed"], data["sleep_hist"][2]["inBed"], data["sleep_hist"][3]["inBed"], data["sleep_hist"][4]["inBed"], data["sleep_hist"][5]["inBed"], data["sleep_hist"][6]["inBed"]]
-        ];
+          [data["sleep_hist"][0]["sleeping"], data["sleep_hist"][1]["sleeping"], data["sleep_hist"][2]["sleeping"], data["sleep_hist"][3]["sleeping"], data["sleep_hist"][4]["sleeping"], data["sleep_hist"][5]["sleeping"], data["sleep_hist"][6]["sleeping"], data["sleep_hist"][7]["sleeping"], data["sleep_hist"][8]["sleeping"], data["sleep_hist"][9]["sleeping"], data["sleep_hist"][10]["sleeping"], data["sleep_hist"][11]["sleeping"], data["sleep_hist"][12]["sleeping"], data["sleep_hist"][13]["sleeping"], data["sleep_hist"][14]["sleeping"], data["sleep_hist"][15]["sleeping"], data["sleep_hist"][16]["sleeping"], data["sleep_hist"][17]["sleeping"], data["sleep_hist"][18]["sleeping"], data["sleep_hist"][19]["sleeping"], data["sleep_hist"][20]["sleeping"], data["sleep_hist"][21]["sleeping"], data["sleep_hist"][22]["sleeping"], data["sleep_hist"][23]["sleeping"], data["sleep_hist"][24]["sleeping"], data["sleep_hist"][25]["sleeping"], data["sleep_hist"][26]["sleeping"], data["sleep_hist"][27]["sleeping"], data["sleep_hist"][28]["sleeping"], data["sleep_hist"][29]["sleeping"], data["sleep_hist"][30]["sleeping"]],
+          [data["sleep_hist"][0]["awake"], data["sleep_hist"][1]["awake"], data["sleep_hist"][2]["awake"], data["sleep_hist"][3]["awake"], data["sleep_hist"][4]["awake"], data["sleep_hist"][5]["awake"], data["sleep_hist"][6]["awake"], data["sleep_hist"][7]["awake"], data["sleep_hist"][8]["awake"], data["sleep_hist"][9]["awake"], data["sleep_hist"][10]["awake"], data["sleep_hist"][11]["awake"], data["sleep_hist"][12]["awake"], data["sleep_hist"][13]["awake"], data["sleep_hist"][14]["awake"], data["sleep_hist"][15]["awake"], data["sleep_hist"][16]["awake"], data["sleep_hist"][17]["awake"], data["sleep_hist"][18]["awake"], data["sleep_hist"][19]["awake"], data["sleep_hist"][20]["awake"], data["sleep_hist"][21]["awake"], data["sleep_hist"][22]["awake"], data["sleep_hist"][23]["awake"], data["sleep_hist"][24]["awake"], data["sleep_hist"][25]["awake"], data["sleep_hist"][26]["awake"], data["sleep_hist"][27]["awake"], data["sleep_hist"][28]["awake"], data["sleep_hist"][29]["awake"], data["sleep_hist"][30]["awake"]],
+          [data["sleep_hist"][0]["awakening"], data["sleep_hist"][1]["awakening"], data["sleep_hist"][2]["awakening"], data["sleep_hist"][3]["awakening"], data["sleep_hist"][4]["awakening"], data["sleep_hist"][5]["awakening"], data["sleep_hist"][6]["awakening"], data["sleep_hist"][7]["awakening"], data["sleep_hist"][8]["awakening"], data["sleep_hist"][9]["awakening"], data["sleep_hist"][10]["awakening"], data["sleep_hist"][11]["awakening"], data["sleep_hist"][12]["awakening"], data["sleep_hist"][13]["awakening"], data["sleep_hist"][14]["awakening"], data["sleep_hist"][15]["awakening"], data["sleep_hist"][16]["awakening"], data["sleep_hist"][17]["awakening"], data["sleep_hist"][18]["awakening"], data["sleep_hist"][19]["awakening"], data["sleep_hist"][20]["awakening"], data["sleep_hist"][21]["awakening"], data["sleep_hist"][22]["awakening"], data["sleep_hist"][23]["awakening"], data["sleep_hist"][24]["awakening"], data["sleep_hist"][25]["awakening"], data["sleep_hist"][26]["awakening"], data["sleep_hist"][27]["awakening"], data["sleep_hist"][28]["awakening"], data["sleep_hist"][29]["awakening"], data["sleep_hist"][30]["awakening"]],
+          [data["sleep_hist"][0]["inBed"], data["sleep_hist"][1]["inBed"], data["sleep_hist"][2]["inBed"], data["sleep_hist"][3]["inBed"], data["sleep_hist"][4]["inBed"], data["sleep_hist"][5]["inBed"], data["sleep_hist"][6]["inBed"], data["sleep_hist"][7]["inBed"], data["sleep_hist"][8]["inBed"], data["sleep_hist"][9]["inBed"], data["sleep_hist"][10]["inBed"], data["sleep_hist"][11]["inBed"], data["sleep_hist"][12]["inBed"], data["sleep_hist"][13]["inBed"], data["sleep_hist"][14]["inBed"], data["sleep_hist"][15]["inBed"], data["sleep_hist"][16]["inBed"], data["sleep_hist"][17]["inBed"], data["sleep_hist"][18]["inBed"], data["sleep_hist"][19]["inBed"], data["sleep_hist"][20]["inBed"], data["sleep_hist"][21]["inBed"], data["sleep_hist"][22]["inBed"], data["sleep_hist"][23]["inBed"], data["sleep_hist"][24]["inBed"], data["sleep_hist"][25]["inBed"], data["sleep_hist"][26]["inBed"], data["sleep_hist"][27]["inBed"], data["sleep_hist"][28]["inBed"], data["sleep_hist"][29]["inBed"], data["sleep_hist"][30]["inBed"]]];
         $scope.labels = [
-          "03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
+          "03-01", "03-02", "03-03", "03-04", "03-05", "03-06", "03-07", "03-08", "03-09", "03-10", "03-11", "03-12", "03-13", "03-14", "03-15", "03-16", "03-17","03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
         ];
         $scope.series = [
           "Sleeping",
@@ -180,6 +216,9 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
           "Awakening",
           "In_Bed"
         ];
+        $scope.onClick = function (points, evt) {
+          console.log(points, evt);
+        };
       })
     })
 
@@ -233,4 +272,5 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     };
   })
 });
+
 
