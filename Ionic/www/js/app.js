@@ -26,12 +26,12 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
   $ionicConfigProvider.tabs.position('bottom'); // other values: top
 
 }])
-  .controller("OrientationCtrl", function($scope){
-    
+
+  .controller("orientationCtrl",function ($scope) {
+    $scope.changeOrientation = function () {
+      screenOrientation('portrait');
+    }
   })
-
-
-
 
   //activity_default
   .controller("activityDefaultCtrl",function (activityDefault,$scope) {
