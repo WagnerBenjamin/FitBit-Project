@@ -16,22 +16,20 @@ angular.module('app.controllers', [])
 
 })
 
-.controller('settingCtrl', function($scope, $ionicPopup){
-  // A confirm dialog
-  $scope.showConfirm = function() {
-    var confirmPopup = $ionicPopup.confirm({
-      title: 'Consume Ice Cream',
-      template: 'Are you sure you want to eat this ice cream?'
-    });
+.controller('settingCtrl', function($scope, $ionicPopover){
+  $ionicPopover.fromTemplateUrl('templates/popover.html', {
+    scope: $scope,
+  }).then(function(popover) {
+    $scope.popover = popover;
+  });
 
-    confirmPopup.then(function(res) {
-      if(res) {
-        console.log('You are sure');
-      } else {
-        console.log('You are not sure');
-      }
-    });
-  };
+  $scope.demo = 'ios';
+  $scope.setPlatform = function(p) {
+    document.body.classList.remove('platform-ios');
+    document.body.classList.remove('platform-android');
+    document.body.classList.add('platform-' + p);
+    $scope.demo = p;
+  }
 });
 
 

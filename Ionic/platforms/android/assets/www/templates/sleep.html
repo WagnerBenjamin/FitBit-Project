@@ -1,5 +1,5 @@
 <ion-view title="Sleep" id="page6">
-  <ion-content padding="true" class="has-header">
+  <ion-content class="has-header">
     <div class="row padding">
       <div class="col-50 padding">
         <div class="row responsive-sm lol padding">
@@ -20,7 +20,7 @@
               animation="easeInOutQuart"
               animation-delay="0">  </round-progress>
             <div class="icon ion-ios-moon"></div>
-            <div class="text">324</div>
+            <div id="sleepingWidget" class="text">324</div>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@
               animation="easeInOutQuart"
               animation-delay="0"></round-progress>
             <div class="icon ion-ios-timer"></div>
-            <div class="text">0</div>
+            <div id="awakeWidget" class="text">0</div>
           </div>
         </div>
       </div>
@@ -69,7 +69,7 @@
               animation="easeInOutQuart"
               animation-delay="0"></round-progress>
             <div class="icon ion-ios-alarm"></div>
-            <div class="text">0</div>
+            <div id="awakeningWidget" class="text">0</div>
           </div>
         </div>
       </div>
@@ -92,30 +92,30 @@
               animation="easeInOutQuart"
               animation-delay="0"></round-progress>
             <div class="icon ion-ios-body"></div>
-            <div class="text">324</div>
+            <div id="inBedWidget" class="text">324</div>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
-      <span class="padding">
-        <button class="button button-small button-assertive">
-          Default
+      <span class="button-graph" ng-controller="SleepGraphCtrl">
+        <button class="button button-small button-assertive" ng-click="onTouchDefaultGraph()">
+          Lastweek
         </button>
-        <button class="button button-small button-assertive">
+        <button class="button button-small button-assertive" ng-click="onTouchLastYearGraph()">
           Lastyear
         </button>
-        <button class="button button-small button-assertive">
+        <button class="button button-small button-assertive" ng-click="onTouchLastMonthGraph()">
           Lastmonth
         </button>
-        <button class="button button-small button-assertive">
+        <button class="button button-small button-assertive" ng-click="onTouchMeanYearsGraph()">
           Mean_years
         </button>
       </span>
     </div>
-    <div class="row padding" ng-controller="activityCtrl">
-      <div class="chart-container">
-        <canvas id="line2" class="chart chart-bar" chart-data="data"
+    <div class="row padding" ng-controller="SleepDefaultCtrl">
+      <div class="chart-container" style="width: 100%;">
+        <canvas id="line2" class="chart chart-line" chart-data="data"
                 chart-labels="labels" chart-legend="false" chart-series="series"
                 chart-click="onClick">
         </canvas>

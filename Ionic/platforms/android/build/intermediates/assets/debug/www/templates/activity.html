@@ -1,5 +1,5 @@
 <ion-view title="Activity" id="page3">
-  <ion-content padding="true" class="has-header">
+  <ion-content class="has-header">
     <div class="row padding">
       <div class="col-50 padding">
         <div class="row responsive-sm lol padding">
@@ -98,7 +98,7 @@
       </div>
     </div>
     <div class="row">
-      <span class="padding">
+      <span class="button-graph">
         <button class="button button-small button-assertive">
           Default
         </button>
@@ -113,9 +113,9 @@
         </button>
       </span>
     </div>
-    <div class="row padding" ng-controller="activityCtrl">
-      <div class="chart-container">
-        <canvas id="line" class="chart chart-bar ng-isolate-scope" chart-data="data" chart-labels="labels" chart-legend="false" chart-click="onClick" chart-hover="onHover" chart-series="series"></canvas>
+    <div class="row padding">
+      <div class="chart-container" ng-controller="activityDefaultCtrl" style="width: 100%;">
+        <canvas class="chart chart-line ng-isolate-scope" chart-data="data" chart-labels="labels" chart-legend="false" chart-click="onClick" chart-hover="onHover" chart-series="series"></canvas>
         <chart-legend>
           <ul class="line-legend">
             <li>
