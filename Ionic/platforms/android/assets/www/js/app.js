@@ -26,6 +26,9 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
   $ionicConfigProvider.tabs.position('bottom'); // other values: top
 
 }])
+  .controller("OrientationCtrl", function($scope){
+    screen.lockOrientation('portrait');
+  })
 
   .controller("activityCtrl", function ($scope,$http) {
     $http.get('datasets/activity/activity_mean_years.JSON').success(function (data) {

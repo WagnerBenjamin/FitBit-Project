@@ -26,6 +26,9 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
   $ionicConfigProvider.tabs.position('bottom'); // other values: top
 
 }])
+  .controller("OrientationCtrl", function($scope){
+    
+  })
 
 
 
