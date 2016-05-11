@@ -20,7 +20,7 @@ class PerfController extends Controller
         return new Response($data);
     }
 
-    public function thisMonthAction()
+    public function lastMonthAction()
     {
         $perfm = $this->getDoctrine()
             ->getManager()
@@ -31,7 +31,7 @@ class PerfController extends Controller
         return new Response($data);
     }
 
-    public function thisYearAction(){
+    public function lastYearAction(){
         $perfy = $this->getDoctrine()
             ->getManager()
             ->getRepository('ApiBundle:Datasets')
@@ -41,7 +41,7 @@ class PerfController extends Controller
         return new Response($data);
     }
 
-    public function allYearAction(){
+    public function meansYearAction(){
         $perfally = $this->getDoctrine()
             ->getManager()
             ->getRepository('ApiBundle:Datasets')
