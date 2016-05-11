@@ -47,7 +47,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       $scope.onClick = function (points, evt) {
         console.log(points, evt);
       };
-      
+
       document.getElementById("weightWidget").textContent = data["weight_hist"][6]["weight"];
       document.getElementById("bmiWidget").textContent = data["bmi_actual"][0]["bmi"];
     })
@@ -84,6 +84,9 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       $scope.series = [
         "weight"
       ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
     })
   })
 
@@ -93,36 +96,43 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     activityDefault.getData(function (data) {
 
       $scope.data = [
-        [data["activity_hist"][0]["Sedentary"], data["activity_hist"][1]["Sedentary"], data["activity_hist"][2]["Sedentary"], data["activity_hist"][3]["Sedentary"], data["activity_hist"][4]["Sedentary"], data["activity_hist"][5]["Sedentary"], data["activity_hist"][6]["Sedentary"]],
-        [data["activity_hist"][0]["Mobile"], data["activity_hist"][1]["Mobile"], data["activity_hist"][2]["Mobile"], data["activity_hist"][3]["Mobile"], data["activity_hist"][4]["Mobile"], data["activity_hist"][5]["Mobile"], data["activity_hist"][6]["Mobile"]],
-        [data["activity_hist"][0]["Active"], data["activity_hist"][1]["Active"], data["activity_hist"][2]["Active"], data["activity_hist"][3]["Active"], data["activity_hist"][4]["Active"], data["activity_hist"][5]["Active"], data["activity_hist"][6]["Active"]],
-        [data["activity_hist"][0]["Very_Active"], data["activity_hist"][1]["Very_Active"], data["activity_hist"][2]["Very_Active"], data["activity_hist"][3]["Very_Active"], data["activity_hist"][4]["Very_Active"], data["activity_hist"][5]["Very_Active"], data["activity_hist"][6]["Very_Active"]]
+        [data["activity_hist"][0]["sedentary"], data["activity_hist"][1]["sedentary"], data["activity_hist"][2]["sedentary"], data["activity_hist"][3]["sedentary"], data["activity_hist"][4]["sedentary"], data["activity_hist"][5]["sedentary"], data["activity_hist"][6]["sedentary"]],
+        [data["activity_hist"][0]["mobile"], data["activity_hist"][1]["mobile"], data["activity_hist"][2]["mobile"], data["activity_hist"][3]["mobile"], data["activity_hist"][4]["mobile"], data["activity_hist"][5]["mobile"], data["activity_hist"][6]["mobile"]],
+        [data["activity_hist"][0]["active"], data["activity_hist"][1]["active"], data["activity_hist"][2]["active"], data["activity_hist"][3]["active"], data["activity_hist"][4]["active"], data["activity_hist"][5]["active"], data["activity_hist"][6]["active"]],
+        [data["activity_hist"][0]["veryActive"], data["activity_hist"][1]["veryActive"], data["activity_hist"][2]["veryActive"], data["activity_hist"][3]["veryActive"], data["activity_hist"][4]["veryActive"], data["activity_hist"][5]["veryActive"], data["activity_hist"][6]["veryActive"]]
       ];
       $scope.labels = [
         "2016-03-25", "2016-03-26", "2016-03-27", "2016-03-28", "2016-03-29", "2016-03-30", "2016-03-31"
       ];
       $scope.series = [
-        "Sedentary", "Mobile", "Active", "Very_Active"
+        "Sedentary", "Mobile", "Active", "veryActive"
       ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
+
+      document.getElementById("sedentaryWidget").textContent = data["activity_lastday"][0]["sedentary"];
+      document.getElementById("mobileWidget").textContent = data["activity_lastday"][0]["mobile"];
+      document.getElementById("activeWidget").textContent = data["activity_lastday"][0]["active"];
+      document.getElementById("veryActiveWidget").textContent = data["activity_lastday"][0]["veryActive"];
     })
   })
-  //activity_means_years
-  .controller("activityCtrl", function ($scope,$http) {
-    $http.get('datasets/activity/activity_mean_years.JSON').success(function (data) {
+
+  .controller("activityLastMonthCtrl",function (activityLastMonth,$scope) {
+    activityLastMonth.getData(function (data) {
       $scope.data = [
-        [data[0]["mean_sedentary"],data[1]["mean_sedentary"],data[2]["mean_sedentary"],data[3]["mean_sedentary"],data[4]["mean_sedentary"],data[5]["mean_sedentary"],data[6]["mean_sedentary"]],
-        [data[0]["mean_mobile"],data[1]["mean_mobile"],data[2]["mean_mobile"],data[3]["mean_mobile"],data[4]["mean_mobile"],data[5]["mean_mobile"],data[6]["mean_mobile"]],
-        [data[0]["mean_active"],data[1]["mean_active"],data[2]["mean_active"],data[3]["mean_active"],data[4]["mean_active"],data[5]["mean_active"],data[6]["mean_active"]],
-        [data[0]["mean_very_active"],data[1]["mean_very_active"],data[2]["mean_very_active"],data[3]["mean_very_active"],data[4]["mean_very_active"],data[5]["mean_very_active"],data[6]["mean_very_active"]]
-        ];
+        [data["activity_hist"][0]["sedentary"], data["activity_hist"][1]["sedentary"], data["activity_hist"][2]["sedentary"], data["activity_hist"][3]["sedentary"], data["activity_hist"][4]["sedentary"], data["activity_hist"][5]["sedentary"], data["activity_hist"][6]["sedentary"], data["activity_hist"][7]["sedentary"], data["activity_hist"][8]["sedentary"], data["activity_hist"][9]["sedentary"], data["activity_hist"][10]["sedentary"], data["activity_hist"][11]["sedentary"], data["activity_hist"][12]["sedentary"], data["activity_hist"][13]["sedentary"], data["activity_hist"][14]["sedentary"], data["activity_hist"][15]["sedentary"], data["activity_hist"][16]["sedentary"], data["activity_hist"][17]["sedentary"], data["activity_hist"][18]["sedentary"], data["activity_hist"][19]["sedentary"], data["activity_hist"][20]["sedentary"], data["activity_hist"][21]["sedentary"], data["activity_hist"][22]["sedentary"], data["activity_hist"][23]["sedentary"], data["activity_hist"][24]["sedentary"], data["activity_hist"][25]["sedentary"], data["activity_hist"][26]["sedentary"], data["activity_hist"][27]["sedentary"], data["activity_hist"][28]["sedentary"], data["activity_hist"][29]["sedentary"], data["activity_hist"][30]["sedentary"]],
+        [data["activity_hist"][0]["mobile"], data["activity_hist"][1]["mobile"], data["activity_hist"][2]["mobile"], data["activity_hist"][3]["mobile"], data["activity_hist"][4]["mobile"], data["activity_hist"][5]["mobile"], data["activity_hist"][6]["mobile"], data["activity_hist"][7]["mobile"], data["activity_hist"][8]["mobile"], data["activity_hist"][9]["mobile"], data["activity_hist"][10]["mobile"], data["activity_hist"][11]["mobile"], data["activity_hist"][12]["mobile"], data["activity_hist"][13]["mobile"], data["activity_hist"][14]["mobile"], data["activity_hist"][15]["mobile"], data["activity_hist"][16]["mobile"], data["activity_hist"][17]["mobile"], data["activity_hist"][18]["mobile"], data["activity_hist"][19]["mobile"], data["activity_hist"][20]["mobile"], data["activity_hist"][21]["mobile"], data["activity_hist"][22]["mobile"], data["activity_hist"][23]["mobile"], data["activity_hist"][24]["mobile"], data["activity_hist"][25]["mobile"], data["activity_hist"][26]["mobile"], data["activity_hist"][27]["mobile"], data["activity_hist"][28]["mobile"], data["activity_hist"][29]["mobile"], data["activity_hist"][30]["mobile"]],
+        [data["activity_hist"][0]["active"], data["activity_hist"][1]["active"], data["activity_hist"][2]["active"], data["activity_hist"][3]["active"], data["activity_hist"][4]["active"], data["activity_hist"][5]["active"], data["activity_hist"][6]["active"], data["activity_hist"][7]["active"], data["activity_hist"][8]["active"], data["activity_hist"][9]["active"], data["activity_hist"][10]["active"], data["activity_hist"][11]["active"], data["activity_hist"][12]["active"], data["activity_hist"][13]["active"], data["activity_hist"][14]["active"], data["activity_hist"][15]["active"], data["activity_hist"][16]["active"], data["activity_hist"][17]["active"], data["activity_hist"][18]["active"], data["activity_hist"][19]["active"], data["activity_hist"][20]["active"], data["activity_hist"][21]["active"], data["activity_hist"][22]["active"], data["activity_hist"][23]["active"], data["activity_hist"][24]["active"], data["activity_hist"][25]["active"], data["activity_hist"][26]["active"], data["activity_hist"][27]["active"], data["activity_hist"][28]["active"], data["activity_hist"][29]["active"], data["activity_hist"][30]["active"]],
+        [data["activity_hist"][0]["veryActive"], data["activity_hist"][1]["veryActive"], data["activity_hist"][2]["veryActive"], data["activity_hist"][3]["veryActive"], data["activity_hist"][4]["veryActive"], data["activity_hist"][5]["veryActive"], data["activity_hist"][6]["veryActive"], data["activity_hist"][7]["veryActive"], data["activity_hist"][8]["veryActive"], data["activity_hist"][9]["veryActive"], data["activity_hist"][10]["veryActive"], data["activity_hist"][11]["veryActive"], data["activity_hist"][12]["veryActive"], data["activity_hist"][13]["veryActive"], data["activity_hist"][14]["veryActive"], data["activity_hist"][15]["veryActive"], data["activity_hist"][16]["veryActive"], data["activity_hist"][17]["veryActive"], data["activity_hist"][18]["veryActive"], data["activity_hist"][19]["veryActive"], data["activity_hist"][20]["veryActive"], data["activity_hist"][21]["veryActive"], data["activity_hist"][22]["veryActive"], data["activity_hist"][23]["veryActive"], data["activity_hist"][24]["veryActive"], data["activity_hist"][25]["veryActive"], data["activity_hist"][26]["veryActive"], data["activity_hist"][27]["veryActive"], data["activity_hist"][28]["veryActive"], data["activity_hist"][29]["veryActive"], data["activity_hist"][30]["veryActive"]]];
       $scope.labels = [
-        data[0]["years"],data[1]["years"],data[2]["years"],data[3]["years"],data[4]["years"],data[5]["years"],data[6]["years"]
+        "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17","18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"
       ];
       $scope.series = [
         "Sedentary",
         "Mobile",
         "Active",
-        "Very_Active"
+        "veryActive"
       ];
       $scope.onClick = function (points, evt) {
         console.log(points, evt);
@@ -130,46 +140,146 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     })
   })
 
+  .controller("activityLastYearCtrl",function ($scope,activityLastYear) {
+    activityLastYear.getData(function (data) {
+      $scope.data = [
+        [data["lastyear"][0]["sedentary"],data["lastyear"][1]["sedentary"],data["lastyear"][2]["sedentary"]],
+        [data["lastyear"][0]["mobile"],data["lastyear"][1]["mobile"],data["lastyear"][2]["mobile"]],
+        [data["lastyear"][0]["active"],data["lastyear"][1]["active"],data["lastyear"][2]["active"]],
+        [data["lastyear"][0]["very_active"],data["lastyear"][1]["very_active"],data["lastyear"][2]["very_active"]]
+      ];
 
-  //performance_means_years
-  .controller("performanceCtrl", function ($scope,$http) {
-  $http.get('datasets/performance/performance_means_years.JSON').success(function (data) {
-    $scope.data = [
-      [data[0]["mean_steps"],data[1]["mean_steps"],data[2]["mean_steps"],data[3]["mean_steps"],data[4]["mean_steps"],data[5]["mean_steps"],data[6]["mean_steps"]],
-      [data[0]["mean_floors"],data[1]["mean_floors"],data[2]["mean_floors"],data[3]["mean_floors"],data[4]["mean_floors"],data[5]["mean_floors"],data[6]["mean_floors"]],
-      [data[0]["mean_distance"],data[1]["mean_distance"],data[2]["mean_distance"],data[3]["mean_distance"],data[4]["mean_distance"],data[5]["mean_distance"],data[6]["mean_distance"]],
-      [data[0]["mean_calories"],data[1]["mean_calories"],data[2]["mean_calories"],data[3]["mean_calories"],data[4]["mean_calories"],data[5]["mean_calories"],data[6]["mean_calories"]]
-    ];
+      $scope.series = [
+        "Sedentary",
+        "Mobile",
+        "Active",
+        "veryActive"
+      ];
 
-    $scope.series = [
-      "Steps",
-      "Floors",
-      "Distance",
-      "Calories"
-    ];
-
-    $scope.labels = [
-      data[0]["Date"],data[1]["Date"],data[2]["Date"],data[3]["Date"],data[4]["Date"],data[5]["Date"],data[6]["Date"]
-    ];
-    $scope.onClick = function (points, evt) {
-      console.log(points, evt);
-    };
+      $scope.labels = [
+        data["lastyear"][0]["date"],data["lastyear"][1]["date"],data["lastyear"][2]["date"]
+      ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
+    })
   })
-})
+
+  .controller("activityMeanYearsCtrl",function ($scope,activityMeanYears) {
+    activityMeanYears.getData(function (data) {
+      $scope.data = [
+        [data["activity_hist"][0]["sedentary"],data["activity_hist"][1]["sedentary"],data["activity_hist"][2]["sedentary"],data["activity_hist"][3]["sedentary"],data["activity_hist"][4]["sedentary"],data["activity_hist"][5]["sedentary"],data["activity_hist"][6]["sedentary"]],
+        [data["activity_hist"][0]["mobile"],data["activity_hist"][1]["mobile"],data["activity_hist"][2]["mobile"],data["activity_hist"][3]["mobile"],data["activity_hist"][4]["mobile"],data["activity_hist"][5]["mobile"],data["activity_hist"][6]["mobile"]],
+        [data["activity_hist"][0]["active"],data["activity_hist"][1]["active"],data["activity_hist"][2]["active"],data["activity_hist"][3]["active"],data["activity_hist"][4]["active"],data["activity_hist"][5]["active"],data["activity_hist"][6]["active"]],
+        [data["activity_hist"][0]["very_active"],data["activity_hist"][1]["very_active"],data["activity_hist"][2]["very_active"],data["activity_hist"][3]["very_active"],data["activity_hist"][4]["very_active"],data["activity_hist"][5]["very_active"],data["activity_hist"][6]["very_active"]],
+      ];
+
+      $scope.series = [
+        "Sedentary",
+        "Bobile",
+        "Active",
+        "veryActive"
+      ];
+
+      $scope.labels = [
+        "2010","2011","2012","2013","2014","2015","2016"
+      ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
+    })
+  })
 
   .controller("performanceDefaultCtrl",function ($scope,performanceDefault) {
     performanceDefault.getData(function (data) {
       $scope.data = [
-        [data[0]["steps"],data[1]["steps"],data[2]["steps"],data[3]["steps"],data[4]["steps"],data[5]["steps"],data[6]["steps"],data[7]["steps"]],
-        [data[0]["floors"],data[1]["floors"],data[2]["floors"],data[3]["floors"],data[4]["floors"],data[5]["floors"],data[6]["floors"],data[7]["floors"]],
-        [data[0]["distance"],data[1]["distance"],data[2]["distance"],data[3]["distance"],data[4]["distance"],data[5]["distance"],data[6]["distance"],data[7]["distance"]],
-        [data[0]["calories"],data[1]["calories"],data[2]["calories"],data[3]["calories"],data[4]["calories"],data[5]["calories"],data[6]["calories"],data[7]["calories"]]
+        [data["perf_hist"][0]["steps"],data["perf_hist"][1]["steps"],data["perf_hist"][2]["steps"],data["perf_hist"][3]["steps"],data["perf_hist"][4]["steps"],data["perf_hist"][5]["steps"],data["perf_hist"][6]["steps"]],
+        [data["perf_hist"][0]["floors"],data["perf_hist"][1]["floors"],data["perf_hist"][2]["floors"],data["perf_hist"][3]["floors"],data["perf_hist"][4]["floors"],data["perf_hist"][5]["floors"],data["perf_hist"][6]["floors"]],
+        [data["perf_hist"][0]["distance"],data["perf_hist"][1]["distance"],data["perf_hist"][2]["distance"],data["perf_hist"][3]["distance"],data["perf_hist"][4]["distance"],data["perf_hist"][5]["distance"],data["perf_hist"][6]["distance"]],
+        [data["perf_hist"][0]["calories"],data["perf_hist"][1]["calories"],data["perf_hist"][2]["calories"],data["perf_hist"][3]["calories"],data["perf_hist"][4]["calories"],data["perf_hist"][5]["calories"],data["perf_hist"][6]["calories"]]
       ];
       $scope.labels = [
         "2016-03-25", "2016-03-26", "2016-03-27", "2016-03-28", "2016-03-29", "2016-03-30", "2016-03-31"
       ];
       $scope.series = [
         "Steps","Floors","Distance","Calories"
+      ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
+
+      document.getElementById("stepsWidget").textContent = data["perf_lastday"][0]["steps"];
+      document.getElementById("floorsWidget").textContent = data["perf_lastday"][0]["floors"];
+      document.getElementById("distanceWidget").textContent = data["perf_lastday"][0]["distance"];
+      document.getElementById("caloriesWidget").textContent = data["perf_lastday"][0]["calories"];
+    })
+  })
+
+  .controller("performanceLastMonthCtrl",function (performanceLastMonth,$scope) {
+    performanceLastMonth.getData(function (data) {
+      $scope.data = [
+        [data["perf_hist"][0]["steps"], data["perf_hist"][1]["steps"], data["perf_hist"][2]["steps"], data["perf_hist"][3]["steps"], data["perf_hist"][4]["steps"], data["perf_hist"][5]["steps"], data["perf_hist"][6]["steps"], data["perf_hist"][7]["steps"], data["perf_hist"][8]["steps"], data["perf_hist"][9]["steps"], data["perf_hist"][10]["steps"], data["perf_hist"][11]["steps"], data["perf_hist"][12]["steps"], data["perf_hist"][13]["steps"], data["perf_hist"][14]["steps"], data["perf_hist"][15]["steps"], data["perf_hist"][16]["steps"], data["perf_hist"][17]["steps"], data["perf_hist"][18]["steps"], data["perf_hist"][19]["steps"], data["perf_hist"][20]["steps"], data["perf_hist"][21]["steps"], data["perf_hist"][22]["steps"], data["perf_hist"][23]["steps"], data["perf_hist"][24]["steps"], data["perf_hist"][25]["steps"], data["perf_hist"][26]["steps"], data["perf_hist"][27]["steps"], data["perf_hist"][28]["steps"], data["perf_hist"][29]["steps"], data["perf_hist"][30]["steps"]],
+        [data["perf_hist"][0]["floors"], data["perf_hist"][1]["floors"], data["perf_hist"][2]["floors"], data["perf_hist"][3]["floors"], data["perf_hist"][4]["floors"], data["perf_hist"][5]["floors"], data["perf_hist"][6]["floors"], data["perf_hist"][7]["floors"], data["perf_hist"][8]["floors"], data["perf_hist"][9]["floors"], data["perf_hist"][10]["floors"], data["perf_hist"][11]["floors"], data["perf_hist"][12]["floors"], data["perf_hist"][13]["floors"], data["perf_hist"][14]["floors"], data["perf_hist"][15]["floors"], data["perf_hist"][16]["floors"], data["perf_hist"][17]["floors"], data["perf_hist"][18]["floors"], data["perf_hist"][19]["floors"], data["perf_hist"][20]["floors"], data["perf_hist"][21]["floors"], data["perf_hist"][22]["floors"], data["perf_hist"][23]["floors"], data["perf_hist"][24]["floors"], data["perf_hist"][25]["floors"], data["perf_hist"][26]["floors"], data["perf_hist"][27]["floors"], data["perf_hist"][28]["floors"], data["perf_hist"][29]["floors"], data["perf_hist"][30]["floors"]],
+        [data["perf_hist"][0]["distance"], data["perf_hist"][1]["distance"], data["perf_hist"][2]["distance"], data["perf_hist"][3]["distance"], data["perf_hist"][4]["distance"], data["perf_hist"][5]["distance"], data["perf_hist"][6]["distance"], data["perf_hist"][7]["distance"], data["perf_hist"][8]["distance"], data["perf_hist"][9]["distance"], data["perf_hist"][10]["distance"], data["perf_hist"][11]["distance"], data["perf_hist"][12]["distance"], data["perf_hist"][13]["distance"], data["perf_hist"][14]["distance"], data["perf_hist"][15]["distance"], data["perf_hist"][16]["distance"], data["perf_hist"][17]["distance"], data["perf_hist"][18]["distance"], data["perf_hist"][19]["distance"], data["perf_hist"][20]["distance"], data["perf_hist"][21]["distance"], data["perf_hist"][22]["distance"], data["perf_hist"][23]["distance"], data["perf_hist"][24]["distance"], data["perf_hist"][25]["distance"], data["perf_hist"][26]["distance"], data["perf_hist"][27]["distance"], data["perf_hist"][28]["distance"], data["perf_hist"][29]["distance"], data["perf_hist"][30]["distance"]],
+        [data["perf_hist"][0]["calories"], data["perf_hist"][1]["calories"], data["perf_hist"][2]["calories"], data["perf_hist"][3]["calories"], data["perf_hist"][4]["calories"], data["perf_hist"][5]["calories"], data["perf_hist"][6]["calories"], data["perf_hist"][7]["calories"], data["perf_hist"][8]["calories"], data["perf_hist"][9]["calories"], data["perf_hist"][10]["calories"], data["perf_hist"][11]["calories"], data["perf_hist"][12]["calories"], data["perf_hist"][13]["calories"], data["perf_hist"][14]["calories"], data["perf_hist"][15]["calories"], data["perf_hist"][16]["calories"], data["perf_hist"][17]["calories"], data["perf_hist"][18]["calories"], data["perf_hist"][19]["calories"], data["perf_hist"][20]["calories"], data["perf_hist"][21]["calories"], data["perf_hist"][22]["calories"], data["perf_hist"][23]["calories"], data["perf_hist"][24]["calories"], data["perf_hist"][25]["calories"], data["perf_hist"][26]["calories"], data["perf_hist"][27]["calories"], data["perf_hist"][28]["calories"], data["perf_hist"][29]["calories"], data["perf_hist"][30]["calories"]]];
+      $scope.labels = [
+        "03-01", "03-02", "03-03", "03-04", "03-05", "03-06", "03-07", "03-08", "03-09", "03-10", "03-11", "03-12", "03-13", "03-14", "03-15", "03-16", "03-17","03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
+      ];
+      $scope.series = [
+        "Steps",
+        "Floors",
+        "Distance",
+        "Calories"
+      ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
+    })
+  })
+
+  .controller("performanceLastYearCtrl",function ($scope,performanceLastYear) {
+    performanceLastYear.getData(function (data) {
+      $scope.data = [
+        [data["lastyear"][0]["steps"],data["lastyear"][1]["steps"],data["lastyear"][2]["steps"]],
+        [data["lastyear"][0]["floors"],data["lastyear"][1]["floors"],data["lastyear"][2]["floors"]],
+        [data["lastyear"][0]["distance"],data["lastyear"][1]["distance"],data["lastyear"][2]["distance"]],
+        [data["lastyear"][0]["calories"],data["lastyear"][1]["calories"],data["lastyear"][2]["calories"]]
+      ];
+
+      $scope.series = [
+        "Steps",
+        "Floors",
+        "Distance",
+        "Calories"
+      ];
+
+      $scope.labels = [
+        data["lastyear"][0]["date"],data["lastyear"][1]["date"],data["lastyear"][2]["date"]
+      ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
+    })
+  })
+
+  .controller("performanceMeanYearsCtrl",function ($scope,performanceMeanYears) {
+    performanceMeanYears.getData(function (data) {
+      $scope.data = [
+        [data["mean_perf_year"][0]["steps"],data["mean_perf_year"][1]["steps"],data["mean_perf_year"][2]["steps"],data["mean_perf_year"][3]["steps"],data["mean_perf_year"][4]["steps"],data["mean_perf_year"][5]["steps"],data["mean_perf_year"][6]["steps"]],
+        [data["mean_perf_year"][0]["floors"],data["mean_perf_year"][1]["floors"],data["mean_perf_year"][2]["floors"],data["mean_perf_year"][3]["floors"],data["mean_perf_year"][4]["floors"],data["mean_perf_year"][5]["floors"],data["mean_perf_year"][6]["floors"]],
+        [data["mean_perf_year"][0]["distance"],data["mean_perf_year"][1]["distance"],data["mean_perf_year"][2]["distance"],data["mean_perf_year"][3]["distance"],data["mean_perf_year"][4]["distance"],data["mean_perf_year"][5]["distance"],data["mean_perf_year"][6]["distance"]],
+        [data["mean_perf_year"][0]["calories"],data["mean_perf_year"][1]["calories"],data["mean_perf_year"][2]["calories"],data["mean_perf_year"][3]["calories"],data["mean_perf_year"][4]["calories"],data["mean_perf_year"][5]["calories"],data["mean_perf_year"][6]["calories"]],
+        ];
+
+        $scope.series = [
+          "Steps",
+          "Floors",
+          "Distance",
+          "Calories"
+      ];
+
+      $scope.labels = [
+        "2010","2011","2012","2013","2014","2015","2016"
       ];
       $scope.onClick = function (points, evt) {
         console.log(points, evt);
@@ -231,10 +341,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     .controller("sleepLastYearCtrl",function ($scope,sleepLastYear) {
       sleepLastYear.getData(function (data) {
         $scope.data = [
-          [data[0]["mean_sleeping"],data[1]["mean_sleeping"],data[2]["mean_sleeping"]],
-          [data[0]["mean_awake"],data[1]["mean_awake"],data[2]["mean_awake"]],
-          [data[0]["mean_awakening"],data[1]["mean_awakening"],data[2]["mean_awakening"]],
-          [data[0]["mean_in_bed"],data[1]["mean_in_bed"],data[2]["mean_in_bed"]]
+          [data["lastyear"][0]["mean_sleeping"],data["lastyear"][1]["mean_sleeping"],data["lastyear"][2]["mean_sleeping"]],
+          [data["lastyear"][0]["mean_awake"],data["lastyear"][1]["mean_awake"],data["lastyear"][2]["mean_awake"]],
+          [data["lastyear"][0]["mean_awakening"],data["lastyear"][1]["mean_awakening"],data["lastyear"][2]["mean_awakening"]],
+          [data["lastyear"][0]["mean_in_bed"],data["lastyear"][1]["mean_in_bed"],data["lastyear"][2]["mean_in_bed"]]
         ];
 
         $scope.series = [
@@ -245,7 +355,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         ];
 
         $scope.labels = [
-          data[0]["Date"],data[1]["Date"],data[2]["Date"]
+          data["lastyear"][0]["date"],data["lastyear"][1]["date"],data["lastyear"][2]["date"]
         ];
         $scope.onClick = function (points, evt) {
           console.log(points, evt);
@@ -257,10 +367,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
   .controller("sleepMeanYearsCtrl",function ($scope,sleepMeanYears) {
     sleepMeanYears.getData(function (data) {
     $scope.data = [
-      [data[0]["mean_sleeping"],data[1]["mean_sleeping"],data[2]["mean_sleeping"],data[3]["mean_sleeping"],data[4]["mean_sleeping"],data[5]["mean_sleeping"],data[6]["mean_sleeping"]],
-      [data[0]["mean_awake"],data[1]["mean_awake"],data[2]["mean_awake"],data[3]["mean_awake"],data[4]["mean_awake"],data[5]["mean_awake"],data[6]["mean_awake"]],
-      [data[0]["mean_awakening"],data[1]["mean_awakening"],data[2]["mean_awakening"],data[3]["mean_awakening"],data[4]["mean_awakening"],data[5]["mean_awakening"],data[6]["mean_awakening"]],
-      [data[0]["mean_in_bed"],data[1]["mean_in_bed"],data[2]["mean_in_bed"],data[3]["mean_in_bed"],data[4]["mean_in_bed"],data[5]["mean_in_bed"],data[6]["mean_in_bed"]]
+      [data["sleep_mean_years"][0]["mean_sleeping"],data["sleep_mean_years"][1]["mean_sleeping"],data["sleep_mean_years"][2]["mean_sleeping"],data["sleep_mean_years"][3]["mean_sleeping"],data["sleep_mean_years"][4]["mean_sleeping"],data["sleep_mean_years"][5]["mean_sleeping"],data["sleep_mean_years"][6]["mean_sleeping"]],
+      [data["sleep_mean_years"][0]["mean_awake"],data["sleep_mean_years"][1]["mean_awake"],data["sleep_mean_years"][2]["mean_awake"],data["sleep_mean_years"][3]["mean_awake"],data["sleep_mean_years"][4]["mean_awake"],data["sleep_mean_years"][5]["mean_awake"],data["sleep_mean_years"][6]["mean_awake"]],
+      [data["sleep_mean_years"][0]["mean_awakening"],data["sleep_mean_years"][1]["mean_awakening"],data["sleep_mean_years"][2]["mean_awakening"],data["sleep_mean_years"][3]["mean_awakening"],data["sleep_mean_years"][4]["mean_awakening"],data["sleep_mean_years"][5]["mean_awakening"],data["sleep_mean_years"][6]["mean_awakening"]],
+      [data["sleep_mean_years"][0]["mean_in_bed"],data["sleep_mean_years"][1]["mean_in_bed"],data["sleep_mean_years"][2]["mean_in_bed"],data["sleep_mean_years"][3]["mean_in_bed"],data["sleep_mean_years"][4]["mean_in_bed"],data["sleep_mean_years"][5]["mean_in_bed"],data["sleep_mean_years"][6]["mean_in_bed"]]
     ];
 
     $scope.series = [
@@ -271,7 +381,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     ];
 
     $scope.labels = [
-      data[0]["Date"],data[1]["Date"],data[2]["Date"],data[3]["Date"],data[4]["Date"],data[5]["Date"],data[6]["Date"]
+      data["sleep_mean_years"][0]["date"],data["sleep_mean_years"][1]["date"],data["sleep_mean_years"][2]["date"],data["sleep_mean_years"][3]["date"],data["sleep_mean_years"][4]["date"],data["sleep_mean_years"][5]["date"],data["sleep_mean_years"][6]["date"]
     ];
     $scope.onClick = function (points, evt) {
       console.log(points, evt);
