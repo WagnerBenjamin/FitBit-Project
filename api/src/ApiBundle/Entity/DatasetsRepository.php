@@ -218,18 +218,6 @@ class DatasetsRepository extends EntityRepository
         return $qb->getQuery()->getResult();
     }
 
-    public function getActMonth($monthBehind = 2)
-    {
-        $qb = $this->_em->createQueryBuilder()
-            ->select('SUBSTRING(d.date, 1, 7) as date, avg(d.sedentary) as sedentary, avg(d.mobile) as mobile, avg(d.active) as active, avg(d.veryActive) as very_active')
-            ->from($this->_entityName, 'd')
-            ->where("d.date BETWEEN DATE_SUB(:end, $monthBehind, 'MONTH')+1 AND DATE_SUB(:end, '$monthBehind-1', 'MONTH')")
-            ->setParameter('end', date('2016-03-31'))
-            ->orderBy('d.id');
-
-        return $qb->getQuery()->getResult();
-    }
-
     public function getActFirstMonth()
     {
         $qb = $this->_em->createQueryBuilder()
