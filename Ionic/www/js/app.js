@@ -27,14 +27,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
 }])
 
-  .controller("OrientationCtrl", function($scope){
-
-  })
-
   .controller("profileDefaultCtrl",function (profileDefault,$scope) {
     profileDefault.getData(function (data) {
       $scope.data = [
-        data["weight_hist"][0]["weight"], data["weight_hist"][1]["weight"], data["weight_hist"][2]["weight"], data["weight_hist"][3]["weight"], data["weight_hist"][4]["weight"], data["weight_hist"][5]["weight"], data["weight_hist"][6]["weight"]
+        [data["weight_hist"][0]["weight"], data["weight_hist"][1]["weight"], data["weight_hist"][2]["weight"], data["weight_hist"][3]["weight"], data["weight_hist"][4]["weight"], data["weight_hist"][5]["weight"], data["weight_hist"][6]["weight"]]
       ];
       $scope.labels = [
         "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
@@ -46,25 +42,25 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         console.log(points, evt);
       };
 
-      document.getElementById("weightWidget").textContent = data["weight_lastday"][0]["Weight"];
-      document.getElementById("bmiWidget").textContent = data["bmi_actual"][0]["BMI"];
+      document.getElementById("weightWidget").textContent = data["weight_hist"][6]["weight"];
+      document.getElementById("bmiWidget").textContent = data["bmi_actual"][0]["bmi"];
     })
   })
 
-  .controller("profileLastMonthCtrl",function (profileDefault,$scope) {
+  .controller("profileLastMonthCtrl",function (profileLastMonth,$scope) {
     profileLastMonth.getData(function (data) {
       $scope.data = [
-        data["weight_hist"][0]["Weight"], data["weight_hist"][1]["weight"], data["weight_hist"][2]["weight"], data["weight_hist"][3]["weight"], data["weight_hist"][4]["weight"], data["weight_hist"][5]["weight"], data["weight_hist"][6]["weight"],
+        [data["weight_hist"][0]["weight"], data["weight_hist"][1]["weight"], data["weight_hist"][2]["weight"], data["weight_hist"][3]["weight"], data["weight_hist"][4]["weight"], data["weight_hist"][5]["weight"], data["weight_hist"][6]["weight"],
         data["weight_hist"][7]["weight"], data["weight_hist"][8]["weight"], data["weight_hist"][9]["weight"], data["weight_hist"][10]["weight"], data["weight_hist"][11]["weight"], data["weight_hist"][12]["weight"], data["weight_hist"][13]["weight"],
         data["weight_hist"][14]["weight"], data["weight_hist"][15]["weight"], data["weight_hist"][16]["weight"], data["weight_hist"][17]["weight"], data["weight_hist"][18]["weight"], data["weight_hist"][19]["weight"], data["weight_hist"][20]["weight"], data["weight_hist"][21]["weight"], data["weight_hist"][22]["weight"],
         data["weight_hist"][23]["weight"], data["weight_hist"][24]["weight"], data["weight_hist"][25]["weight"], data["weight_hist"][26]["weight"], data["weight_hist"][27]["weight"], data["weight_hist"][28]["weight"], data["weight_hist"][29]["weight"],
-        data["weight_hist"][30]["weight"]
+        data["weight_hist"][30]["weight"]]
       ];
       $scope.labels = [
         "03-01", "03-02", "03-03", "03-04", "03-05", "03-06", "03-07", "03-08", "03-09", "03-10", "03-11", "03-12", "03-13", "03-14", "03-15", "03-16", "03-17","03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
       ];
       $scope.series = [
-        "weight"
+        "Weight"
       ];
       $scope.onClick = function (points, evt) {
         console.log(points, evt);
@@ -274,6 +270,25 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       console.log(points, evt);
     };
   })
-});
+})
+
+  .controller("profileMeanYearsCtrl",function ($scope,profileMeanYears) {
+    profileMeanYears.getData(function (data) {
+      $scope.data = [
+        [data["Mean_weight_years"][0]["weight"],data["Mean_weight_years"][1]["weight"],data["Mean_weight_years"][2]["weight"],data["Mean_weight_years"][3]["weight"],data["Mean_weight_years"][4]["weight"],data["Mean_weight_years"][5]["weight"],data["Mean_weight_years"][6]["weight"]]
+      ];
+
+      $scope.series = [
+        "Weight"
+      ];
+
+      $scope.labels = [
+        "2010","2011","2012","2013","2014","2015","2016"
+      ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
+    })
+  });
 
 
