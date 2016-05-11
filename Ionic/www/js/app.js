@@ -20,6 +20,12 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       StatusBar.styleDefault();
     }
   });
+    $ionicPlatform.ready(function() {
+      if(window.isTablet){
+        screen.unlockOrientation();
+      }else{ screen.lockOrientation('portrait');
+      }
+    });
 })
   .config(['$ionicConfigProvider', function($ionicConfigProvider) {
 
