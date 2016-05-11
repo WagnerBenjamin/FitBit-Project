@@ -111,7 +111,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
           $tmp.push(data["activity_hist"][j][$arrName[i]]);
         }
       }
-      $scope.data = $tmp;
+      $scope.data = [$tmp];
 
       /*$scope.data = [
         [data["activity_hist"][0]["Sedentary"], data["activity_hist"][1]["Sedentary"], data["activity_hist"][2]["Sedentary"], data["activity_hist"][3]["Sedentary"], data["activity_hist"][4]["Sedentary"], data["activity_hist"][5]["Sedentary"], data["activity_hist"][6]["Sedentary"]],
@@ -139,7 +139,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
           $tmp.push(data[j][$arrName[i]]);
         }
       }
-      $scope.data = $tmp;
+      $scope.data = [$tmp];
 
       /*$scope.data = [
         [data[0]["mean_sedentary"],data[1]["mean_sedentary"],data[2]["mean_sedentary"],data[3]["mean_sedentary"],data[4]["mean_sedentary"],data[5]["mean_sedentary"],data[6]["mean_sedentary"]],
@@ -175,7 +175,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         $tmp.push(data[j][$arrName[i]]);
       }
     }
-    $scope.data = $tmp;
+    $scope.data = [$tmp];
 
     /*$scope.data = [
       [data[0]["mean_steps"],data[1]["mean_steps"],data[2]["mean_steps"],data[3]["mean_steps"],data[4]["mean_steps"],data[5]["mean_steps"],data[6]["mean_steps"]],
@@ -211,7 +211,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
           $tmp.push(data[j][$arrName[i]]);
         }
       }
-      $scope.data = $tmp;
+      $scope.data = [$tmp];
 
       /*$scope.data = [
         [data[0]["steps"],data[1]["steps"],data[2]["steps"],data[3]["steps"],data[4]["steps"],data[5]["steps"],data[6]["steps"],data[7]["steps"]],
@@ -243,7 +243,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
           $tmp.push(data["sleep_hist"][j][$arrName[i]]);
         }
       }
-      $scope.data = $tmp;
+      $scope.data = [$tmp];
 
       /*$scope.data = [
         [data["sleep_hist"][0]["sleeping"], data["sleep_hist"][1]["sleeping"], data["sleep_hist"][2]["sleeping"], data["sleep_hist"][3]["sleeping"], data["sleep_hist"][4]["sleeping"], data["sleep_hist"][5]["sleeping"], data["sleep_hist"][6]["sleeping"]],
@@ -282,7 +282,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
             $tmp.push(data["sleep_hist"][j][$arrName[i]]);
           }
         }
-        $scope.data = $tmp;
+        $scope.data = [$tmp];
 
         /*$scope.data = [
           [data["sleep_hist"][0]["sleeping"], data["sleep_hist"][1]["sleeping"], data["sleep_hist"][2]["sleeping"], data["sleep_hist"][3]["sleeping"], data["sleep_hist"][4]["sleeping"], data["sleep_hist"][5]["sleeping"], data["sleep_hist"][6]["sleeping"], data["sleep_hist"][7]["sleeping"], data["sleep_hist"][8]["sleeping"], data["sleep_hist"][9]["sleeping"], data["sleep_hist"][10]["sleeping"], data["sleep_hist"][11]["sleeping"], data["sleep_hist"][12]["sleeping"], data["sleep_hist"][13]["sleeping"], data["sleep_hist"][14]["sleeping"], data["sleep_hist"][15]["sleeping"], data["sleep_hist"][16]["sleeping"], data["sleep_hist"][17]["sleeping"], data["sleep_hist"][18]["sleeping"], data["sleep_hist"][19]["sleeping"], data["sleep_hist"][20]["sleeping"], data["sleep_hist"][21]["sleeping"], data["sleep_hist"][22]["sleeping"], data["sleep_hist"][23]["sleeping"], data["sleep_hist"][24]["sleeping"], data["sleep_hist"][25]["sleeping"], data["sleep_hist"][26]["sleeping"], data["sleep_hist"][27]["sleeping"], data["sleep_hist"][28]["sleeping"], data["sleep_hist"][29]["sleeping"], data["sleep_hist"][30]["sleeping"]],
@@ -316,7 +316,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
             $tmp.push(data["sleep_hist"][j][$arrName[i]]);
           }
         }
-        $scope.data = $tmp;
+        $scope.data = [$tmp];
 
         /*$scope.data = [
           [data[0]["mean_sleeping"],data[1]["mean_sleeping"],data[2]["mean_sleeping"]],
@@ -353,7 +353,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
           $tmp.push(data[j][$arrName[i]]);
         }
       }
-      $scope.data = $tmp;
+      $scope.data = [$tmp];
 
       /*$scope.data = [
       [data[0]["mean_sleeping"],data[1]["mean_sleeping"],data[2]["mean_sleeping"],data[3]["mean_sleeping"],data[4]["mean_sleeping"],data[5]["mean_sleeping"],data[6]["mean_sleeping"]],
