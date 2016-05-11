@@ -388,7 +388,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
   })
   //sleep_default
 
-  .controller("SleepDefaultCtrl",function (sleepDefault,$scope) {
+  .controller("sleepDefaultCtrl",function (sleepDefault,$scope) {
     sleepDefault.getData(function (data) {
 
       $scope.data = [];
@@ -423,7 +423,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     })
   })
 
-    .controller("SleepLastMonthCtrl",function (sleepLastMonth,$scope) {
+    .controller("sleepLastMonthCtrl",function (sleepLastMonth,$scope) {
       sleepLastMonth.getData(function (data) {
 
         $scope.data = [];
