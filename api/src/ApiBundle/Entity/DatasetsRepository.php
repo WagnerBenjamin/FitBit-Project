@@ -79,7 +79,7 @@ class DatasetsRepository extends EntityRepository
             ->getResult();
     }
 
-    public function getPerfDefault()
+    public function getPerfDefault() //modif
     {
         $qb = $this->_em->createQueryBuilder()
             ->select('SUBSTRING(d.date, 1, 9) as date, d.steps, d.floors, d.distance, d.calories')
