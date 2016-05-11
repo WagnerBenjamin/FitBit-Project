@@ -19,8 +19,8 @@
   <allow-navigation href="*" />
   <content src="index.html"/>
   <access origin="*"/>
-  <preference name="orientation" value="portrait/landscape" />
-  <preference name="orientation" value="portrait" />
+  <preference name="Orientation" value="portrait/landscape" />
+  <preference name="Orientation" value="portrait" />
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
