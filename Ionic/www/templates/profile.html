@@ -19,7 +19,7 @@
               duration="800"
               animation="easeInOutQuart"
               animation-delay="0"></round-progress>
-            <div class="text-profile">10760</div>
+            <div id="weightWidget" class="text-profile">10760</div>
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@
               duration="800"
               animation="easeInOutQuart"
               animation-delay="0"></round-progress>
-            <div class="text-profile">7</div>
+            <div id="bmiWidget" class="text-profile">7</div>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@
         </button>
       </span>
     </div>
-    <div class="row padding responsive-sm" ng-controller="performanceCtrl">
+    <div class="row padding responsive-sm" ng-controller="">
       <div class="chart-container" style="width: 100%;">
         <canvas id="line2" class="chart chart-bar" chart-data="data"
                 chart-labels="labels" chart-legend="false" chart-series="series"

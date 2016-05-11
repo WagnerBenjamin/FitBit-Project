@@ -27,13 +27,55 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
 }])
 
+  .controller("OrientationCtrl", function($scope){
+
+  })
+
+  .controller("profileDefaultCtrl",function ($profileDefault,$scope) {
+    profileDefault.getData(function (data) {
+      $scope.data = [
+        data["weight_hist"][0]["Weight"], data["weight_hist"][1]["Weight"], data["weight_hist"][2]["Weight"], data["weight_hist"][3]["Weight"], data["weight_hist"][4]["Weight"], data["weight_hist"][5]["Weight"], data["weight_hist"][6]["Weight"]
+      ];
+      $scope.labels = [
+        "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
+      ];
+      $scope.series = [
+        "Weight"
+      ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
+
+      document.getElementById("weightWidget").textContent = data["weight_lastday"][0]["Weight"];
+      document.getElementById("bmiWidget").textContent = data["bmi_actual"][0]["BMI"];
+    })
+  })
+
+  .controller("profileLastMonthCtrl",function (profileDefault,$scope) {
+    profileDefault.getData(function (data) {
+      $scope.data = [
+        data["weight_hist"][0]["Weight"], data["weight_hist"][1]["Weight"], data["weight_hist"][2]["Weight"], data["weight_hist"][3]["Weight"], data["weight_hist"][4]["Weight"], data["weight_hist"][5]["Weight"], data["weight_hist"][6]["Weight"],
+        data["weight_hist"][7]["Weight"], data["weight_hist"][8]["Weight"], data["weight_hist"][9]["Weight"], data["weight_hist"][10]["Weight"], data["weight_hist"][11]["Weight"], data["weight_hist"][12]["Weight"], data["weight_hist"][13]["Weight"],
+        data["weight_hist"][14]["Weight"], data["weight_hist"][15]["Weight"], data["weight_hist"][16]["Weight"], data["weight_hist"][17]["Weight"], data["weight_hist"][18]["Weight"], data["weight_hist"][19]["Weight"], data["weight_hist"][20]["Weight"], data["weight_hist"][21]["Weight"], data["weight_hist"][22]["Weight"],
+        data["weight_hist"][23]["Weight"], data["weight_hist"][24]["Weight"], data["weight_hist"][25]["Weight"], data["weight_hist"][26]["Weight"], data["weight_hist"][27]["Weight"], data["weight_hist"][28]["Weight"], data["weight_hist"][29]["Weight"],
+        data["weight_hist"][30]["Weight"], data["weight_hist"][31]["Weight"]
+      ];
+      $scope.labels = [
+        "03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
+      ];
+      $scope.series = [
+        "Weight"
+      ];
+    })
+  })
+
   .controller("profileLastYearCtrl",function (profileLastYear,$scope) {
     profileLastYear.getData(function (data) {
       $scope.data = [
         data["lastyear"][0]["weight"],data["lastyear"][1]["weight"],data["lastyear"][3]["weight"]
       ];
       $scope.labels = ["2016-01","2016-02","2016-03"];
-      
+
       $scope.series = [
         "Weight"
       ];
@@ -83,6 +125,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     })
   })
 
+
   //performance_means_years
   .controller("performanceCtrl", function ($scope,$http) {
   $http.get('datasets/performance/performance_means_years.JSON').success(function (data) {
@@ -108,6 +151,26 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     };
   })
 })
+
+  .controller("performanceDefaultCtrl",function ($scope,performanceDefault) {
+    performanceDefault.getData(function (data) {
+      $scope.data = [
+        [data[0]["steps"],data[1]["steps"],data[2]["steps"],data[3]["steps"],data[4]["steps"],data[5]["steps"],data[6]["steps"],data[7]["steps"]],
+        [data[0]["floors"],data[1]["floors"],data[2]["floors"],data[3]["floors"],data[4]["floors"],data[5]["floors"],data[6]["floors"],data[7]["floors"]],
+        [data[0]["distance"],data[1]["distance"],data[2]["distance"],data[3]["distance"],data[4]["distance"],data[5]["distance"],data[6]["distance"],data[7]["distance"]],
+        [data[0]["calories"],data[1]["calories"],data[2]["calories"],data[3]["calories"],data[4]["calories"],data[5]["calories"],data[6]["calories"],data[7]["calories"]]
+      ];
+      $scope.labels = [
+        "2016-03-25", "2016-03-26", "2016-03-27", "2016-03-28", "2016-03-29", "2016-03-30", "2016-03-31"
+      ];
+      $scope.series = [
+        "Steps","Floors","Distance","Calories"
+      ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
+    })
+  })
   //sleep_default
 
   .controller("SleepDefaultCtrl",function (sleepDefault,$scope) {
@@ -127,6 +190,9 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         "Awakening",
         "In_Bed"
       ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
       document.getElementById("sleepingWidget").textContent = data["sleep_lastday"][0]["sleeping"];
       document.getElementById("awakeWidget").textContent = data["sleep_lastday"][0]["awake"];
       document.getElementById("awakeningWidget").textContent = data["sleep_lastday"][0]["awakening"];
@@ -156,7 +222,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       })
     })
 
-    .controller("sleepLastYearCtrl",function ($scope,$http) {
+    .controller("sleepLastYearCtrl",function ($scope,sleepLastYear) {
       sleepLastYear.getData(function (data) {
         $scope.data = [
           [data[0]["mean_sleeping"],data[1]["mean_sleeping"],data[2]["mean_sleeping"]],
@@ -182,7 +248,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     })
 
   //sleep_means_years
-  .controller("sleepMeanYearsCtrl",function ($scope,$http) {
+  .controller("sleepMeanYearsCtrl",function ($scope,sleepMeanYears) {
     sleepMeanYears.getData(function (data) {
     $scope.data = [
       [data[0]["mean_sleeping"],data[1]["mean_sleeping"],data[2]["mean_sleeping"],data[3]["mean_sleeping"],data[4]["mean_sleeping"],data[5]["mean_sleeping"],data[6]["mean_sleeping"]],
@@ -206,4 +272,5 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     };
   })
 });
+
 
