@@ -4,12 +4,50 @@
 
 namespace ApiBundle\Controller;
 
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
-class ActivityController
+class ActivityController extends Controller
 {
     public function indexAction()
     {
-        return new Response("Controlleur de l'activite");
+        $Actw = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('ApiBundle:Datasets')
+            ->getActDefault();
+
+        $data = json_encode($Actw);
+        return new Response($data);
+    }
+
+    public function thisMonthAction()
+    {
+        $Actm = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('ApiBundle:Datasets')
+            ->getActThisMonth();
+
+        $data = json_encode($Actm);
+        return new Response($data);
+    }
+
+    public function thisYearAction(){
+        $Acty = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('ApiBundle:Datasets')
+            ->getActLYear();
+
+        $data = json_encode($Acty);
+        return new Response($data);
+    }
+
+    public function allYearAction(){
+        $Actally = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('ApiBundle:Datasets')
+            ->getActAllYear();
+
+        $data = json_encode($Actally);
+        return new Response($data);
     }
 }

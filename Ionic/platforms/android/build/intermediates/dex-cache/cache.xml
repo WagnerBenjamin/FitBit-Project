@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/antoinebecher/Desktop/FitBit-Project/Ionic/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="84d355978a163f78569962aa9f7e277346976cfc">
+        <dex dex="/Users/antoinebecher/Desktop/FitBit-Project/Ionic/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_5778502f4754d93967aec5ffb55ccb9fa6535d89.jar" />
+    </item>
+
+</items>

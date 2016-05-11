@@ -22,9 +22,25 @@ api_perf:
     path:     /perf
     defaults: { _controller: ApiBundle:Perf:index }
 
+api_perf_month:
+    path:     /perf/month
+    defaults: { _controller: ApiBundle:Perf:thisMonth, _format: json }
+
+api_perf_year:
+    path:     /perf/year
+    defaults: { _controller: ApiBundle:Perf:thisYear, _format: json }
+
 api_activity:
     path:     /activity
     defaults: { _controller: ApiBundle:Activity:index }
+    
+api_act_month:
+    path:     /activity/month
+    defaults: { _controller: ApiBundle:Activity:thisMonth, _format: json }
+
+api_act_year:
+    path:     /activity/year
+    defaults: { _controller: ApiBundle:Activity:thisYear, _format: json }
 
 api_sleep:
     path:     /sleep
