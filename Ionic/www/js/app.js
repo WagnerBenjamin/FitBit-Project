@@ -36,12 +36,11 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
   .controller("profileDefaultCtrl",function (profileDefault,$scope) {
     profileDefault.getData(function (data) {
       $scope.data = [];
-      var $tmp = [];
+      var tmp = [];
       for(var i = 0; i <= 6; i++){
-        $tmp.push(data["weight_hist"][i]["weight"]);
+        tmp.push(data["weight_hist"][i]["weight"]);
       }
-      $scope.data = [$tmp];
-      console.log($scope.data);
+      $scope.data = [tmp];
       $scope.labels = [
         "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
       ];
@@ -61,11 +60,11 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     profileLastMonth.getData(function (data) {
 
       $scope.data = [];
-      var $tmp = [];
+      var tmp = [];
       for(var i = 0; i <= 30; i++){
-        $tmp.push(data["weight_hist"][i]["weight"]);
+        tmp.push(data["weight_hist"][i]["weight"]);
       }
-      $scope.data = [$tmp];
+      $scope.data = [tmp];
 
       /*$scope.data = [
         [data["weight_hist"][0]["weight"], data["weight_hist"][1]["weight"], data["weight_hist"][2]["weight"], data["weight_hist"][3]["weight"], data["weight_hist"][4]["weight"], data["weight_hist"][5]["weight"], data["weight_hist"][6]["weight"],
@@ -108,22 +107,17 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
   .controller("activityDefaultCtrl",function (activityDefault,$scope) {
     activityDefault.getData(function (data) {
 
-     /* $scope.data = [
-        [data["activity_hist"][0]["sedentary"], data["activity_hist"][1]["sedentary"], data["activity_hist"][2]["sedentary"], data["activity_hist"][3]["sedentary"], data["activity_hist"][4]["sedentary"], data["activity_hist"][5]["sedentary"], data["activity_hist"][6]["sedentary"]],
-        [data["activity_hist"][0]["mobile"], data["activity_hist"][1]["mobile"], data["activity_hist"][2]["mobile"], data["activity_hist"][3]["mobile"], data["activity_hist"][4]["mobile"], data["activity_hist"][5]["mobile"], data["activity_hist"][6]["mobile"]],
-        [data["activity_hist"][0]["active"], data["activity_hist"][1]["active"], data["activity_hist"][2]["active"], data["activity_hist"][3]["active"], data["activity_hist"][4]["active"], data["activity_hist"][5]["active"], data["activity_hist"][6]["active"]],
-        [data["activity_hist"][0]["veryActive"], data["activity_hist"][1]["veryActive"], data["activity_hist"][2]["veryActive"], data["activity_hist"][3]["veryActive"], data["activity_hist"][4]["veryActive"], data["activity_hist"][5]["veryActive"], data["activity_hist"][6]["veryActive"]]
-      ];*/
-
       $scope.data = [];
-      $arrName = ["sedentary", "mobile", "active", "veryActive"];
-      $tmp = [];
+      arrName = ["sedentary", "mobile", "active", "veryActive"];
+      tmp = [];
       for(var i = 0; i < 4; i++){
+        tmp2 = [];
         for(var j = 0; j <= 6; j++){
-          $tmp.push(data["activity_hist"][j][$arrName[i]]);
+          tmp2.push(data["activity_hist"][j][arrName[i]]);
         }
+        tmp.push(tmp2);
       }
-      $scope.data = [$tmp];
+      $scope.data = tmp;
 
       $scope.labels = [
         "2016-03-25", "2016-03-26", "2016-03-27", "2016-03-28", "2016-03-29", "2016-03-30", "2016-03-31"
@@ -144,22 +138,24 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
   .controller("activityLastMonthCtrl",function (activityLastMonth,$scope) {
     activityLastMonth.getData(function (data) {
-      $scope.data = [
+      /*$scope.data = [
         [data["activity_hist"][0]["sedentary"], data["activity_hist"][1]["sedentary"], data["activity_hist"][2]["sedentary"], data["activity_hist"][3]["sedentary"], data["activity_hist"][4]["sedentary"], data["activity_hist"][5]["sedentary"], data["activity_hist"][6]["sedentary"], data["activity_hist"][7]["sedentary"], data["activity_hist"][8]["sedentary"], data["activity_hist"][9]["sedentary"], data["activity_hist"][10]["sedentary"], data["activity_hist"][11]["sedentary"], data["activity_hist"][12]["sedentary"], data["activity_hist"][13]["sedentary"], data["activity_hist"][14]["sedentary"], data["activity_hist"][15]["sedentary"], data["activity_hist"][16]["sedentary"], data["activity_hist"][17]["sedentary"], data["activity_hist"][18]["sedentary"], data["activity_hist"][19]["sedentary"], data["activity_hist"][20]["sedentary"], data["activity_hist"][21]["sedentary"], data["activity_hist"][22]["sedentary"], data["activity_hist"][23]["sedentary"], data["activity_hist"][24]["sedentary"], data["activity_hist"][25]["sedentary"], data["activity_hist"][26]["sedentary"], data["activity_hist"][27]["sedentary"], data["activity_hist"][28]["sedentary"], data["activity_hist"][29]["sedentary"], data["activity_hist"][30]["sedentary"]],
         [data["activity_hist"][0]["mobile"], data["activity_hist"][1]["mobile"], data["activity_hist"][2]["mobile"], data["activity_hist"][3]["mobile"], data["activity_hist"][4]["mobile"], data["activity_hist"][5]["mobile"], data["activity_hist"][6]["mobile"], data["activity_hist"][7]["mobile"], data["activity_hist"][8]["mobile"], data["activity_hist"][9]["mobile"], data["activity_hist"][10]["mobile"], data["activity_hist"][11]["mobile"], data["activity_hist"][12]["mobile"], data["activity_hist"][13]["mobile"], data["activity_hist"][14]["mobile"], data["activity_hist"][15]["mobile"], data["activity_hist"][16]["mobile"], data["activity_hist"][17]["mobile"], data["activity_hist"][18]["mobile"], data["activity_hist"][19]["mobile"], data["activity_hist"][20]["mobile"], data["activity_hist"][21]["mobile"], data["activity_hist"][22]["mobile"], data["activity_hist"][23]["mobile"], data["activity_hist"][24]["mobile"], data["activity_hist"][25]["mobile"], data["activity_hist"][26]["mobile"], data["activity_hist"][27]["mobile"], data["activity_hist"][28]["mobile"], data["activity_hist"][29]["mobile"], data["activity_hist"][30]["mobile"]],
         [data["activity_hist"][0]["active"], data["activity_hist"][1]["active"], data["activity_hist"][2]["active"], data["activity_hist"][3]["active"], data["activity_hist"][4]["active"], data["activity_hist"][5]["active"], data["activity_hist"][6]["active"], data["activity_hist"][7]["active"], data["activity_hist"][8]["active"], data["activity_hist"][9]["active"], data["activity_hist"][10]["active"], data["activity_hist"][11]["active"], data["activity_hist"][12]["active"], data["activity_hist"][13]["active"], data["activity_hist"][14]["active"], data["activity_hist"][15]["active"], data["activity_hist"][16]["active"], data["activity_hist"][17]["active"], data["activity_hist"][18]["active"], data["activity_hist"][19]["active"], data["activity_hist"][20]["active"], data["activity_hist"][21]["active"], data["activity_hist"][22]["active"], data["activity_hist"][23]["active"], data["activity_hist"][24]["active"], data["activity_hist"][25]["active"], data["activity_hist"][26]["active"], data["activity_hist"][27]["active"], data["activity_hist"][28]["active"], data["activity_hist"][29]["active"], data["activity_hist"][30]["active"]],
         [data["activity_hist"][0]["veryActive"], data["activity_hist"][1]["veryActive"], data["activity_hist"][2]["veryActive"], data["activity_hist"][3]["veryActive"], data["activity_hist"][4]["veryActive"], data["activity_hist"][5]["veryActive"], data["activity_hist"][6]["veryActive"], data["activity_hist"][7]["veryActive"], data["activity_hist"][8]["veryActive"], data["activity_hist"][9]["veryActive"], data["activity_hist"][10]["veryActive"], data["activity_hist"][11]["veryActive"], data["activity_hist"][12]["veryActive"], data["activity_hist"][13]["veryActive"], data["activity_hist"][14]["veryActive"], data["activity_hist"][15]["veryActive"], data["activity_hist"][16]["veryActive"], data["activity_hist"][17]["veryActive"], data["activity_hist"][18]["veryActive"], data["activity_hist"][19]["veryActive"], data["activity_hist"][20]["veryActive"], data["activity_hist"][21]["veryActive"], data["activity_hist"][22]["veryActive"], data["activity_hist"][23]["veryActive"], data["activity_hist"][24]["veryActive"], data["activity_hist"][25]["veryActive"], data["activity_hist"][26]["veryActive"], data["activity_hist"][27]["veryActive"], data["activity_hist"][28]["veryActive"], data["activity_hist"][29]["veryActive"], data["activity_hist"][30]["veryActive"]]];
+      */
 
-
-      /*$scope.data = [];
-      $arrName = ["mean_sedentary", "mean_mobile", "mean_active", "mean_very_active"];
-      $tmp = [];
+      $scope.data = [];
+      arrName = ["sedentary", "mobile", "active", "veryActive"];
+      tmp = [];
       for(var i = 0; i < 4; i++){
-        for(var j = 0; j <= 6; j++){
-          $tmp.push(data[j][$arrName[i]]);
+        tmp2 = [];
+        for(var j = 0; j <= 30; j++){
+          tmp2.push(data["activity_hist"][j][arrName[i]]);
         }
+        tmp.push(tmp2);
       }
-      $scope.data = [$tmp];*/
+      $scope.data = tmp;
 
       $scope.labels = [
         "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17","18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"
@@ -212,7 +208,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
       $scope.series = [
         "Sedentary",
-        "Bobile",
+        "Mobile",
         "Active",
         "veryActive"
       ];
@@ -237,14 +233,16 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       ];*/
 
       $scope.data = [];
-      $arrName = ["steps", "floors", "distance", "calories"];
-      $tmp = [];
+      arrName = ["steps", "floors", "distance", "calories"];
+      tmp = [];
       for(var i = 0; i < 4; i++){
+        tmp2=[];
         for(var j = 0; j <= 6; j++){
-          $tmp.push(data["perf_hist"][j][$arrName[i]]);
+          tmp2.push(data["perf_hist"][j][arrName[i]]);
         }
+        tmp.push(tmp2);
       }
-      $scope.data = [$tmp];
+      $scope.data = tmp;
 
       $scope.labels = [
         "2016-03-25", "2016-03-26", "2016-03-27", "2016-03-28", "2016-03-29", "2016-03-30", "2016-03-31"
@@ -340,21 +338,17 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     sleepDefault.getData(function (data) {
 
       $scope.data = [];
-      $arrName = ["sleeping", "awake", "awakening", "inBed"];
-      $tmp = [];
+      arrName = ["sleeping", "awake", "awakening", "inBed"];
+      tmp = [];
       for(var i = 0; i < 4; i++){
+        tmp2=[];
         for(var j = 0; j <= 6; j++){
-          $tmp.push(data["sleep_hist"][j][$arrName[i]]);
+          tmp2.push(data["sleep_hist"][j][arrName[i]]);
         }
+        tmp.push(tmp2);
       }
-      $scope.data = [$tmp];
+      $scope.data = tmp;
 
-      /*$scope.data = [
-        [data["sleep_hist"][0]["sleeping"], data["sleep_hist"][1]["sleeping"], data["sleep_hist"][2]["sleeping"], data["sleep_hist"][3]["sleeping"], data["sleep_hist"][4]["sleeping"], data["sleep_hist"][5]["sleeping"], data["sleep_hist"][6]["sleeping"]],
-        [data["sleep_hist"][0]["awake"], data["sleep_hist"][1]["awake"], data["sleep_hist"][2]["awake"], data["sleep_hist"][3]["awake"], data["sleep_hist"][4]["awake"], data["sleep_hist"][5]["awake"], data["sleep_hist"][6]["awake"]],
-        [data["sleep_hist"][0]["awakening"], data["sleep_hist"][1]["awakening"], data["sleep_hist"][2]["awakening"], data["sleep_hist"][3]["awakening"], data["sleep_hist"][4]["awakening"], data["sleep_hist"][5]["awakening"], data["sleep_hist"][6]["awakening"]],
-        [data["sleep_hist"][0]["inBed"], data["sleep_hist"][1]["inBed"], data["sleep_hist"][2]["inBed"], data["sleep_hist"][3]["inBed"], data["sleep_hist"][4]["inBed"], data["sleep_hist"][5]["inBed"], data["sleep_hist"][6]["inBed"]]
-      ];*/
       $scope.labels = [
         "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
       ];
@@ -362,7 +356,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         "Sleeping",
         "Awake",
         "Awakening",
-        "In_Bed"
+        "InBed"
       ];
       $scope.onClick = function (points, evt) {
         console.log(points, evt);
@@ -379,14 +373,16 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       sleepLastMonth.getData(function (data) {
 
         $scope.data = [];
-        $arrName = ["sleeping", "awake", "awakening", "inBed"];
-        $tmp = [];
+        arrName = ["sleeping", "awake", "awakening", "inBed"];
+        tmp = [];
         for(var i = 0; i < 4; i++){
-          for(var j = 0; j <= data.count()-1; j++){
-            $tmp.push(data["sleep_hist"][j][$arrName[i]]);
+          tmp2 = [];
+          for(var j = 0; j <= 30; j++){
+            tmp2.push(data["sleep_hist"][j][arrName[i]]);
           }
+          tmp.push(tmp2);
         }
-        $scope.data = [$tmp];
+        $scope.data = tmp;
 
         /*$scope.data = [
           [data["sleep_hist"][0]["sleeping"], data["sleep_hist"][1]["sleeping"], data["sleep_hist"][2]["sleeping"], data["sleep_hist"][3]["sleeping"], data["sleep_hist"][4]["sleeping"], data["sleep_hist"][5]["sleeping"], data["sleep_hist"][6]["sleeping"], data["sleep_hist"][7]["sleeping"], data["sleep_hist"][8]["sleeping"], data["sleep_hist"][9]["sleeping"], data["sleep_hist"][10]["sleeping"], data["sleep_hist"][11]["sleeping"], data["sleep_hist"][12]["sleeping"], data["sleep_hist"][13]["sleeping"], data["sleep_hist"][14]["sleeping"], data["sleep_hist"][15]["sleeping"], data["sleep_hist"][16]["sleeping"], data["sleep_hist"][17]["sleeping"], data["sleep_hist"][18]["sleeping"], data["sleep_hist"][19]["sleeping"], data["sleep_hist"][20]["sleeping"], data["sleep_hist"][21]["sleeping"], data["sleep_hist"][22]["sleeping"], data["sleep_hist"][23]["sleeping"], data["sleep_hist"][24]["sleeping"], data["sleep_hist"][25]["sleeping"], data["sleep_hist"][26]["sleeping"], data["sleep_hist"][27]["sleeping"], data["sleep_hist"][28]["sleeping"], data["sleep_hist"][29]["sleeping"], data["sleep_hist"][30]["sleeping"]],
@@ -419,21 +415,16 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         ];*/
 
         $scope.data = [];
-        $arrName = ["mean_sleeping", "mean_awake", "mean_awakening", "mean_in_bed"];
-        $tmp = [];
+        arrName = ["mean_sleeping", "mean_awake", "mean_awakening", "mean_in_bed"];
+        tmp = [];
         for(var i = 0; i < 4; i++){
-          for(var j = 0; j <= 2; j++){
-            $tmp.push(data["lastyear"][j][$arrName[i]]);
+          tmp2=[];
+          for(var j = 0; j <= 2 ; j++){
+            tmp2.push(data["lastyear"][j][arrName[i]]);
           }
+          tmp.push(tmp2);
         }
-        $scope.data = [$tmp];
-
-        /*$scope.data = [
-          [data[0]["mean_sleeping"],data[1]["mean_sleeping"],data[2]["mean_sleeping"]],
-          [data[0]["mean_awake"],data[1]["mean_awake"],data[2]["mean_awake"]],
-          [data[0]["mean_awakening"],data[1]["mean_awakening"],data[2]["mean_awakening"]],
-          [data[0]["mean_in_bed"],data[1]["mean_in_bed"],data[2]["mean_in_bed"]]
-        ];*/
+        $scope.data = tmp;
 
         $scope.series = [
           "Sleeping",
@@ -462,20 +453,22 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     ];*/
 
       $scope.data = [];
-      $arrName = ["mean_sleeping", "mean_awake", "mean_awakening", "mean_in_bed"];
-      $tmp = [];
+      arrName = ["mean_sleeping", "mean_awake", "mean_awakening", "mean_in_bed"];
+      tmp = [];
       for(var i = 0; i < 4; i++){
+        tmp2=[];
         for(var j = 0; j <= 6; j++){
-          $tmp.push(data["sleep_mean_years"][j][$arrName[i]]);
+          tmp2.push(data["sleep_mean_years"][j][arrName[i]]);
         }
+        tmp.push(tmp2);
       }
-      $scope.data = [$tmp];
+      $scope.data = tmp;
 
     $scope.series = [
       "Sleeping",
       "Awake",
       "Awakening",
-      "In_Bed"
+      "InBed"
     ];
 
     $scope.labels = [
