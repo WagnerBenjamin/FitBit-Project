@@ -32,7 +32,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
 
 
-
   //activity_default
   .controller("activityDefaultCtrl",function (activityDefault,$scope) {
     activityDefault.getData(function (data) {
@@ -126,9 +125,54 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     })
   })
 
+    .controller("SleepLastMonthCtrl",function (sleepDefault,$scope) {
+      sleepDefault.getData(function (data) {
+        $scope.data = [
+          [data["sleep_hist"][0]["sleeping"], data["sleep_hist"][1]["sleeping"], data["sleep_hist"][2]["sleeping"], data["sleep_hist"][3]["sleeping"], data["sleep_hist"][4]["sleeping"], data["sleep_hist"][5]["sleeping"], data["sleep_hist"][6]["sleeping"]],
+          [data["sleep_hist"][0]["awake"], data["sleep_hist"][1]["awake"], data["sleep_hist"][2]["awake"], data["sleep_hist"][3]["awake"], data["sleep_hist"][4]["awake"], data["sleep_hist"][5]["awake"], data["sleep_hist"][6]["awake"]],
+          [data["sleep_hist"][0]["awakening"], data["sleep_hist"][1]["awakening"], data["sleep_hist"][2]["awakening"], data["sleep_hist"][3]["awakening"], data["sleep_hist"][4]["awakening"], data["sleep_hist"][5]["awakening"], data["sleep_hist"][6]["awakening"]],
+          [data["sleep_hist"][0]["inBed"], data["sleep_hist"][1]["inBed"], data["sleep_hist"][2]["inBed"], data["sleep_hist"][3]["inBed"], data["sleep_hist"][4]["inBed"], data["sleep_hist"][5]["inBed"], data["sleep_hist"][6]["inBed"]]
+        ];
+        $scope.labels = [
+          "03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
+        ];
+        $scope.series = [
+          "Sleeping",
+          "Awake",
+          "Awakening",
+          "In_Bed"
+        ];
+      })
+    })
+
+    .controller("sleepLastYearCtrl",function ($scope,$http) {
+      sleepLastYear.getData(function (data) {
+        $scope.data = [
+          [data[0]["mean_sleeping"],data[1]["mean_sleeping"],data[2]["mean_sleeping"]],
+          [data[0]["mean_awake"],data[1]["mean_awake"],data[2]["mean_awake"]],
+          [data[0]["mean_awakening"],data[1]["mean_awakening"],data[2]["mean_awakening"]],
+          [data[0]["mean_in_bed"],data[1]["mean_in_bed"],data[2]["mean_in_bed"]]
+        ];
+
+        $scope.series = [
+          "Sleeping",
+          "Awake",
+          "Awakening",
+          "In_Bed"
+        ];
+
+        $scope.labels = [
+          data[0]["Date"],data[1]["Date"],data[2]["Date"]
+        ];
+        $scope.onClick = function (points, evt) {
+          console.log(points, evt);
+        };
+      })
+    })
+
   //sleep_means_years
-  .controller("sleepCtrl",function ($scope,$http) {
-  $http.get('datasets/sleep/sleep_means_years.JSON').success(function (data) {
+  .controller("sleepMeanYearsCtrl",function ($scope,$http) {
+    sleepMeanYears.getData(function (data) {
     $scope.data = [
       [data[0]["mean_sleeping"],data[1]["mean_sleeping"],data[2]["mean_sleeping"],data[3]["mean_sleeping"],data[4]["mean_sleeping"],data[5]["mean_sleeping"],data[6]["mean_sleeping"]],
       [data[0]["mean_awake"],data[1]["mean_awake"],data[2]["mean_awake"],data[3]["mean_awake"],data[4]["mean_awake"],data[5]["mean_awake"],data[6]["mean_awake"]],
@@ -151,7 +195,4 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     };
   })
 });
-
-
-
 

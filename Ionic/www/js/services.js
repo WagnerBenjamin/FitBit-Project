@@ -38,6 +38,51 @@ angular.module('app.services', [])
   };
 }])
 
+    .factory('sleepLastMonth', ['$http', function ($http) {
+      var data;
+      return {
+        getData: function (callback) {
+          if(data) {
+            callback(data);
+          } else {
+            $http.get('http://10.42.0.1/fitbit_api/api/web/sleep/lastmonth').success(function(d) {
+              callback(data = d);
+            });
+          }
+        }
+      };
+    }])
+
+    .factory('sleepMeanYears', ['$http', function ($http) {
+      var data;
+      return {
+        getData: function (callback) {
+          if(data) {
+            callback(data);
+          } else {
+            $http.get('http://10.42.0.1/fitbit_api/api/web/sleep/sleepmeanyears').success(function(d) {
+              callback(data = d);
+            });
+          }
+        }
+      };
+    }])
+
+    .factory('sleepLastYear', ['$http', function ($http) {
+      var data;
+      return {
+        getData: function (callback) {
+          if(data) {
+            callback(data);
+          } else {
+            $http.get('http://10.42.0.1/fitbit_api/api/web/sleep/lastyear').success(function(d) {
+              callback(data = d);
+            });
+          }
+        }
+      };
+    }])
+
 .factory('profileDefault', ['$http', function ($http) {
   var data;
   return {
