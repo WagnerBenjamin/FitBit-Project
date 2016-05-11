@@ -23,11 +23,11 @@ api_perf:
     defaults: { _controller: ApiBundle:Perf:index }
 
 api_perf_month:
-    path:     /perf/month
+    path:     /perf/lastmonth
     defaults: { _controller: ApiBundle:Perf:lastMonth, _format: json }
 
 api_perf_year:
-    path:     /perf/year
+    path:     /perf/lastyear
     defaults: { _controller: ApiBundle:Perf:lastYear, _format: json }
 
 api_perf_year:
@@ -39,11 +39,11 @@ api_activity:
     defaults: { _controller: ApiBundle:Activity:index }
     
 api_act_month:
-    path:     /activity/month
+    path:     /activity/lastmonth
     defaults: { _controller: ApiBundle:Activity:lastMonth, _format: json }
 
 api_act_year:
-    path:     /activity/year
+    path:     /activity/lastyear
     defaults: { _controller: ApiBundle:Activity:lastYear, _format: json }
 
 api_act_year:
