@@ -7,6 +7,7 @@
   "dependencies": {
     "Chart.js": "^2.1.1",
     "angular-chart.js": "^0.10.2",
-    "highcharts-ng": "^0.0.11"
+    "highcharts-ng": "^0.0.11",
+    "angular-svg-round-progressbar": "^0.4.4"
   }
 }

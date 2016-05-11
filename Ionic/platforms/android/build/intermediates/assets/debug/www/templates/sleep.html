@@ -1,0 +1,145 @@
+<ion-view title="Sleep" id="page6">
+  <ion-content padding="true" class="has-header">
+    <div class="row padding">
+      <div class="col-50 padding">
+        <div class="row responsive-sm lol padding">
+          <div class="title">Sleeping</div>
+          <div class="progress-wrapper">
+            <round-progress
+              max="100"
+              current="70"
+              color="#002B93"
+              bgcolor="#eaeaea"
+              radius="100"
+              stroke="30"
+              semi="true"
+              rounded="true"
+              clockwise="true"
+              responsive="true"
+              duration="800"
+              animation="easeInOutQuart"
+              animation-delay="0">  </round-progress>
+            <div class="icon ion-ios-moon"></div>
+            <div class="text">324</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-50 padding">
+        <div class="row responsive-sm lol padding">
+          <div class="title">Awake</div>
+          <div class="progress-wrapper">
+            <round-progress
+              max="100"
+              current="0"
+              color="#116F32"
+              bgcolor="#eaeaea"
+              radius="100"
+              stroke="30"
+              semi="true"
+              rounded="true"
+              clockwise="true"
+              responsive="true"
+              duration="800"
+              animation="easeInOutQuart"
+              animation-delay="0"></round-progress>
+            <div class="icon ion-ios-timer"></div>
+            <div class="text">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row padding">
+      <div class="col-50 padding">
+        <div class="row responsive-sm lol padding">
+          <div class="title">Awakening</div>
+          <div class="progress-wrapper">
+            <round-progress
+              max="100"
+              current="0"
+              color="#45ccce"
+              bgcolor="#eaeaea"
+              radius="100"
+              stroke="30"
+              semi="true"
+              rounded="true"
+              clockwise="true"
+              responsive="true"
+              duration="800"
+              animation="easeInOutQuart"
+              animation-delay="0"></round-progress>
+            <div class="icon ion-ios-alarm"></div>
+            <div class="text">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-50 padding">
+        <div class="row responsive-sm lol padding">
+          <div class="title">In Bed</div>
+          <div class="progress-wrapper">
+            <round-progress
+              max="100"
+              current="70"
+              color="#632863"
+              bgcolor="#eaeaea"
+              radius="100"
+              stroke="30"
+              semi="true"
+              rounded="true"
+              clockwise="true"
+              responsive="true"
+              duration="800"
+              animation="easeInOutQuart"
+              animation-delay="0"></round-progress>
+            <div class="icon ion-ios-body"></div>
+            <div class="text">324</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <span class="padding">
+        <button class="button button-small button-assertive">
+          Default
+        </button>
+        <button class="button button-small button-assertive">
+          Lastyear
+        </button>
+        <button class="button button-small button-assertive">
+          Lastmonth
+        </button>
+        <button class="button button-small button-assertive">
+          Mean_years
+        </button>
+      </span>
+    </div>
+    <div class="row padding" ng-controller="activityCtrl">
+      <div class="chart-container">
+        <canvas id="line2" class="chart chart-bar" chart-data="data"
+                chart-labels="labels" chart-legend="false" chart-series="series"
+                chart-click="onClick">
+        </canvas>
+        <chart-legend>
+          <ul class="line-legend">
+            <li>
+              <span class="line-legend-icon" style="background-color:#002B93"></span>
+              <span class="line-legend-text">Sleeping</span>
+            </li>
+            <li>
+              <span class="line-legend-icon" style="background-color:#116F32"></span>
+              <span class="line-legend-text">Awake</span>
+            </li>
+            <li>
+              <span class="line-legend-icon" style="background-color:#45ccce"></span>
+              <span class="line-legend-text">Awakening</span>
+            </li>
+            <li>
+              <span class="line-legend-icon" style="background-color:#632863"></span>
+              <span class="line-legend-text">Bed</span>
+            </li>
+          </ul>
+        </chart-legend>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
