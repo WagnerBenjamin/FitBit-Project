@@ -120,7 +120,7 @@ angular.module('app.services', [])
         if(data) {
           callback(data);
         } else {
-          $http.get('http://10.42.0.1/fitbit_api/api/web/performance').success(function(d) {
+          $http.get('http://10.42.0.1/fitbit_api/api/web/perf').success(function(d) {
             callback(data = d);
           });
         }
