@@ -117,13 +117,15 @@ class DatasetsRepository extends EntityRepository
 
     public function getPerfLYear()
     {
-        $arr = array(
-            $this->getPerfThisMonth(),
-            $this->getPerfMonth(2),
-            $this->getPerfMonth(3),
-        );
+        $m1 = $this->getPerfThisMonth();
+        $m2 = $this->getPerfMonth(2);
+        $m3 = $this->getPerfMonth(3);
+        $arr[0] = $m1[0];
+        $arr[1] = $m2[0];
+        $arr[2] = $m3[0];
+        $data = array('lastyear' => $arr);
 
-        return $arr;
+        return $data;
     }
 
     public function getPerfYear($year){
@@ -138,12 +140,21 @@ class DatasetsRepository extends EntityRepository
 
     public function getPerfAllYear()
     {
-        $arr = array(
-            $this->getPerfYear("2016"),
-            $this->getPerfYear("2015"),
-            $this->getPerfYear("2014")
-        );
+        $m1 = $this->getPerfYear("2010");
+        $m2 = $this->getPerfYear("2011");
+        $m3 = $this->getPerfYear("2012");
+        $m4 = $this->getPerfYear("2013");
+        $m5 = $this->getPerfYear("2014");
+        $m6 = $this->getPerfYear("2015");
+        $m7 = $this->getPerfYear("2016");
 
+        $arr[0] = $m1[0];
+        $arr[1] = $m2[0];
+        $arr[2] = $m3[0];
+        $arr[3] = $m4[0];
+        $arr[4] = $m5[0];
+        $arr[5] = $m6[0];
+        $arr[6] = $m7[0];
         return $arr;
     }
 
@@ -183,20 +194,33 @@ class DatasetsRepository extends EntityRepository
         return $qb->getQuery()->getResult();
     }
 
+    public function getActFirstMonth()
+    {
+        $qb = $this->_em->createQueryBuilder()
+            ->select('SUBSTRING(d.date, 1, 7) as date, avg(d.sedentary) as sedentary, avg(d.mobile) as mobile, avg(d.active) as active, avg(d.veryActive) as very_active')
+            ->from($this->_entityName, 'd')
+            ->where("d.date BETWEEN DATE_SUB(:end, 1, 'MONTH')+1 AND :end")
+            ->setParameter('end', date('2016-03-31'))
+            ->orderBy('d.id');
+
+        return $qb->getQuery()->getResult();
+    }
+
     public function getActLYear()
     {
-        $arr = array(
-            $this->getActThisMonth(),
-            $this->getActMonth(2),
-            $this->getActMonth(3),
-        );
+        $m1 = $this->getActFirstMonth();
+        $m2 = $this->getActMonth(2);
+        $m3 = $this->getActMonth(3);
+        $arr[0] = $m3[0];
+        $arr[1] = $m2[0];
+        $arr[2] = $m1[0];
 
         return $arr;
     }
 
     public function getActYear($year){
         $qb = $this->_em->createQueryBuilder()
-            ->select('SUBSTRING(d.date, 1, 7) as date, avg(d.sedentary) as sedentary, avg(d.mobile) as mobile, avg(d.active) as active, avg(d.veryActive) as very_active')
+            ->select('SUBSTRING(d.date, 1, 4) as date, avg(d.sedentary) as sedentary, avg(d.mobile) as mobile, avg(d.active) as active, avg(d.veryActive) as very_active')
             ->from($this->_entityName, 'd')
             ->where("d.date LIKE '$year%'")
             ->orderBy('d.id');
@@ -206,11 +230,20 @@ class DatasetsRepository extends EntityRepository
 
     public function getActAllYear()
     {
-        $arr = array(
-            $this->getActYear("2016"),
-            $this->getActYear("2015"),
-            $this->getActYear("2014")
-        );
+        $m1 = $this->getActYear("2016");
+        $m2 = $this->getActYear("2015");
+        $m3 = $this->getActYear("2014");
+        $m4 = $this->getActYear("2013");
+        $m5 = $this->getActYear("2012");
+        $m6 = $this->getActYear("2011");
+        $m7 = $this->getActYear("2010");
+        $arr[0] = $m7[0];
+        $arr[1] = $m6[0];
+        $arr[2] = $m5[0];
+        $arr[3] = $m4[0];
+        $arr[4] = $m3[0];
+        $arr[5] = $m2[0];
+        $arr[6] = $m1[0];
 
         return $arr;
     }
