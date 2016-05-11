@@ -27,6 +27,48 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
 }])
 
+  .controller("OrientationCtrl", function($scope){
+
+  })
+
+  .controller("profileDefaultCtrl",function ($profileDefault,$scope) {
+    profileDefault.getData(function (data) {
+      $scope.data = [
+        data["weight_hist"][0]["Weight"], data["weight_hist"][1]["Weight"], data["weight_hist"][2]["Weight"], data["weight_hist"][3]["Weight"], data["weight_hist"][4]["Weight"], data["weight_hist"][5]["Weight"], data["weight_hist"][6]["Weight"]
+      ];
+      $scope.labels = [
+        "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
+      ];
+      $scope.series = [
+        "Weight"
+      ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
+
+      document.getElementById("weightWidget").textContent = data["weight_lastday"][0]["Weight"];
+      document.getElementById("bmiWidget").textContent = data["bmi_actual"][0]["BMI"];
+    })
+  })
+
+  .controller("profileLastMonthCtrl",function (profileDefault,$scope) {
+    profileDefault.getData(function (data) {
+      $scope.data = [
+        data["weight_hist"][0]["Weight"], data["weight_hist"][1]["Weight"], data["weight_hist"][2]["Weight"], data["weight_hist"][3]["Weight"], data["weight_hist"][4]["Weight"], data["weight_hist"][5]["Weight"], data["weight_hist"][6]["Weight"],
+        data["weight_hist"][7]["Weight"], data["weight_hist"][8]["Weight"], data["weight_hist"][9]["Weight"], data["weight_hist"][10]["Weight"], data["weight_hist"][11]["Weight"], data["weight_hist"][12]["Weight"], data["weight_hist"][13]["Weight"],
+        data["weight_hist"][14]["Weight"], data["weight_hist"][15]["Weight"], data["weight_hist"][16]["Weight"], data["weight_hist"][17]["Weight"], data["weight_hist"][18]["Weight"], data["weight_hist"][19]["Weight"], data["weight_hist"][20]["Weight"], data["weight_hist"][21]["Weight"], data["weight_hist"][22]["Weight"],
+        data["weight_hist"][23]["Weight"], data["weight_hist"][24]["Weight"], data["weight_hist"][25]["Weight"], data["weight_hist"][26]["Weight"], data["weight_hist"][27]["Weight"], data["weight_hist"][28]["Weight"], data["weight_hist"][29]["Weight"],
+        data["weight_hist"][30]["Weight"], data["weight_hist"][31]["Weight"]
+      ];
+      $scope.labels = [
+        "03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
+      ];
+      $scope.series = [
+        "Weight"
+      ];
+    })
+  })
+
   .controller("profileLastYearCtrl",function (profileLastYear,$scope) {
     profileLastYear.getData(function (data) {
       $scope.data = [
@@ -82,6 +124,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       };
     })
   })
+
 
   //performance_means_years
   .controller("performanceCtrl", function ($scope,$http) {
