@@ -31,7 +31,7 @@ api_perf_year:
     defaults: { _controller: ApiBundle:Perf:lastYear, _format: json }
 
 api_perf_mean_year:
-    path:     /perf/meanyear
+    path:     /perf/perfmeanyear
     defaults: { _controller: ApiBundle:Perf:meanYear, _format: json }
 
 api_act:
@@ -47,7 +47,7 @@ api_act_year:
     defaults: { _controller: ApiBundle:Activity:lastYear, _format: json }
 
 api_act_mean_year:
-    path:     /activity/meanyear
+    path:     /activity/actmeanyear
     defaults: { _controller: ApiBundle:Activity:meanYear, _format: json }
 
 api_sleep:
