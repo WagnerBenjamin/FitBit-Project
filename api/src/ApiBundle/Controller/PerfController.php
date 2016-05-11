@@ -41,7 +41,7 @@ class PerfController extends Controller
         return new Response($data);
     }
 
-    public function meansYearAction(){
+    public function meanYearAction(){
         $perfally = $this->getDoctrine()
             ->getManager()
             ->getRepository('ApiBundle:Datasets')

@@ -41,7 +41,7 @@ class ActivityController extends Controller
         return new Response($data);
     }
 
-    public function meansYearAction(){
+    public function meanYearAction(){
         $Actally = $this->getDoctrine()
             ->getManager()
             ->getRepository('ApiBundle:Datasets')
