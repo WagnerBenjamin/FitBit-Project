@@ -34,21 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sleep.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sleep.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/templates/sleep.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.625">
+            <state vertical-scroll-proportion="0.43962485">
               <caret line="114" column="10" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2596945">
-              <caret line="125" column="1269" selection-start-line="125" selection-start-column="1269" selection-end-line="125" selection-end-column="1269" />
+            <state vertical-scroll-proportion="-17.153847">
+              <caret line="127" column="1147" selection-start-line="127" selection-start-column="1147" selection-end-line="127" selection-end-column="1147" />
               <folding />
             </state>
           </provider>
@@ -682,10 +682,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/sleep.html">
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.625">
-          <caret line="114" column="10" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
+        <state vertical-scroll-proportion="-17.153847">
+          <caret line="127" column="1147" selection-start-line="127" selection-start-column="1147" selection-end-line="127" selection-end-column="1147" />
           <folding />
         </state>
       </provider>
@@ -698,10 +698,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+    <entry file="file://$PROJECT_DIR$/www/templates/sleep.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2596945">
-          <caret line="125" column="1269" selection-start-line="125" selection-start-column="1269" selection-end-line="125" selection-end-column="1269" />
+        <state vertical-scroll-proportion="0.43962485">
+          <caret line="114" column="10" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
           <folding />
         </state>
       </provider>
