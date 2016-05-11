@@ -16,8 +16,7 @@ class ActivityController extends Controller
             ->getRepository('ApiBundle:Datasets')
             ->getActDefault();
 
-        $data = array( "act_hist" => $Actw);
-        $data = json_encode($data);
+        $data = json_encode($Actw);
         return new Response($data);
     }
 
@@ -28,7 +27,7 @@ class ActivityController extends Controller
             ->getRepository('ApiBundle:Datasets')
             ->getActThisMonth();
 
-        $data = array( "act_hist" => $Actm);
+        $data = array( "activity_hist" => $Actm);
         $data = json_encode($data);
         return new Response($data);
     }
@@ -50,7 +49,7 @@ class ActivityController extends Controller
             ->getRepository('ApiBundle:Datasets')
             ->getActAllYear();
 
-        $data = array( "act_hist" => $Actally);
+        $data = array( "activity_hist" => $Actally);
         $data = json_encode($data);
         return new Response($data);
     }

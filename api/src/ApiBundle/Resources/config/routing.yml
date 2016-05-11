@@ -47,7 +47,7 @@ api_act_year:
     defaults: { _controller: ApiBundle:Activity:lastYear, _format: json }
 
 api_act_mean_year:
-    path:     /activity/actmeanyear
+    path:     /activity/actmeanyears
     defaults: { _controller: ApiBundle:Activity:meanYear, _format: json }
 
 api_sleep:

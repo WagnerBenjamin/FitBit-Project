@@ -16,8 +16,7 @@ class PerfController extends Controller
             ->getRepository('ApiBundle:Datasets')
             ->getPerfDefault();
 
-        $data = array( "perf_hist" => $perfw);
-        $data = json_encode($data);
+        $data = json_encode($perfw);
         return new Response($data);
     }
 

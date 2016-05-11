@@ -86,15 +86,30 @@ class DatasetsRepository extends EntityRepository
             ->from($this->_entityName, 'd')
             ->where("d.date BETWEEN DATE_SUB(:end, 6, 'day') AND :end")
             ->setParameter('end', date('2016-03-31'))
-            ->orderBy('d.id');
+            ->orderBy('d.id')
+            ->getQuery()
+            ->getResult();
 
-        return $qb->getQuery()->getResult();
+        $qq = $this->_em->createQueryBuilder()
+            ->select('d.steps, d.floors, d.distance, d.calories')
+            ->from($this->_entityName, 'd')
+            ->where("d.date = :end")
+            ->setParameter('end', date('2016-03-31'))
+            ->orderBy('d.id')
+            ->getQuery()
+            ->getResult();
+
+        $data = array(
+            "perf_hist" => $qb,
+            "perf_lastday" => $qq,
+        );
+        return $data;
     }
 
     public function getPerfThisMonth()
     {
         $qb = $this->_em->createQueryBuilder()
-            ->select('SUBSTRING(d.date, 1, 7) as date, avg(d.steps) as steps, avg(d.floors) as floors, avg(d.distance) as distance, avg(d.calories) as calories')
+            ->select('SUBSTRING(d.date, 1, 10) as date, d.steps, d.floors, d.distance, d.calories')
             ->from($this->_entityName, 'd')
             ->where("d.date BETWEEN DATE_SUB(:end, 1, 'MONTH')+1 AND :end")
             ->setParameter('end', date('2016-03-31'))
@@ -117,12 +132,17 @@ class DatasetsRepository extends EntityRepository
 
     public function getPerfLYear()
     {
-        $m1 = $this->getPerfThisMonth();
+        $m1 = $this->_em->createQueryBuilder()
+            ->select('SUBSTRING(d.date, 1, 7) as date, d.steps, d.floors, d.distance, d.calories')
+            ->from($this->_entityName, 'd')
+            ->where("d.date BETWEEN DATE_SUB(:end, 1, 'MONTH')+1 AND :end")
+            ->setParameter('end', date('2016-03-31'))
+            ->orderBy('d.id')->getQuery()->getResult();
         $m2 = $this->getPerfMonth(2);
         $m3 = $this->getPerfMonth(3);
-        $arr[0] = $m1[0];
+        $arr[0] = $m3[0];
         $arr[1] = $m2[0];
-        $arr[2] = $m3[0];
+        $arr[2] = $m1[0];
         $data = array('lastyear' => $arr);
 
         return $data;
@@ -165,9 +185,24 @@ class DatasetsRepository extends EntityRepository
             ->from($this->_entityName, 'd')
             ->where("d.date BETWEEN DATE_SUB(:end, 6, 'day') AND :end")
             ->setParameter('end', date('2016-03-31'))
-            ->orderBy('d.id');
+            ->orderBy('d.id')
+            ->getQuery()
+            ->getResult();
 
-        return $qb->getQuery()->getResult();
+        $qq = $this->_em->createQueryBuilder()
+            ->select('d.sedentary, d.mobile, d.active, d.veryActive')
+            ->from($this->_entityName, 'd')
+            ->where("d.date = :end")
+            ->setParameter('end', date('2016-03-31'))
+            ->orderBy('d.id')
+            ->getQuery()
+            ->getResult();
+
+        $data = array(
+            "activity_hist" => $qb,
+            "activity_lastday" => $qq,
+        );
+        return $data;
     }
 
     public function getActThisMonth()
