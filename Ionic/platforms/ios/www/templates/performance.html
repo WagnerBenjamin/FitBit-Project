@@ -1,0 +1,145 @@
+<ion-view title="Performance" id="page4">
+  <ion-content padding="true" class="has-header">
+    <div class="row padding">
+      <div class="col-50 padding">
+        <div class="row responsive-sm padding lol">
+          <div class="title">Steps</div>
+          <div class="progress-wrapper">
+          <round-progress
+            max="100"
+            current="70"
+            color="#ef473a"
+            bgcolor="#eaeaea"
+            radius="100"
+            stroke="30"
+            semi="true"
+            rounded="true"
+            clockwise="true"
+            responsive="true"
+            duration="800"
+            animation="easeInOutQuart"
+            animation-delay="0"></round-progress>
+            <div class="icon ion-ios-paw"></div>
+            <div class="text">10760</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-50 padding">
+        <div class="row responsive-sm padding lol">
+          <div class="title">Distance</div>
+          <div class="progress-wrapper">
+          <round-progress
+            max="100"
+            current="60"
+            color="#33cd5f"
+            bgcolor="#eaeaea"
+            radius="100"
+            stroke="30"
+            semi="true"
+            rounded="true"
+            clockwise="true"
+            responsive="true"
+            duration="800"
+            animation="easeInOutQuart"
+            animation-delay="0"></round-progress>
+            <div class="icon ion-map"></div>
+            <div class="text">7</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row padding padding">
+      <div class="col-50 padding">
+        <div class="row responsive-sm padding lol">
+          <div class="title">Floors</div>
+          <div class="progress-wrapper">
+          <round-progress
+            max="10"
+            current="0"
+            color="#387ef5"
+            bgcolor="#eaeaea"
+            radius="100"
+            stroke="30"
+            semi="true"
+            rounded="true"
+            clockwise="true"
+            responsive="true"
+            duration="800"
+            animation="easeInOutQuart"
+            animation-delay="0"></round-progress>
+            <div class="icon ion-drag"></div>
+            <div class="text">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-50 padding">
+        <div class="row responsive-sm padding lol">
+          <div class="title">Calories</div>
+          <div class="progress-wrapper">
+          <round-progress
+            max="100"
+            current="40"
+            color="#ffc900"
+            bgcolor="#eaeaea"
+            radius="100"
+            stroke="30"
+            semi="true"
+            rounded="true"
+            clockwise="true"
+            responsive="true"
+            duration="800"
+            animation="easeInOutQuart"
+            animation-delay="0"></round-progress>
+            <div class="icon ion-fireball"></div>
+            <div class="text">3227</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <span class="padding">
+        <button class="button button-small button-assertive">
+          Default
+        </button>
+        <button class="button button-small button-assertive">
+          Lastyear
+        </button>
+        <button class="button button-small button-assertive">
+          Lastmonth
+        </button>
+        <button class="button button-small button-assertive">
+          Mean_years
+        </button>
+      </span>
+    </div>
+    <div class="row padding responsive-sm" ng-controller="performanceCtrl">
+      <div class="chart-container">
+        <canvas id="line2" class="chart chart-bar" chart-data="data"
+                chart-labels="labels" chart-legend="false" chart-series="series"
+                chart-click="onClick">
+        </canvas>
+        <chart-legend>
+          <ul class="line-legend">
+            <li>
+              <span class="line-legend-icon" style="background-color:#ef473a"></span>
+              <span class="line-legend-text">Steps</span>
+            </li>
+            <li>
+              <span class="line-legend-icon" style="background-color:#387ef5"></span>
+              <span class="line-legend-text">Floors</span>
+            </li>
+            <li>
+              <span class="line-legend-icon" style="background-color:#33cd5f"></span>
+              <span class="line-legend-text">Distance</span>
+            </li>
+            <li>
+              <span class="line-legend-icon" style="background-color:#ffc900"></span>
+              <span class="line-legend-text">Calories</span>
+            </li>
+          </ul>
+        </chart-legend>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
