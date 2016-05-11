@@ -263,7 +263,7 @@ class DatasetsRepository extends EntityRepository
             ->setParameter('year', $year.'-%');
         return $qb->getQuery()->getResult();
     }
-    
+
     public function getMeanSleepYears(){
         return $this->getEntityManager()
             ->createQuery(
