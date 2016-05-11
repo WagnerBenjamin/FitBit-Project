@@ -37,6 +37,7 @@
     <script src="js/routes.js"></script>
     <script src="js/services.js"></script>
     <script src="js/directives.js"></script>
+    <script src="templates/popover.html" type="text/ng-template"></script>
 
     <!-- Only required for Tab projects w/ pages in multiple tabs
     <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
@@ -46,7 +47,7 @@
     </script>
   </head>
   <body ng-app="app" animation="slide-left-right-ios7">
-  <div>
+  <div ng-controller="settingCtrl">
     <ion-side-menus>
       <ion-pane ion-side-menu-content="">
         <ion-nav-bar class="bar-assertive nav-title-slide-ios7" align-title="center">
@@ -55,7 +56,7 @@
             </button>
           </ion-nav-buttons>
           <ion-nav-buttons side="right">
-            <button class="button icon ion-gear-a" ng-click="showConfirm()"></button>
+            <button class="button icon ion-gear-a" ng-click="popover.show($event)"></button>
           </ion-nav-buttons>
         </ion-nav-bar>
         <ion-nav-view></ion-nav-view>
