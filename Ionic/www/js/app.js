@@ -27,6 +27,20 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
 }])
 
+  .controller("profileLastYearCtrl",function (profileLastYear,$scope) {
+    profileLastYear.getData(function (data) {
+      $scope.data = [
+        data["lastyear"][0]["weight"],data["lastyear"][1]["weight"],data["lastyear"][3]["weight"]
+      ];
+      $scope.labels = ["2016-01","2016-02","2016-03"];
+      
+      $scope.series = [
+        "Weight"
+      ];
+    })
+  })
+
+
   //activity_default
   .controller("activityDefaultCtrl",function (activityDefault,$scope) {
     activityDefault.getData(function (data) {

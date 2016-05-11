@@ -79,3 +79,7 @@
 .button-graph{
  padding-left: 9%;
 }
+
+.item:hover{
+  background-color: lightgray;
+}
