@@ -14,6 +14,10 @@ api_profile_lastYear:
     path:     /profile/lastyear
     defaults: { _controller: ApiBundle:Profile:lastYear, _format: json }
 
+api_profile_meanWeightYears:
+    path:     /profile/meanweightyears
+    defaults: { _controller: ApiBundle:Profile:meanWeightYears, _format: json }
+
 api_perf:
     path:     /perf
     defaults: { _controller: ApiBundle:Perf:index }
@@ -40,4 +44,16 @@ api_act_year:
 
 api_sleep:
     path:     /sleep
-    defaults: { _controller: ApiBundle:Sleep:index }
+    defaults: { _controller: ApiBundle:Sleep:index, _format: json }
+
+api_sleep_lastMonth:
+    path:     /sleep/lastmonth
+    defaults: { _controller: ApiBundle:Sleep:lastMonth, _format: json }
+
+api_sleep_lastYear:
+    path:     /sleep/lastyear
+    defaults: { _controller: ApiBundle:Sleep:lastYear, _format: json }
+
+api_sleep_meanSleepYears:
+    path:     /sleep/sleepmeanyears
+    defaults: { _controller: ApiBundle:Sleep:sleepMeanYears, _format: json }
