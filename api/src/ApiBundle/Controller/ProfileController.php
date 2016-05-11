@@ -39,7 +39,6 @@ class ProfileController extends Controller
             'bmi_actual' => $bmi
         );
         $data = json_encode($data);
-        //return new Response($this->render('ApiBundle:Test:index.html.twig', array('data' => $data)));
         return new Response($data);
     }
 
@@ -109,7 +108,93 @@ class ProfileController extends Controller
             'lastyear' => $data,
         );
         $data = json_encode($data);
-        //return new Response($this->render('ApiBundle:Test:index.html.twig', array('data' => $data)));
+        return new Response($data);
+    }
+
+    public function meanWeightYearsAction()
+    {
+        $weight = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('ApiBundle:Datasets')
+            ->getMeanWeightYears();
+        $arrayWeight = array();
+        $arrayWeight2 = array();
+        $arrayWeight3 = array();
+        $arrayWeight4 = array();
+        $arrayWeight5 = array();
+        $arrayWeight6 = array();
+        $arrayWeight7 = array();
+        foreach($weight as $dataset){
+            $tmp = $dataset["date"]->format("Y");
+            if($tmp == "2010") $arrayWeight[] = ["date" => $tmp, "weight" => $dataset["weight"]];
+            if($tmp == "2011") $arrayWeight2[] = ["date" => $tmp, "weight" => $dataset["weight"]];
+            if($tmp == "2012") $arrayWeight3[] = ["date" => $tmp, "weight" => $dataset["weight"]];
+            if($tmp == "2013") $arrayWeight4[] = ["date" => $tmp, "weight" => $dataset["weight"]];
+            if($tmp == "2014") $arrayWeight5[] = ["date" => $tmp, "weight" => $dataset["weight"]];
+            if($tmp == "2015") $arrayWeight6[] = ["date" => $tmp, "weight" => $dataset["weight"]];
+            if($tmp == "2016") $arrayWeight7[] = ["date" => $tmp, "weight" => $dataset["weight"]];
+        }
+
+        $cumul=0;
+        foreach($arrayWeight as $key=>$val)
+        {
+            $cumul += $val["weight"];
+        }
+        $weight_moy=$cumul/count($arrayWeight);
+        $data = array(array("date" => "2010", "weight" => $weight_moy));
+
+        $cumul=0;
+        foreach($arrayWeight2 as $key=>$val)
+        {
+            $cumul += $val["weight"];
+        }
+        $weight_moy=$cumul/count($arrayWeight2);
+        $data[] = array("date" => "2011", "weight" => $weight_moy);
+
+        $cumul=0;
+        foreach($arrayWeight3 as $key=>$val)
+        {
+            $cumul += $val["weight"];
+        }
+        $weight_moy=$cumul/count($arrayWeight3);
+        $data[] = array("date" => "2012", "weight" => $weight_moy);
+
+        $cumul=0;
+        foreach($arrayWeight4 as $key=>$val)
+        {
+            $cumul += $val["weight"];
+        }
+        $weight_moy=$cumul/count($arrayWeight4);
+        $data[] = array("date" => "2013", "weight" => $weight_moy);
+
+        $cumul=0;
+        foreach($arrayWeight5 as $key=>$val)
+        {
+            $cumul += $val["weight"];
+        }
+        $weight_moy=$cumul/count($arrayWeight5);
+        $data[] = array("date" => "2014", "weight" => $weight_moy);
+
+        $cumul=0;
+        foreach($arrayWeight6 as $key=>$val)
+        {
+            $cumul += $val["weight"];
+        }
+        $weight_moy=$cumul/count($arrayWeight6);
+        $data[] = array("date" => "2015", "weight" => $weight_moy);
+
+        $cumul=0;
+        foreach($arrayWeight7 as $key=>$val)
+        {
+            $cumul += $val["weight"];
+        }
+        $weight_moy=$cumul/count($arrayWeight7);
+        $data[] = array("date" => "2016", "weight" => $weight_moy);
+
+        $data = array(
+            'Mean_weight_years' => $data
+        );
+        $data = json_encode($data);
         return new Response($data);
     }
 }
