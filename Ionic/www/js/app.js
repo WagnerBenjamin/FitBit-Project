@@ -291,23 +291,180 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       };
     })
   })
+    .controller("ProfileGraphCtrl",function ($scope) {
+      $scope.defaultclicked = true;
+      $scope.lastyearclicked = false;
+      $scope.lastmonthclicked = false;
+      $scope.meanyearsclicked = false;
 
-    .controller("SleepGraphCtrl",function ($scope) {
       $scope.onTouchDefaultGraph = function()
       {
-        console.log('clicked');
+        if(!$scope.defaultclicked){
+          $scope.lastyearclicked = false;
+          $scope.lastmonthclicked = false;
+          $scope.meanyearsclicked = false;
+          $scope.defaultclicked = !$scope.defaultclicked;
+        }
+
       }
       $scope.onTouchLastYearGraph = function()
       {
-        console.log('clicked');
+        if(!$scope.lastyearclicked){
+          $scope.defaultclicked = false;
+          $scope.lastmonthclicked = false;
+          $scope.meanyearsclicked = false;
+          $scope.lastyearclicked = !$scope.lastyearclicked;
+        }
       }
       $scope.onTouchLastMonthGraph = function()
       {
-        console.log('clicked');
+        if(!$scope.lastmonthclicked){
+          $scope.defaultclicked = false;
+          $scope.lastyearclicked = false;
+          $scope.meanyearsclicked = false;
+          $scope.lastmonthclicked = !$scope.lastyearclicked;
+        }
       }
       $scope.onTouchMeanYearsGraph = function()
       {
-        console.log('clicked');
+        if(!$scope.meanyearsclicked){
+          $scope.defaultclicked = false;
+          $scope.lastyearclicked = false;
+          $scope.lastmonthclicked = false;
+          $scope.meanyearsclicked = !$scope.meanyearsclicked;
+        }
+      }
+    })
+    .controller("ActivityGraphCtrl",function ($scope) {
+      $scope.defaultclicked = true;
+      $scope.lastyearclicked = false;
+      $scope.lastmonthclicked = false;
+      $scope.meanyearsclicked = false;
+
+      $scope.onTouchDefaultGraph = function()
+      {
+        if(!$scope.defaultclicked){
+          $scope.lastyearclicked = false;
+          $scope.lastmonthclicked = false;
+          $scope.meanyearsclicked = false;
+          $scope.defaultclicked = !$scope.defaultclicked;
+        }
+
+      }
+      $scope.onTouchLastYearGraph = function()
+      {
+        if(!$scope.lastyearclicked){
+          $scope.defaultclicked = false;
+          $scope.lastmonthclicked = false;
+          $scope.meanyearsclicked = false;
+          $scope.lastyearclicked = !$scope.lastyearclicked;
+        }
+      }
+      $scope.onTouchLastMonthGraph = function()
+      {
+        if(!$scope.lastmonthclicked){
+          $scope.defaultclicked = false;
+          $scope.lastyearclicked = false;
+          $scope.meanyearsclicked = false;
+          $scope.lastmonthclicked = !$scope.lastyearclicked;
+        }
+      }
+      $scope.onTouchMeanYearsGraph = function()
+      {
+        if(!$scope.meanyearsclicked){
+          $scope.defaultclicked = false;
+          $scope.lastyearclicked = false;
+          $scope.lastmonthclicked = false;
+          $scope.meanyearsclicked = !$scope.meanyearsclicked;
+        }
+      }
+    })
+    .controller("PerfGraphCtrl",function ($scope) {
+      $scope.defaultclicked = true;
+      $scope.lastyearclicked = false;
+      $scope.lastmonthclicked = false;
+      $scope.meanyearsclicked = false;
+
+      $scope.onTouchDefaultGraph = function()
+      {
+        if(!$scope.defaultclicked){
+          $scope.lastyearclicked = false;
+          $scope.lastmonthclicked = false;
+          $scope.meanyearsclicked = false;
+          $scope.defaultclicked = !$scope.defaultclicked;
+        }
+
+      }
+      $scope.onTouchLastYearGraph = function()
+      {
+        if(!$scope.lastyearclicked){
+          $scope.defaultclicked = false;
+          $scope.lastmonthclicked = false;
+          $scope.meanyearsclicked = false;
+          $scope.lastyearclicked = !$scope.lastyearclicked;
+        }
+      }
+      $scope.onTouchLastMonthGraph = function()
+      {
+        if(!$scope.lastmonthclicked){
+          $scope.defaultclicked = false;
+          $scope.lastyearclicked = false;
+          $scope.meanyearsclicked = false;
+          $scope.lastmonthclicked = !$scope.lastyearclicked;
+        }
+      }
+      $scope.onTouchMeanYearsGraph = function()
+      {
+        if(!$scope.meanyearsclicked){
+          $scope.defaultclicked = false;
+          $scope.lastyearclicked = false;
+          $scope.lastmonthclicked = false;
+          $scope.meanyearsclicked = !$scope.meanyearsclicked;
+        }
+      }
+    })
+    .controller("SleepGraphCtrl",function ($scope) {
+      $scope.defaultclicked = true;
+      $scope.lastyearclicked = false;
+      $scope.lastmonthclicked = false;
+      $scope.meanyearsclicked = false;
+
+      $scope.onTouchDefaultGraph = function()
+      {
+        if(!$scope.defaultclicked){
+          $scope.lastyearclicked = false;
+          $scope.lastmonthclicked = false;
+          $scope.meanyearsclicked = false;
+          $scope.defaultclicked = !$scope.defaultclicked;
+        }
+
+      }
+      $scope.onTouchLastYearGraph = function()
+      {
+        if(!$scope.lastyearclicked){
+          $scope.defaultclicked = false;
+          $scope.lastmonthclicked = false;
+          $scope.meanyearsclicked = false;
+          $scope.lastyearclicked = !$scope.lastyearclicked;
+        }
+      }
+      $scope.onTouchLastMonthGraph = function()
+      {
+        if(!$scope.lastmonthclicked){
+          $scope.defaultclicked = false;
+          $scope.lastyearclicked = false;
+          $scope.meanyearsclicked = false;
+          $scope.lastmonthclicked = !$scope.lastyearclicked;
+        }
+      }
+      $scope.onTouchMeanYearsGraph = function()
+      {
+        if(!$scope.meanyearsclicked){
+          $scope.defaultclicked = false;
+          $scope.lastyearclicked = false;
+          $scope.lastmonthclicked = false;
+          $scope.meanyearsclicked = !$scope.meanyearsclicked;
+        }
       }
     });
 
