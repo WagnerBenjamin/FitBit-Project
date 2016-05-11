@@ -98,6 +98,21 @@ angular.module('app.services', [])
   };
 }])
 
+  .factory('profileLastMonth', ['$http', function ($http) {
+    var data;
+    return {
+      getData: function (callback) {
+        if(data) {
+          callback(data);
+        } else {
+          $http.get('http://10.42.0.1/fitbit_api/api/web/profile/lastmonth').success(function(d) {
+            callback(data = d);
+          });
+        }
+      }
+    };
+  }])
+
   .factory('profileLastYear', ['$http', function ($http) {
     var data;
     return {
