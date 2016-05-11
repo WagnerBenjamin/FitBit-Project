@@ -33,7 +33,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         data["lastyear"][0]["weight"],data["lastyear"][1]["weight"],data["lastyear"][3]["weight"]
       ];
       $scope.labels = ["2016-01","2016-02","2016-03"];
-      
+
       $scope.series = [
         "Weight"
       ];
@@ -108,6 +108,26 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     };
   })
 })
+
+  .controller("performanceDefaultCtrl",function ($scope,performanceDefault) {
+    performanceDefault.getData(function (data) {
+      $scope.data = [
+        [data[0]["steps"],data[1]["steps"],data[2]["steps"],data[3]["steps"],data[4]["steps"],data[5]["steps"],data[6]["steps"],data[7]["steps"]],
+        [data[0]["floors"],data[1]["floors"],data[2]["floors"],data[3]["floors"],data[4]["floors"],data[5]["floors"],data[6]["floors"],data[7]["floors"]],
+        [data[0]["distance"],data[1]["distance"],data[2]["distance"],data[3]["distance"],data[4]["distance"],data[5]["distance"],data[6]["distance"],data[7]["distance"]],
+        [data[0]["calories"],data[1]["calories"],data[2]["calories"],data[3]["calories"],data[4]["calories"],data[5]["calories"],data[6]["calories"],data[7]["calories"]]
+      ];
+      $scope.labels = [
+        "2016-03-25", "2016-03-26", "2016-03-27", "2016-03-28", "2016-03-29", "2016-03-30", "2016-03-31"
+      ];
+      $scope.series = [
+        "Steps","Floors","Distance","Calories"
+      ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
+    })
+  })
   //sleep_default
 
   .controller("SleepDefaultCtrl",function (sleepDefault,$scope) {
@@ -127,6 +147,9 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         "Awakening",
         "In_Bed"
       ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
       document.getElementById("sleepingWidget").textContent = data["sleep_lastday"][0]["sleeping"];
       document.getElementById("awakeWidget").textContent = data["sleep_lastday"][0]["awake"];
       document.getElementById("awakeningWidget").textContent = data["sleep_lastday"][0]["awakening"];
@@ -207,4 +230,5 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     };
   })
 });
+
 
