@@ -119,6 +119,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         "Awakening",
         "In_Bed"
       ];
+      document.getElementById("sleepingWidget").textContent = data["sleep_lastday"][0]["sleeping"];
+      document.getElementById("awakeWidget").textContent = data["sleep_lastday"][0]["awake"];
+      document.getElementById("awakeningWidget").textContent = data["sleep_lastday"][0]["awakening"];
+      document.getElementById("inBedWidget").textContent = data["sleep_lastday"][0]["inBed"];
     })
   })
 
