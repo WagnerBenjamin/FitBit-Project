@@ -47,22 +47,25 @@
       </div>
     </div>
     <br>
+    <div ng-controller="ProfileGraphCtrl">
     <div class="row padding">
       <span class="button-graph">
-        <button class="button button-small button-assertive">
-          Default
+        <button class="button button-small button-assertive" ng-click="onTouchDefaultGraph()">
+          Lastweek
         </button>
-        <button class="button button-small button-assertive">
+        <button class="button button-small button-assertive" ng-click="onTouchLastYearGraph()">
           Lastyear
         </button>
-        <button class="button button-small button-assertive">
+        <button class="button button-small button-assertive" ng-click="onTouchLastMonthGraph()">
           Lastmonth
         </button>
-        <button class="button button-small button-assertive">
+        <button class="button button-small button-assertive" ng-click="onTouchMeanYearsGraph()">
           Mean_years
         </button>
       </span>
     </div>
+      <!--default Graph-->
+      <div data-ng-if="defaultclicked">
     <div class="row padding responsive-sm" ng-controller="profileDefaultCtrl">
       <div class="chart-container" style="width: 100%;">
         <canvas id="line" class="chart chart-line" chart-data="data"
@@ -79,5 +82,66 @@
         </chart-legend>
       </div>
     </div>
+    </div>
+      <!--lastyear Graph-->
+      <div data-ng-if="lastyearclicked">
+    <div class="row padding responsive-sm" ng-controller="profileLastYearCtrl">
+      <div class="chart-container" style="width: 100%;">
+        <canvas id="line2" class="chart chart-line" chart-data="data"
+                chart-labels="labels" chart-legend="false" chart-series="series"
+                chart-click="onClick">
+        </canvas>
+        <chart-legend>
+          <ul class="line-legend">
+            <li>
+              <span class="line-legend-icon" style="background-color:#11c1f3"></span>
+              <span class="line-legend-text">Weight</span>
+            </li>
+          </ul>
+        </chart-legend>
+      </div>
+    </div>
+      </div>
+
+    <!--lastmonth Graph-->
+      <div data-ng-if="lastmonthclicked">
+    <div class="row padding responsive-sm" ng-controller="profileLastMonthCtrl">
+      <div class="chart-container" style="width: 100%;">
+        <canvas id="line3" class="chart chart-line" chart-data="data"
+                chart-labels="labels" chart-legend="false" chart-series="series"
+                chart-click="onClick">
+        </canvas>
+        <chart-legend>
+          <ul class="line-legend">
+            <li>
+              <span class="line-legend-icon" style="background-color:#11c1f3"></span>
+              <span class="line-legend-text">Weight</span>
+            </li>
+          </ul>
+        </chart-legend>
+      </div>
+    </div>
+      </div>
+
+    <!--meanyears Graph-->
+      <div data-ng-if="meanyearsclicked">
+    <div class="row padding responsive-sm" ng-controller="profileMeanYearsCtrl">
+      <div class="chart-container" style="width: 100%;">
+        <canvas id="line4" class="chart chart-line" chart-data="data"
+                chart-labels="labels" chart-legend="false" chart-series="series"
+                chart-click="onClick">
+        </canvas>
+        <chart-legend>
+          <ul class="line-legend">
+            <li>
+              <span class="line-legend-icon" style="background-color:#11c1f3"></span>
+              <span class="line-legend-text">Weight</span>
+            </li>
+          </ul>
+        </chart-legend>
+      </div>
+    </div>
+        </div>
+      </div>
   </ion-content>
 </ion-view>
