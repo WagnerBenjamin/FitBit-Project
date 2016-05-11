@@ -27,14 +27,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
 }])
 
-  .controller("OrientationCtrl", function($scope){
-
-  })
-
-  .controller("profileDefaultCtrl",function ($profileDefault,$scope) {
+  .controller("profileDefaultCtrl",function (profileDefault,$scope) {
     profileDefault.getData(function (data) {
       $scope.data = [
-        data["weight_hist"][0]["Weight"], data["weight_hist"][1]["Weight"], data["weight_hist"][2]["Weight"], data["weight_hist"][3]["Weight"], data["weight_hist"][4]["Weight"], data["weight_hist"][5]["Weight"], data["weight_hist"][6]["Weight"]
+        data["weight_hist"][0]["weight"], data["weight_hist"][1]["weight"], data["weight_hist"][2]["weight"], data["weight_hist"][3]["weight"], data["weight_hist"][4]["weight"], data["weight_hist"][5]["weight"], data["weight_hist"][6]["weight"]
       ];
       $scope.labels = [
         "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
@@ -46,8 +42,8 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         console.log(points, evt);
       };
 
-      document.getElementById("weightWidget").textContent = data["weight_lastday"][0]["Weight"];
-      document.getElementById("bmiWidget").textContent = data["bmi_actual"][0]["BMI"];
+      document.getElementById("weightWidget").textContent = data["weight_hist"][6]["weight"];
+      document.getElementById("bmiWidget").textContent = data["bmi_actual"][0]["bmi"];
     })
   })
 
