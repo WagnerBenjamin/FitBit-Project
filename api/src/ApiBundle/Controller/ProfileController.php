@@ -108,6 +108,42 @@ class ProfileController extends Controller
         $data = array(
             'lastyear' => $data,
         );
+
+        /*
+         * C'est WTF les valeurs
+         *
+        $arrweight[] = array();
+        $index = 0;
+        $tmpWeight = null;
+        $nbrJour = 0;
+        $tmp = null;
+        foreach($weight as $dataset){
+            if($tmpWeight  == null){
+                $tmp = $dataset["date"]->format("Y-m");
+                $tmpWeight = $dataset["weight"];
+                //var_dump($tmpWeight);
+                $nbrJour++;
+            }elseif($tmp == $dataset["date"]->format("Y-m")){
+                var_dump($tmpWeight + $dataset["weight"]);
+                $tmpWeight = $tmpWeight + $dataset["weight"];
+                $nbrJour++;
+            }else{
+                //var_dump($tmpWeight, $nbrJour);
+                $tmpWeight /= $nbrJour;
+                $arrweight[$index] = array("date" => $tmp, "weight" => $tmpWeight);
+                $nbrJour = 0;
+                $tmpWeight = 0;
+
+                $tmp = $dataset["date"]->format("Y-m");
+                $tmpWeight = $tmpWeight + $dataset["weight"];
+                $index++;
+                $nbrJour++;
+            }
+            $tmpWeight /= $nbrJour;
+            $arrweight[$index] = array("date" => $tmp, "weight" => $tmpWeight);
+        }
+        var_dump($arrweight);*/
+
         $data = json_encode($data);
         //return new Response($this->render('ApiBundle:Test:index.html.twig', array('data' => $data)));
         return new Response($data);

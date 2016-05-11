@@ -59,52 +59,6 @@ class DatasetsRepository extends EntityRepository
         return $qb->getQuery()->getResult();
     }
 
-    public function getPerfDefault()
-    {
-        $qb = $this->_em->createQueryBuilder()
-            ->select('d.date, d.steps, d.floors, d.distance, d.calories')
-            ->from($this->_entityName, 'd')
-            ->where("d.date BETWEEN DATE_SUB(:end, 6, 'day') AND :end")
-            ->setParameter('end', date('2016-03-31'))
-            ->orderBy('d.id');
-
-        return $qb->getQuery()->getResult();
-    }
-
-    public function getPerfLMonth()
-    {
-        $qb = $this->_em->createQueryBuilder()
-            ->select('avg(d.steps), avg(d.floors), avg(d.distance), avg(d.calories)')
-            ->from($this->_entityName, 'd')
-            ->where("d.date BETWEEN DATE_SUB(:end, 1, 'MONTH') AND :end")
-            ->setParameter('end', date('2016-03-31'))
-            ->orderBy('d.id');
-
-        return $qb->getQuery()->getResult();
-    }
-
-    public function getPerfLYear()
-    {
-        $qb = $this->_em->createQueryBuilder()
-            ->select('avg(d.steps), avg(d.floors), avg(d.distance), avg(d.calories)')
-            ->from($this->_entityName, 'd')
-            ->where("d.date BETWEEN DATE_SUB(:end, 12, 'MONTH') AND :end")
-            ->setParameter('end', date('2016-03-31'))
-            ->orderBy('d.id');
-
-        return $qb->getQuery()->getResult();
-    }
-
-    public function getPerfAllYear()
-    {
-        $qb = $this->_em->createQueryBuilder()
-            ->select('d.date, avg(d.steps), avg(d.floors), avg(d.distance), avg(d.calories)')
-            ->from($this->_entityName, 'd')
-            ->orderBy('d.id');
-
-        return $qb->getQuery()->getResult();
-    }
-
     public function getWeightHistLastYear()
     {
         $parsed_date = date_parse($this->now);
@@ -114,5 +68,143 @@ class DatasetsRepository extends EntityRepository
             ->from($this->_entityName, 'd')
             ->where("d.date LIKE :year")
             ->setParameter('year', $year . '-%');
+
+        return $qb->getQuery()->getResult();
+    }
+
+    public function getPerfDefault()
+    {
+        $qb = $this->_em->createQueryBuilder()
+            ->select('SUBSTRING(d.date, 1, 9) as date, d.steps, d.floors, d.distance, d.calories')
+            ->from($this->_entityName, 'd')
+            ->where("d.date BETWEEN DATE_SUB(:end, 6, 'day') AND :end")
+            ->setParameter('end', date('2016-03-31'))
+            ->orderBy('d.id');
+
+        return $qb->getQuery()->getResult();
+    }
+
+    public function getPerfThisMonth()
+    {
+        $qb = $this->_em->createQueryBuilder()
+            ->select('SUBSTRING(d.date, 1, 7) as date, avg(d.steps) as steps, avg(d.floors) as floors, avg(d.distance) as distance, avg(d.calories) as calories')
+            ->from($this->_entityName, 'd')
+            ->where("d.date BETWEEN DATE_SUB(:end, 1, 'MONTH')+1 AND :end")
+            ->setParameter('end', date('2016-03-31'))
+            ->orderBy('d.id');
+
+        return $qb->getQuery()->getResult();
+    }
+
+    public function getPerfMonth($monthBehind = 2)
+    {
+        $qb = $this->_em->createQueryBuilder()
+            ->select('SUBSTRING(d.date, 1, 7) as date, avg(d.steps) as steps, avg(d.floors) as floors, avg(d.distance) as distance, avg(d.calories) as calories')
+            ->from($this->_entityName, 'd')
+            ->where("d.date BETWEEN DATE_SUB(:end, $monthBehind, 'MONTH')+1 AND DATE_SUB(:end, '$monthBehind-1', 'MONTH')")
+            ->setParameter('end', date('2016-03-31'))
+            ->orderBy('d.id');
+
+        return $qb->getQuery()->getResult();
+    }
+
+    public function getPerfLYear()
+    {
+        $arr = array(
+            $this->getPerfThisMonth(),
+            $this->getPerfMonth(2),
+            $this->getPerfMonth(3),
+        );
+
+        return $arr;
+    }
+
+    public function getPerfYear($year){
+        $qb = $this->_em->createQueryBuilder()
+            ->select('SUBSTRING(d.date, 1, 4) as date, avg(d.steps) as steps, avg(d.floors) as floors, avg(d.distance) as distance, avg(d.calories) as calories')
+            ->from($this->_entityName, 'd')
+            ->where("d.date LIKE '$year%'")
+            ->orderBy('d.id');
+
+        return $qb->getQuery()->getResult();
+    }
+
+    public function getPerfAllYear()
+    {
+        $arr = array(
+            $this->getPerfYear("2016"),
+            $this->getPerfYear("2015"),
+            $this->getPerfYear("2014")
+        );
+
+        return $arr;
+    }
+
+    public function getActDefault()
+    {
+        $qb = $this->_em->createQueryBuilder()
+            ->select('SUBSTRING(d.date, 1, 9) as date, d.sedentary, d.mobile, d.active, d.veryActive')
+            ->from($this->_entityName, 'd')
+            ->where("d.date BETWEEN DATE_SUB(:end, 6, 'day') AND :end")
+            ->setParameter('end', date('2016-03-31'))
+            ->orderBy('d.id');
+
+        return $qb->getQuery()->getResult();
+    }
+
+    public function getActThisMonth()
+    {
+        $qb = $this->_em->createQueryBuilder()
+            ->select('SUBSTRING(d.date, 1, 9) as date, d.sedentary, d.mobile, d.active, d.veryActive')
+            ->from($this->_entityName, 'd')
+            ->where("d.date BETWEEN DATE_SUB(:end, 1, 'MONTH')+1 AND :end")
+            ->setParameter('end', date('2016-03-31'))
+            ->orderBy('d.id');
+
+        return $qb->getQuery()->getResult();
+    }
+
+    public function getActMonth($monthBehind = 2)
+    {
+        $qb = $this->_em->createQueryBuilder()
+            ->select('SUBSTRING(d.date, 1, 7) as date, avg(d.sedentary) as sedentary, avg(d.mobile) as mobile, avg(d.active) as active, avg(d.veryActive) as very_active')
+            ->from($this->_entityName, 'd')
+            ->where("d.date BETWEEN DATE_SUB(:end, $monthBehind, 'MONTH')+1 AND DATE_SUB(:end, '$monthBehind-1', 'MONTH')")
+            ->setParameter('end', date('2016-03-31'))
+            ->orderBy('d.id');
+
+        return $qb->getQuery()->getResult();
+    }
+
+    public function getActLYear()
+    {
+        $arr = array(
+            $this->getActThisMonth(),
+            $this->getActMonth(2),
+            $this->getActMonth(3),
+        );
+
+        return $arr;
+    }
+
+    public function getActYear($year){
+        $qb = $this->_em->createQueryBuilder()
+            ->select('SUBSTRING(d.date, 1, 7) as date, avg(d.sedentary) as sedentary, avg(d.mobile) as mobile, avg(d.active) as active, avg(d.veryActive) as very_active')
+            ->from($this->_entityName, 'd')
+            ->where("d.date LIKE '$year%'")
+            ->orderBy('d.id');
+
+        return $qb->getQuery()->getResult();
+    }
+
+    public function getActAllYear()
+    {
+        $arr = array(
+            $this->getActYear("2016"),
+            $this->getActYear("2015"),
+            $this->getActYear("2014")
+        );
+
+        return $arr;
     }
 }
