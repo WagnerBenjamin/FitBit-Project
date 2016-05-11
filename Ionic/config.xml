@@ -16,6 +16,7 @@
   <author email="benjamin.wagner@ynov.com" href="http://example.com.com/">
     Benjamin Wagner
   </author>
+  <allow-navigation href="*" />
   <content src="index.html"/>
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>

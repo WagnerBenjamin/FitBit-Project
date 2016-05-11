@@ -26,25 +26,28 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
   $ionicConfigProvider.tabs.position('bottom'); // other values: top
 
 }])
-  
+
+
+
+
   //activity_default
-  .controller("activityDefaultCtrl",function ($scope,$http) {
-    $http.get('datasets/activity/activity_default.JSON').success(function (data) {
+  .controller("activityDefaultCtrl",function (activityDefault,$scope) {
+    activityDefault.getData(function (data) {
+
       $scope.data = [
-        [data["activity_hist"][0]["Sedentary"],data["activity_hist"][1]["Sedentary"],data["activity_hist"][2]["Sedentary"],data["activity_hist"][3]["Sedentary"],data["activity_hist"][4]["Sedentary"],data["activity_hist"][5]["Sedentary"],data["activity_hist"][6]["Sedentary"]],
-        [data["activity_hist"][0]["Mobile"],data["activity_hist"][1]["Mobile"],data["activity_hist"][2]["Mobile"],data["activity_hist"][3]["Mobile"],data["activity_hist"][4]["Mobile"],data["activity_hist"][5]["Mobile"],data["activity_hist"][6]["Mobile"]],
-        [data["activity_hist"][0]["Active"],data["activity_hist"][1]["Active"],data["activity_hist"][2]["Active"],data["activity_hist"][3]["Active"],data["activity_hist"][4]["Active"],data["activity_hist"][5]["Active"],data["activity_hist"][6]["Active"]],
-        [data["activity_hist"][0]["Very_Active"],data["activity_hist"][1]["Very_Active"],data["activity_hist"][2]["Very_Active"],data["activity_hist"][3]["Very_Active"],data["activity_hist"][4]["Very_Active"],data["activity_hist"][5]["Very_Active"],data["activity_hist"][6]["Very_Active"]]
+        [data["activity_hist"][0]["Sedentary"], data["activity_hist"][1]["Sedentary"], data["activity_hist"][2]["Sedentary"], data["activity_hist"][3]["Sedentary"], data["activity_hist"][4]["Sedentary"], data["activity_hist"][5]["Sedentary"], data["activity_hist"][6]["Sedentary"]],
+        [data["activity_hist"][0]["Mobile"], data["activity_hist"][1]["Mobile"], data["activity_hist"][2]["Mobile"], data["activity_hist"][3]["Mobile"], data["activity_hist"][4]["Mobile"], data["activity_hist"][5]["Mobile"], data["activity_hist"][6]["Mobile"]],
+        [data["activity_hist"][0]["Active"], data["activity_hist"][1]["Active"], data["activity_hist"][2]["Active"], data["activity_hist"][3]["Active"], data["activity_hist"][4]["Active"], data["activity_hist"][5]["Active"], data["activity_hist"][6]["Active"]],
+        [data["activity_hist"][0]["Very_Active"], data["activity_hist"][1]["Very_Active"], data["activity_hist"][2]["Very_Active"], data["activity_hist"][3]["Very_Active"], data["activity_hist"][4]["Very_Active"], data["activity_hist"][5]["Very_Active"], data["activity_hist"][6]["Very_Active"]]
       ];
       $scope.labels = [
-        "2016-03-25","2016-03-26","2016-03-27","2016-03-28","2016-03-29","2016-03-30","2016-03-31"
+        "2016-03-25", "2016-03-26", "2016-03-27", "2016-03-28", "2016-03-29", "2016-03-30", "2016-03-31"
       ];
       $scope.series = [
-        "Sedentary","Mobile","Active","Very_Active"
+        "Sedentary", "Mobile", "Active", "Very_Active"
       ];
     })
   })
-
   //activity_means_years
   .controller("activityCtrl", function ($scope,$http) {
     $http.get('datasets/activity/activity_mean_years.JSON').success(function (data) {
@@ -94,6 +97,27 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     };
   })
 })
+  //sleep_default
+
+  .controller("SleepDefaultCtrl",function (sleepDefault,$scope) {
+    sleepDefault.getData(function (data) {
+      $scope.data = [
+        [data["sleep_hist"][0]["sleeping"], data["sleep_hist"][1]["sleeping"], data["sleep_hist"][2]["sleeping"], data["sleep_hist"][3]["sleeping"], data["sleep_hist"][4]["sleeping"], data["sleep_hist"][5]["sleeping"], data["sleep_hist"][6]["sleeping"]],
+        [data["sleep_hist"][0]["awake"], data["sleep_hist"][1]["awake"], data["sleep_hist"][2]["awake"], data["sleep_hist"][3]["awake"], data["sleep_hist"][4]["awake"], data["sleep_hist"][5]["awake"], data["sleep_hist"][6]["awake"]],
+        [data["sleep_hist"][0]["awakening"], data["sleep_hist"][1]["awakening"], data["sleep_hist"][2]["awakening"], data["sleep_hist"][3]["awakening"], data["sleep_hist"][4]["awakening"], data["sleep_hist"][5]["awakening"], data["sleep_hist"][6]["awakening"]],
+        [data["sleep_hist"][0]["inBed"], data["sleep_hist"][1]["inBed"], data["sleep_hist"][2]["inBed"], data["sleep_hist"][3]["inBed"], data["sleep_hist"][4]["inBed"], data["sleep_hist"][5]["inBed"], data["sleep_hist"][6]["inBed"]]
+      ];
+      $scope.labels = [
+        "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
+      ];
+      $scope.series = [
+        "Sleeping",
+        "Awake",
+        "Awakening",
+        "In_Bed"
+      ];
+    })
+  })
 
   //sleep_means_years
   .controller("sleepCtrl",function ($scope,$http) {
