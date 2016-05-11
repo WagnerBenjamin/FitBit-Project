@@ -53,12 +53,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
       $scope.data = [];
       var $tmp = [];
-      console.log(data["activity_hist"][1]["Sedentary"]);
       for(var i = 0; i <= 30; i++){
-        $tmp.push(data["weight_hist"][j]["weight"]);
+        $tmp.push(data["weight_hist"][i]["weight"]);
       }
       $scope.data = [$tmp];
-      console.log($scope.data);
 
       /*$scope.data = [
         [data["weight_hist"][0]["weight"], data["weight_hist"][1]["weight"], data["weight_hist"][2]["weight"], data["weight_hist"][3]["weight"], data["weight_hist"][4]["weight"], data["weight_hist"][5]["weight"], data["weight_hist"][6]["weight"],
@@ -68,7 +66,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         data["weight_hist"][30]["weight"]]
       ];*/
       $scope.labels = [
-        "03-01", "03-02", "03-03", "03-04", "03-05", "03-06", "03-07", "03-08", "03-09", "03-10", "03-11", "03-12", "03-13", "03-14", "03-15", "03-16", "03-17","03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
+        "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17","18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"
       ];
       $scope.series = [
         "Weight"
@@ -82,13 +80,16 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
   .controller("profileLastYearCtrl",function (profileLastYear,$scope) {
     profileLastYear.getData(function (data) {
       $scope.data = [
-        data["lastyear"][0]["weight"],data["lastyear"][1]["weight"],data["lastyear"][3]["weight"]
+        [data["lastyear"][0]["weight"],data["lastyear"][1]["weight"],data["lastyear"][2]["weight"]]
       ];
       $scope.labels = ["2016-01","2016-02","2016-03"];
 
       $scope.series = [
         "weight"
       ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
     })
   })
 
