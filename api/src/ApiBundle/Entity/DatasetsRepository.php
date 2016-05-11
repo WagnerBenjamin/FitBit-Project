@@ -137,9 +137,22 @@ class DatasetsRepository extends EntityRepository
             ->from($this->_entityName, 'd')
             ->where("d.date BETWEEN DATE_SUB(:end, 1, 'MONTH')+1 AND :end")
             ->setParameter('end', date('2016-03-31'))
-            ->orderBy('d.id')->getQuery()->getResult();
-        $m2 = $this->getPerfMonth(2);
-        $m3 = $this->getPerfMonth(3);
+            ->orderBy('d.id')
+            ->getQuery()->getResult();
+        $m2 = $this->_em->createQueryBuilder()
+            ->select('SUBSTRING(d.date, 1, 7) as date, avg(d.steps) as steps, avg(d.floors) as floors, avg(d.distance) as distance, avg(d.calories) as calories')
+            ->from($this->_entityName, 'd')
+            ->where("d.date BETWEEN DATE_SUB(:end, 2, 'MONTH')+1 AND DATE_SUB(:end, 1, 'MONTH')")
+            ->setParameter('end', date('2016-03-31'))
+            ->orderBy('d.id')
+            ->getQuery()->getResult();
+        $m3 = $this->_em->createQueryBuilder()
+            ->select('SUBSTRING(d.date, 1, 7) as date, avg(d.steps) as steps, avg(d.floors) as floors, avg(d.distance) as distance, avg(d.calories) as calories')
+            ->from($this->_entityName, 'd')
+            ->where("d.date BETWEEN DATE_SUB(:end, 3, 'MONTH')+1 AND DATE_SUB(:end, 2, 'MONTH')")
+            ->setParameter('end', date('2016-03-31'))
+            ->orderBy('d.id')
+            ->getQuery()->getResult();
         $arr[0] = $m3[0];
         $arr[1] = $m2[0];
         $arr[2] = $m1[0];
