@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="784bf468-0b84-41ca-9c7c-72a9e0e50028" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ionic/config.xml" afterPath="$PROJECT_DIR$/Ionic/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ionic/www/index.html" afterPath="$PROJECT_DIR$/Ionic/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ionic/www/js/app.js" afterPath="$PROJECT_DIR$/Ionic/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ionic/www/js/services.js" afterPath="$PROJECT_DIR$/Ionic/www/js/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ionic/www/templates/activity.html" afterPath="$PROJECT_DIR$/Ionic/www/templates/activity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ionic/www/templates/profile.html" afterPath="$PROJECT_DIR$/Ionic/www/templates/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ionic/www/templates/sleep.html" afterPath="$PROJECT_DIR$/Ionic/www/templates/sleep.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ionic/ionic.project" afterPath="$PROJECT_DIR$/Ionic/ionic.project" />
     </list>
     <ignored path="FitBit-Project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sleep.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sleep.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ionic/www/templates/sleep.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -70,6 +64,16 @@
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#3;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ionic.project" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Ionic/ionic.project">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,6 +113,7 @@
         <option value="$PROJECT_DIR$/Ionic/www/templates/activity.html" />
         <option value="$PROJECT_DIR$/Ionic/www/templates/sleep.html" />
         <option value="$PROJECT_DIR$/Ionic/www/js/app.js" />
+        <option value="$PROJECT_DIR$/Ionic/ionic.project" />
       </list>
     </option>
   </component>
@@ -267,12 +272,12 @@
       <option name="presentableId" value="Default" />
       <updated>1462940741159</updated>
       <workItem from="1462940742209" duration="16000" />
-      <workItem from="1462940784483" duration="10873000" />
+      <workItem from="1462940784483" duration="11165000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10889000" />
+    <option name="totallyTimeSpent" value="11181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -387,6 +392,14 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#3;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ionic/ionic.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
