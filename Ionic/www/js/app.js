@@ -225,7 +225,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       })
     })
 
-    .controller("sleepLastYearCtrl",function ($scope,$http) {
+    .controller("sleepLastYearCtrl",function ($scope,sleepLastYear) {
       sleepLastYear.getData(function (data) {
         $scope.data = [
           [data[0]["mean_sleeping"],data[1]["mean_sleeping"],data[2]["mean_sleeping"]],
@@ -251,7 +251,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     })
 
   //sleep_means_years
-  .controller("sleepMeanYearsCtrl",function ($scope,$http) {
+  .controller("sleepMeanYearsCtrl",function ($scope,sleepMeanYears) {
     sleepMeanYears.getData(function (data) {
     $scope.data = [
       [data[0]["mean_sleeping"],data[1]["mean_sleeping"],data[2]["mean_sleeping"],data[3]["mean_sleeping"],data[4]["mean_sleeping"],data[5]["mean_sleeping"],data[6]["mean_sleeping"]],
