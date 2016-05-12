@@ -5,6 +5,12 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
+// TODO: améliorer l'echelle des graphs
+// TODO: intégrer les graphs de performance
+// TODO: voir pour l'erreur au build
+// TODO: améliorer le code
+// TODO: fixer le problème de changement d'orientation
+// TODO: améliorer le css
 angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives','chart.js','angular-svg-round-progressbar'])
 
   .run(function($ionicPlatform) {
@@ -176,22 +182,22 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
   .controller("activityLastYearCtrl",function ($scope,activityLastYear) {
     activityLastYear.getData(function (data) {
-      /*$scope.data = [
-        [data["lastyear"][0]["sedentary"],data["lastyear"][1]["sedentary"],data["lastyear"][2]["sedentary"]],
-        [data["lastyear"][0]["mobile"],data["lastyear"][1]["mobile"],data["lastyear"][2]["mobile"]],
-        [data["lastyear"][0]["active"],data["lastyear"][1]["active"],data["lastyear"][2]["active"]],
-        [data["lastyear"][0]["very_active"],data["lastyear"][1]["very_active"],data["lastyear"][2]["very_active"]]
-      ];*/
 
-        $scope.data = [];
-        var arrName= ["sedentary", "mobile", "active", "veryActive"];
-        var tmp= [];
+       $scope.data = [];
+        arrName= ["sedentary", "mobile", "active", "veryActive"];
+        tmp= [];
         for(var i = 0; i < 4; i++){
-            for(var j = 0; j <= 2; j++){
-                tmp.push(data["lastyear"][j][arrName[i]]);
+          tmp2=[];
+          for(var j = 0; j <= 2; j++){
+                tmp2.push(data["lastyear"][j][arrName[i]]);
             }
+          tmp.push(tmp2);
         }
-        $scope.data = [tmp];
+        $scope.data = tmp;
+
+      $scope.labels = [
+        data["lastyear"][0]["date"],data["lastyear"][1]["date"],data["lastyear"][2]["date"]
+      ];
 
       $scope.series = [
         "Sedentary",
@@ -200,9 +206,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         "veryActive"
       ];
 
-      $scope.labels = [
-        data["lastyear"][0]["date"],data["lastyear"][1]["date"],data["lastyear"][2]["date"]
-      ];
       $scope.onClick = function (points, evt) {
         console.log(points, evt);
       };
@@ -219,14 +222,20 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       ];*/
 
         $scope.data = [];
-        var arrName= ["sedentary", "mobile", "active", "veryActive"];
-        var tmp= [];
+        arrName= ["sedentary", "mobile", "active", "veryActive"];
+        tmp= [];
         for(var i = 0; i < 4; i++){
-            for(var j = 0; j <= 6; j++){
-                tmp.push(data["activity_hist"][j][arrName[i]]);
+          tmp2=[];
+          for(var j = 0; j <= 6; j++){
+                tmp2.push(data["activity_hist"][j][arrName[i]]);
             }
+          tmp.push(tmp2);
         }
-        $scope.data = [tmp];
+        $scope.data = tmp;
+
+      $scope.labels = [
+        "2010","2011","2012","2013","2014","2015","2016"
+      ];
 
       $scope.series = [
         "Sedentary",
@@ -235,9 +244,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         "veryActive"
       ];
 
-      $scope.labels = [
-        "2010","2011","2012","2013","2014","2015","2016"
-      ];
+
       $scope.onClick = function (points, evt) {
         console.log(points, evt);
       };
@@ -293,14 +300,16 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         [data["perf_hist"][0]["calories"], data["perf_hist"][1]["calories"], data["perf_hist"][2]["calories"], data["perf_hist"][3]["calories"], data["perf_hist"][4]["calories"], data["perf_hist"][5]["calories"], data["perf_hist"][6]["calories"], data["perf_hist"][7]["calories"], data["perf_hist"][8]["calories"], data["perf_hist"][9]["calories"], data["perf_hist"][10]["calories"], data["perf_hist"][11]["calories"], data["perf_hist"][12]["calories"], data["perf_hist"][13]["calories"], data["perf_hist"][14]["calories"], data["perf_hist"][15]["calories"], data["perf_hist"][16]["calories"], data["perf_hist"][17]["calories"], data["perf_hist"][18]["calories"], data["perf_hist"][19]["calories"], data["perf_hist"][20]["calories"], data["perf_hist"][21]["calories"], data["perf_hist"][22]["calories"], data["perf_hist"][23]["calories"], data["perf_hist"][24]["calories"], data["perf_hist"][25]["calories"], data["perf_hist"][26]["calories"], data["perf_hist"][27]["calories"], data["perf_hist"][28]["calories"], data["perf_hist"][29]["calories"], data["perf_hist"][30]["calories"]]];
         */
         $scope.data = [];
-        var arrName= ["steps", "floors", "distance", "calories"];
-        var tmp= [];
+        arrName= ["steps", "floors", "distance", "calories"];
+        tmp= [];
         for(var i = 0; i < 4; i++){
-            for(var j = 0; j <= data.count()-1; j++){
-                tmp.push(data["perf_hist"][j][arrName[i]]);
+          tmp2=[];
+          for(var j = 0; j <= 30; j++){
+                tmp2.push(data["perf_hist"][j][arrName[i]]);
             }
+          tmp.push(tmp2);
         }
-        $scope.data = [tmp];
+        $scope.data = tmp;
 
         $scope.labels = [
         "03-01", "03-02", "03-03", "03-04", "03-05", "03-06", "03-07", "03-08", "03-09", "03-10", "03-11", "03-12", "03-13", "03-14", "03-15", "03-16", "03-17","03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
@@ -327,14 +336,16 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       ];*/
 
         $scope.data = [];
-        var arrName= ["steps", "floors", "distance", "calories"];
-        var tmp= [];
+        arrName= ["steps", "floors", "distance", "calories"];
+        tmp= [];
         for(var i = 0; i < 4; i++){
+            tmp2=[];
             for(var j = 0; j <= 2; j++){
-                tmp.push(data["lastyear"][j][arrName[i]]);
+                tmp2.push(data["lastyear"][j][arrName[i]]);
             }
+          tmp.push(tmp2);
         }
-        $scope.data = [tmp];
+        $scope.data = tmp;
 
       $scope.series = [
         "Steps",
@@ -362,12 +373,14 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         ];*/
 
         $scope.data = [];
-        var arrName= ["steps", "floors", "distance", "calories"];
-        var tmp= [];
+        arrName= ["steps", "floors", "distance", "calories"];
+        tmp= [];
         for(var i = 0; i < 4; i++){
+            tmp2=[];
             for(var j = 0; j <= 6; j++){
-                tmp.push(data["mean_perf_year"][j][arrName[i]]);
+                tmp2.push(data["mean_perf_year"][j][arrName[i]]);
             }
+          tmp.push(tmp2);
         }
         $scope.data = [tmp];
 

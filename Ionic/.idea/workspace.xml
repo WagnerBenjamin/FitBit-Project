@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="595a520a-56cd-4aab-abc9-6eb9b8d48332" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/generated/source/buildConfig/debug/org/apache/cordova/BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/bundles/debug/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/bundles/debug/aapt/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/bundles/debug/classes.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/AuthenticationToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CallbackContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/Config.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ConfigXmlParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$4$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaArgs.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaBridge.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaClientCertRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$8.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$9.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper$Result.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaDialogsHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaHttpAuthHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaInterfaceImpl$ActivityResultHolder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaInterfaceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaPlugin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaPreferences.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaResourceApi$OpenForReadResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaResourceApi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewEngine$Client.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewEngine$EngineView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewEngine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$EngineClient$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$EngineClient$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl$EngineClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CordovaWebViewImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/CoreAndroid.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ExposedJsApi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ICordovaClientCertRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ICordovaCookieManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ICordovaHttpAuthHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/LOG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$BridgeMode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$JsMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$LoadUrlBridgeMode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$NoOpBridgeMode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode$OnlineEventsBridgeModeDelegate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue$OnlineEventsBridgeMode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/NativeToJsMessageQueue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PluginEntry.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PluginManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PluginResult$Status.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/PluginResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/ResumeCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/Whitelist$URLPattern.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/Whitelist.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemCookieManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemExposedJsApi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebChromeClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebViewClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebViewEngine$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebViewEngine$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/classes/debug/org/apache/cordova/engine/SystemWebViewEngine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/compileDebugAidl/dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/CordovaLib/build/outputs/aar/CordovaLib-debug.aar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/generated/source/buildConfig/debug/com/ionicframework/starter/BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/generated/source/r/debug/com/ionicframework/starter/R.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/cordova-js-src/android/nativeapiprovider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/cordova-js-src/android/promptbasednativeapi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/cordova-js-src/exec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/cordova-js-src/platform.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/cordova-js-src/plugin/android/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/cordova.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/datasets/activity/activity_default.JSON" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/datasets/activity/activity_lastmonth.JSON" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/datasets/activity/activity_lastyear.JSON" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/datasets/activity/activity_mean_years.JSON" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/datasets/performance/performance_default.JSON" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/datasets/performance/performance_lastmonth.JSON" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/datasets/performance/performance_lastyear.JSON" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/datasets/performance/performance_means_years.JSON" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/datasets/profile/profile_default.JSON" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/datasets/profile/profile_lastmounth.JSON" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/datasets/profile/profile_lastyear.JSON" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/datasets/profile/profile_means_weight.JSON" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/datasets/sleep/sleep_default.JSON" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/datasets/sleep/sleep_lastmonth.JSON" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/datasets/sleep/sleep_means_years.JSON" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/img/person1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/img/person2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/img/person3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/js/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/js/controllers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/js/directives.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/js/routes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/js/services.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/Chart.js/Chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/Chart.js/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-animate/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-animate/angular-animate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-animate/angular-animate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-animate/angular-animate.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-animate/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-animate/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-animate/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/Dockerfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/ISSUE_TEMPLATE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/PULL_REQUEST_TEMPLATE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/angular-chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/angular-chart.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/dist/angular-chart.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/dist/angular-chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/dist/angular-chart.js.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/dist/angular-chart.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/dist/angular-chart.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/dist/angular-chart.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/dist/angular-chart.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/gulpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-chart.js/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-sanitize/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-sanitize/angular-sanitize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-sanitize/angular-sanitize.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-sanitize/angular-sanitize.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-sanitize/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-sanitize/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-sanitize/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-svg-round-progressbar/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-svg-round-progressbar/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-svg-round-progressbar/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-svg-round-progressbar/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-svg-round-progressbar/build/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-svg-round-progressbar/build/roundProgress.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-svg-round-progressbar/build/roundProgress.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-svg-round-progressbar/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-svg-round-progressbar/src/module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-svg-round-progressbar/src/roundProgress.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-svg-round-progressbar/src/roundProgressConfig.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-svg-round-progressbar/src/roundProgressService.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-svg-round-progressbar/src/shim.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/api/angular-ui-router.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/release/angular-ui-router.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/release/angular-ui-router.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/src/common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/src/resolve.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/src/state.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/src/stateDirectives.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/src/stateFilters.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/src/templateFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/src/urlMatcherFactory.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/src/urlRouter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/src/view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/src/viewDirective.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular-ui-router/src/viewScroll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular/angular-csp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular/angular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular/angular.min.js.gzip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular/angular.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/angular/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/highcharts-ng/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/highcharts-ng/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/highcharts-ng/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/highcharts-ng/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/highcharts-ng/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/highcharts-ng/dist/highcharts-ng.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/highcharts-ng/dist/highcharts-ng.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/highcharts-ng/karma.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/highcharts-ng/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/css/ionic.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/css/ionic.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/fonts/ionicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/fonts/ionicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/fonts/ionicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/fonts/ionicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/ionic-angular.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/ionic-angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/ionic.bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/ionic.bundle.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/ionic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/ionic.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_action-sheet.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_animations.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_backdrop.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_badge.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_bar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_button-bar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_button.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_checkbox.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_form.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_items.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_loading.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_menu.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_modal.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_platform.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_popover.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_popup.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_progress.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_radio.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_range.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_refresher.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_reset.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_scaffolding.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_select.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_slide-box.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_slides.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_spinner.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_tabs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_toggle.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_transitions.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_type.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_util.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/ionic.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/ionicons/_ionicons-font.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/ionicons/_ionicons-icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/ionicons/_ionicons-variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/ionicons/ionicons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/scss/tsconfig.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionic/version.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/ionicuirouter/ionicUIRouter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/AUTHORS.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/dist/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/dist/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/dist/jquery.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/dist/jquery.slim.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/dist/jquery.slim.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/dist/jquery.slim.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/sizzle/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/sizzle/dist/sizzle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/sizzle/dist/sizzle.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/sizzle/dist/sizzle.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/ajax/jsonp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/ajax/load.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/ajax/parseJSON.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/ajax/parseXML.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/ajax/script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/ajax/var/location.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/ajax/var/nonce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/ajax/var/rquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/ajax/xhr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/attributes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/attributes/attr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/attributes/classes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/attributes/prop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/attributes/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/attributes/val.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/callbacks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/core/DOMEval.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/core/access.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/core/init.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/core/parseHTML.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/core/ready.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/core/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/core/var/rsingleTag.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/css.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/css/addGetHookIf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/css/adjustCSS.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/css/curCSS.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/css/defaultDisplay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/css/hiddenVisibleSelectors.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/css/showHide.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/css/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/css/var/cssExpand.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/css/var/getStyles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/css/var/isHidden.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/css/var/rmargin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/css/var/rnumnonpx.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/css/var/swap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/data/Data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/data/accepts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/data/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/data/var/acceptData.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/data/var/dataPriv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/data/var/dataUser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/deferred.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/deferred/exceptionHook.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/deprecated.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/dimensions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/effects.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/effects/Tween.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/effects/animatedSelector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/effects/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/event.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/event/ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/event/alias.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/event/focusin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/event/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/event/trigger.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/exports/amd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/exports/global.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/intro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/manipulation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/manipulation/_evalUrl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/manipulation/buildFragment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/manipulation/createSafeFragment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/manipulation/getAll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/manipulation/setGlobalEval.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/manipulation/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/manipulation/var/nodeNames.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/manipulation/var/rcheckableType.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/manipulation/var/rleadingWhitespace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/manipulation/var/rscriptType.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/manipulation/var/rtagName.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/manipulation/wrapMap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/offset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/outro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/queue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/queue/delay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/selector-native.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/selector-sizzle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/selector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/serialize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/traversing.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/traversing/findFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/traversing/var/dir.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/traversing/var/rneedsContext.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/traversing/var/siblings.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/var/arr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/var/class2type.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/var/concat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/var/deletedIds.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/var/document.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/var/documentElement.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/var/hasOwn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/var/indexOf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/var/pnum.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/var/push.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/var/rcssNum.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/var/rnotwhite.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/var/slice.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/var/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/var/toString.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/lib/jquery/src/wrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/templates/activity.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/templates/performance.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/templates/profile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/templates/sleep.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/assets/debug/www/templates/tabsController.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/multi/values.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-land-hdpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-land-ldpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-land-mdpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-land-xhdpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-land-xxhdpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-land-xxxhdpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-ldpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-port-hdpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-port-ldpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-port-mdpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-port-xhdpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-port-xxhdpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-port-xxxhdpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/drawable-xxxhdpi-v4.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/blame/res/debug/single/xml.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/classes/debug/com/ionicframework/starter/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/classes/debug/com/ionicframework/starter/MainActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/classes/debug/com/ionicframework/starter/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/classes/debug/com/ionicframework/starter/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/classes/debug/com/ionicframework/starter/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/classes/debug/com/ionicframework/starter/R$xml.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/classes/debug/com/ionicframework/starter/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/dex-cache/cache.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/aapt/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/incremental/compileDebugAidl/dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_5778502f4754d93967aec5ffb55ccb9fa6535d89.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/pre-dexed/debug/debug_c1aba1b16a4b33c2fffafa8d2959e09f9b549871.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-land-hdpi-v4/screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-land-ldpi-v4/screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-land-mdpi-v4/screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-land-xhdpi-v4/screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-land-xxhdpi-v4/screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-land-xxxhdpi-v4/screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-ldpi-v4/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-mdpi-v4/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-port-hdpi-v4/screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-port-ldpi-v4/screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-port-mdpi-v4/screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-port-xhdpi-v4/screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-port-xxhdpi-v4/screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-port-xxxhdpi-v4/screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/values/values.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/merged/debug/xml/config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/res/resources-debug.ap_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/symbols/debug/R.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/outputs/apk/android-debug-unaligned.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/outputs/apk/android-debug.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/gradle/wrapper/gradle-wrapper.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/gradlew" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/js/app.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/js/app.js" />
+    </list>
+    <ignored path="ourApp.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ourApp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sleep.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/sleep.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="128" column="74" selection-start-line="128" selection-start-column="74" selection-end-line="128" selection-end-column="74" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#3;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#3;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#3;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#3;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ionic.project" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ionic.project">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/activity.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="101" column="56" selection-start-line="101" selection-start-column="56" selection-end-line="101" selection-end-column="56" />
+              <folding>
+                <marker date="1463002350108" expanded="true" signature="11259:11272" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="performance.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/performance.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="100" column="51" selection-start-line="100" selection-start-column="51" selection-end-line="100" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.048211">
+              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/templates/profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="143" column="10" selection-start-line="143" selection-start-column="10" selection-end-line="143" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/www/templates/login.html" />
+        <option value="$PROJECT_DIR$/www/templates/signup.html" />
+        <option value="$PROJECT_DIR$/www/js/directives.js" />
+        <option value="$PROJECT_DIR$/datasets/profile_default.JSON" />
+        <option value="$PROJECT_DIR$/www/js/services.js" />
+        <option value="$PROJECT_DIR$/www/css/style.css" />
+        <option value="$PROJECT_DIR$/www/datasets/activity/activity_mean_years.JSON" />
+        <option value="$PROJECT_DIR$/www/datasets/profile/profile_means_weight.JSON" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/www/js/slidingTabsDirective.js" />
+        <option value="$PROJECT_DIR$/www/css/slidingTabs.css" />
+        <option value="$PROJECT_DIR$/www/templates/tabsController.html" />
+        <option value="$PROJECT_DIR$/.io-config.json" />
+        <option value="$PROJECT_DIR$/www/js/routes.js" />
+        <option value="$PROJECT_DIR$/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/platforms/android/assets/www/index.html" />
+        <option value="$PROJECT_DIR$/www/lib/Chart.js/Chart.min.js" />
+        <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/templates/activity.html" />
+        <option value="$PROJECT_DIR$/www/templates/performance.html" />
+        <option value="$PROJECT_DIR$/www/templates/profile.html" />
+        <option value="$PROJECT_DIR$/www/templates/sleep.html" />
+        <option value="$PROJECT_DIR$/ionic.project" />
+        <option value="$PROJECT_DIR$/www/js/app.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="243" />
+    <option name="y" value="102" />
+    <option name="width" value="1595" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ourApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ourApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ourApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ourApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ourApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ionic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="editor.config.accepted" value="true" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="146" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="147" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="151" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="945" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="146" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="147" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="151" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="945" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="595a520a-56cd-4aab-abc9-6eb9b8d48332" name="Default" comment="" />
+      <created>1462285899624</created>
+      <option name="number" value="Default" />
+      <updated>1462285899624</updated>
+      <workItem from="1462657153316" duration="1984000" />
+      <workItem from="1462662640063" duration="31000" />
+      <workItem from="1462662680299" duration="793000" />
+      <workItem from="1462663589335" duration="160000" />
+      <workItem from="1462663756944" duration="219000" />
+      <workItem from="1462725222520" duration="9113000" />
+      <workItem from="1462798829908" duration="176000" />
+      <workItem from="1462799059926" duration="227000" />
+      <workItem from="1462799357670" duration="213000" />
+      <workItem from="1462799579795" duration="611000" />
+      <workItem from="1462806106158" duration="774000" />
+      <workItem from="1462814876319" duration="1328000" />
+      <workItem from="1462849095778" duration="8000" />
+      <workItem from="1462875956474" duration="14401000" />
+      <workItem from="1462903217936" duration="334000" />
+      <workItem from="1462904009067" duration="105000" />
+      <workItem from="1462910055051" duration="5079000" />
+      <workItem from="1462920885164" duration="4766000" />
+      <workItem from="1462956975350" duration="5172000" />
+    </task>
+    <task id="LOCAL-00001" summary="Modifs">
+      <created>1462663676162</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1462663676162</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Modifications général">
+      <created>1462912998394</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1462912998394</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="243" y="102" width="1595" height="1000" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25299507" sideWeight="0.5048077" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22243714" sideWeight="0.49519232" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2412231" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Modifs" />
+    <MESSAGE value="Modifications général" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifications général" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/www/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/ionic/js/ionic.bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/angular-chart.js/angular-chart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/datasets/activity/activity_default.JSON">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/datasets/performance/performance_means_years.JSON">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/datasets/sleep/sleep_means_years.JSON">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/datasets/activity/activity_lastyear.JSON">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/datasets/activity/activity_lastmonth.JSON">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/datasets/performance/performance_default.JSON">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/angular-animate/angular-animate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3319" column="43" selection-start-line="3319" selection-start-column="34" selection-end-line="3319" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.bowerrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/fetch.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/cordova/lib/emulator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/platform_www/cordova.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/tabsController.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/assets/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/datasets/activity/activity_mean_years.JSON">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/datasets/profile/profile_means_weight.JSON">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/datasets/profile/profile_default.JSON">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/datasets/sleep/sleep_default.JSON">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="602" selection-start-line="0" selection-start-column="602" selection-end-line="0" selection-end-column="605" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/datasets/sleep/sleep_lastmonth.JSON">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/datasets/profile/profile_lastyear.JSON">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/datasets/profile/profile_lastmounth.JSON">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/popover.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/performance.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="100" column="51" selection-start-line="100" selection-start-column="51" selection-end-line="100" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/sleep.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="128" column="74" selection-start-line="128" selection-start-column="74" selection-end-line="128" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#3;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#3;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#3;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#3;n#ul#0;n#chart-legend#0;n#div#0;n#div#0;n#div#4;n#div#0;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/activity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="101" column="56" selection-start-line="101" selection-start-column="56" selection-end-line="101" selection-end-column="56" />
+          <folding>
+            <marker date="1463002350108" expanded="true" signature="11259:11272" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.048211">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="143" column="10" selection-start-line="143" selection-start-column="10" selection-end-line="143" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
