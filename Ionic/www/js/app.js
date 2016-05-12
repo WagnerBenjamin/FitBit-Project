@@ -6,9 +6,7 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 // TODO: améliorer l'echelle des graphs
-// TODO: voir pour l'erreur au build
 // TODO: améliorer le code
-// TODO: fixer le problème de changement d'orientation
 // TODO: améliorer le css
 angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives','chart.js','angular-svg-round-progressbar'])
 
@@ -25,12 +23,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       StatusBar.styleDefault();
     }
   });
-    $ionicPlatform.ready(function() {
-      if(window.isTablet){
-        screen.unlockOrientation();
-      }else{ screen.lockOrientation('portrait');
-      }
-    });
 })
   .config(['$ionicConfigProvider', function($ionicConfigProvider) {
 

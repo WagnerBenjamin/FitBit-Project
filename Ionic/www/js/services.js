@@ -143,6 +143,7 @@ angular.module('app.services', [])
         $http.get('http://10.42.0.1/fitbit_api/api/web/profile').success(function(d) {
           callback(data = d);
         });
+
       }
     }
   };
