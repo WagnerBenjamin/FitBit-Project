@@ -18,9 +18,8 @@
   </author>
   <allow-navigation href="*" />
   <content src="index.html"/>
-  <access origin="*"/>
-
-  <allow-navigation href = "http://10.42.0.1/*" />
+  <access origin="*" subdomains="true"/>
+  <allow-navigation href = "http://*/*" />
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
@@ -28,7 +27,12 @@
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="3000"/>
-  <preference name="Orientation" value="portrait" />
+  <platform name="ios">
+    <preference name="Orientation" value="portrait" />
+  </platform>
+  <platform name="android">
+    <preference name="Orientation" value="portrait" />
+  </platform>
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
