@@ -6,10 +6,7 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 // TODO: améliorer l'echelle des graphs
-// TODO: intégrer les graphs de performance
-// TODO: voir pour l'erreur au build
 // TODO: améliorer le code
-// TODO: fixer le problème de changement d'orientation
 // TODO: améliorer le css
 angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives','chart.js','angular-svg-round-progressbar'])
 
@@ -26,12 +23,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       StatusBar.styleDefault();
     }
   });
-    $ionicPlatform.ready(function() {
-      if(window.isTablet){
-        screen.unlockOrientation();
-      }else{ screen.lockOrientation('portrait');
-      }
-    });
 })
   .config(['$ionicConfigProvider', function($ionicConfigProvider) {
 
@@ -293,13 +284,13 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
   .controller("performanceLastMonthCtrl",function (performanceLastMonth,$scope) {
     performanceLastMonth.getData(function (data) {
-      /*$scope.data = [
+      $scope.data = [
         [data["perf_hist"][0]["steps"], data["perf_hist"][1]["steps"], data["perf_hist"][2]["steps"], data["perf_hist"][3]["steps"], data["perf_hist"][4]["steps"], data["perf_hist"][5]["steps"], data["perf_hist"][6]["steps"], data["perf_hist"][7]["steps"], data["perf_hist"][8]["steps"], data["perf_hist"][9]["steps"], data["perf_hist"][10]["steps"], data["perf_hist"][11]["steps"], data["perf_hist"][12]["steps"], data["perf_hist"][13]["steps"], data["perf_hist"][14]["steps"], data["perf_hist"][15]["steps"], data["perf_hist"][16]["steps"], data["perf_hist"][17]["steps"], data["perf_hist"][18]["steps"], data["perf_hist"][19]["steps"], data["perf_hist"][20]["steps"], data["perf_hist"][21]["steps"], data["perf_hist"][22]["steps"], data["perf_hist"][23]["steps"], data["perf_hist"][24]["steps"], data["perf_hist"][25]["steps"], data["perf_hist"][26]["steps"], data["perf_hist"][27]["steps"], data["perf_hist"][28]["steps"], data["perf_hist"][29]["steps"], data["perf_hist"][30]["steps"]],
         [data["perf_hist"][0]["floors"], data["perf_hist"][1]["floors"], data["perf_hist"][2]["floors"], data["perf_hist"][3]["floors"], data["perf_hist"][4]["floors"], data["perf_hist"][5]["floors"], data["perf_hist"][6]["floors"], data["perf_hist"][7]["floors"], data["perf_hist"][8]["floors"], data["perf_hist"][9]["floors"], data["perf_hist"][10]["floors"], data["perf_hist"][11]["floors"], data["perf_hist"][12]["floors"], data["perf_hist"][13]["floors"], data["perf_hist"][14]["floors"], data["perf_hist"][15]["floors"], data["perf_hist"][16]["floors"], data["perf_hist"][17]["floors"], data["perf_hist"][18]["floors"], data["perf_hist"][19]["floors"], data["perf_hist"][20]["floors"], data["perf_hist"][21]["floors"], data["perf_hist"][22]["floors"], data["perf_hist"][23]["floors"], data["perf_hist"][24]["floors"], data["perf_hist"][25]["floors"], data["perf_hist"][26]["floors"], data["perf_hist"][27]["floors"], data["perf_hist"][28]["floors"], data["perf_hist"][29]["floors"], data["perf_hist"][30]["floors"]],
         [data["perf_hist"][0]["distance"], data["perf_hist"][1]["distance"], data["perf_hist"][2]["distance"], data["perf_hist"][3]["distance"], data["perf_hist"][4]["distance"], data["perf_hist"][5]["distance"], data["perf_hist"][6]["distance"], data["perf_hist"][7]["distance"], data["perf_hist"][8]["distance"], data["perf_hist"][9]["distance"], data["perf_hist"][10]["distance"], data["perf_hist"][11]["distance"], data["perf_hist"][12]["distance"], data["perf_hist"][13]["distance"], data["perf_hist"][14]["distance"], data["perf_hist"][15]["distance"], data["perf_hist"][16]["distance"], data["perf_hist"][17]["distance"], data["perf_hist"][18]["distance"], data["perf_hist"][19]["distance"], data["perf_hist"][20]["distance"], data["perf_hist"][21]["distance"], data["perf_hist"][22]["distance"], data["perf_hist"][23]["distance"], data["perf_hist"][24]["distance"], data["perf_hist"][25]["distance"], data["perf_hist"][26]["distance"], data["perf_hist"][27]["distance"], data["perf_hist"][28]["distance"], data["perf_hist"][29]["distance"], data["perf_hist"][30]["distance"]],
         [data["perf_hist"][0]["calories"], data["perf_hist"][1]["calories"], data["perf_hist"][2]["calories"], data["perf_hist"][3]["calories"], data["perf_hist"][4]["calories"], data["perf_hist"][5]["calories"], data["perf_hist"][6]["calories"], data["perf_hist"][7]["calories"], data["perf_hist"][8]["calories"], data["perf_hist"][9]["calories"], data["perf_hist"][10]["calories"], data["perf_hist"][11]["calories"], data["perf_hist"][12]["calories"], data["perf_hist"][13]["calories"], data["perf_hist"][14]["calories"], data["perf_hist"][15]["calories"], data["perf_hist"][16]["calories"], data["perf_hist"][17]["calories"], data["perf_hist"][18]["calories"], data["perf_hist"][19]["calories"], data["perf_hist"][20]["calories"], data["perf_hist"][21]["calories"], data["perf_hist"][22]["calories"], data["perf_hist"][23]["calories"], data["perf_hist"][24]["calories"], data["perf_hist"][25]["calories"], data["perf_hist"][26]["calories"], data["perf_hist"][27]["calories"], data["perf_hist"][28]["calories"], data["perf_hist"][29]["calories"], data["perf_hist"][30]["calories"]]];
-        */
-        $scope.data = [];
+
+       /* $scope.data = [];
         arrName= ["steps", "floors", "distance", "calories"];
         tmp= [];
         for(var i = 0; i < 4; i++){
@@ -309,10 +300,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
             }
           tmp.push(tmp2);
         }
-        $scope.data = tmp;
-
+        $scope.data = tmp;*/
+        console.log($scope.data);
         $scope.labels = [
-        "03-01", "03-02", "03-03", "03-04", "03-05", "03-06", "03-07", "03-08", "03-09", "03-10", "03-11", "03-12", "03-13", "03-14", "03-15", "03-16", "03-17","03-18", "03-19", "03-20", "03-21", "03-22", "03-23", "03-24", "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
+        "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17","18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"
       ];
       $scope.series = [
         "Steps",
@@ -365,12 +356,12 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
 
   .controller("performanceMeanYearsCtrl",function ($scope,performanceMeanYears) {
     performanceMeanYears.getData(function (data) {
-      /*$scope.data = [
+      $scope.data = [
         [data["mean_perf_year"][0]["steps"],data["mean_perf_year"][1]["steps"],data["mean_perf_year"][2]["steps"],data["mean_perf_year"][3]["steps"],data["mean_perf_year"][4]["steps"],data["mean_perf_year"][5]["steps"],data["mean_perf_year"][6]["steps"]],
         [data["mean_perf_year"][0]["floors"],data["mean_perf_year"][1]["floors"],data["mean_perf_year"][2]["floors"],data["mean_perf_year"][3]["floors"],data["mean_perf_year"][4]["floors"],data["mean_perf_year"][5]["floors"],data["mean_perf_year"][6]["floors"]],
         [data["mean_perf_year"][0]["distance"],data["mean_perf_year"][1]["distance"],data["mean_perf_year"][2]["distance"],data["mean_perf_year"][3]["distance"],data["mean_perf_year"][4]["distance"],data["mean_perf_year"][5]["distance"],data["mean_perf_year"][6]["distance"]],
         [data["mean_perf_year"][0]["calories"],data["mean_perf_year"][1]["calories"],data["mean_perf_year"][2]["calories"],data["mean_perf_year"][3]["calories"],data["mean_perf_year"][4]["calories"],data["mean_perf_year"][5]["calories"],data["mean_perf_year"][6]["calories"]],
-        ];*/
+        ];
 
         $scope.data = [];
         arrName= ["steps", "floors", "distance", "calories"];
@@ -382,7 +373,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
             }
           tmp.push(tmp2);
         }
-        $scope.data = [tmp];
+        $scope.data = tmp;
 
         $scope.series = [
           "Steps",
@@ -531,7 +522,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         tmp.push(tmp2);
       }
       $scope.data = tmp;
-      
+
     $scope.series = [
       "Sleeping",
       "Awake",
