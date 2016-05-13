@@ -177,7 +177,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       activityLastYear.getData(function (data) {
 
         $scope.data = [];
-        arrName= ["sedentary", "mobile", "active", "veryActive"];
+        arrName= ["sedentary", "mobile", "active", "very_active"];
         var tmp= [];
         var tmpArr = [];
         for(var i = 0; i < 4; i++){
@@ -188,7 +188,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
           tmp = [];
         }
         $scope.data = tmpArr;
-
+        console.log(tmpArr);
         $scope.labels = [
           data["lastyear"][0]["date"],data["lastyear"][1]["date"],data["lastyear"][2]["date"]
         ];
