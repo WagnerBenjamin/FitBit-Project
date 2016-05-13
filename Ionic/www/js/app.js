@@ -10,47 +10,45 @@
 // TODO: améliorer le css
 angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives','chart.js','angular-svg-round-progressbar'])
 
-    .run(function($ionicPlatform) {
-      $ionicPlatform.ready(function() {
-        // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-        // for form inputs)
-        Chart.defaults.global.responsive = true;
-        if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
-          cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-          cordova.plugins.Keyboard.disableScroll(true);
-        }
-        if (window.StatusBar) {
-          // org.apache.cordova.statusbar required
-          StatusBar.styleDefault();
-        }
-      });
-    })
-    .config(['$ionicConfigProvider', function($ionicConfigProvider) {
+  .run(function($ionicPlatform) {
+  $ionicPlatform.ready(function() {
+    Chart.defaults.global.responsive = true;
+    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+    // for form inputs)
+    if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
+      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+      cordova.plugins.Keyboard.disableScroll(true);
+    }
+    if (window.StatusBar) {
+      // org.apache.cordova.statusbar required
+      StatusBar.styleDefault();
+    }
+  });
+})
+  .config(['$ionicConfigProvider', function($ionicConfigProvider) {
 
-      $ionicConfigProvider.tabs.position('bottom'); // other values: top
+  $ionicConfigProvider.tabs.position('bottom'); // other values: top
 
-    }])
+}])
 
-    .controller("profileDefaultCtrl",function (profileDefault,$scope) {
-      profileDefault.getData(function (data) {
-        $scope.data = [];
-        var tmp = [];
+  .controller("profileDefaultCtrl",function (profileDefault,$scope) {
+    profileDefault.getData(function (data) {
+      $scope.data = [];
+      var tmp = [];
 
-        for(var i = 0; i <= 6; i++){
-          tmp.push(data["weight_hist"][i]["weight"]);
-        }
-        $scope.data = [tmp];
-
-        $scope.labels = [
-          "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
-        ];
-        $scope.series = [
-          "weight"
-        ];
-        $scope.onClick = function (points, evt) {
-          console.log(points, evt);
-        };
-
+      for(var i = 0; i <= 6; i++){
+        tmp.push(data["weight_hist"][i]["weight"]);
+      }
+      $scope.data = [tmp];
+      $scope.labels = [
+        "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
+      ];
+      $scope.series = [
+        "weight"
+      ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
         document.getElementById("weightWidget").textContent = data["weight_hist"][6]["weight"];
         document.getElementById("bmiWidget").textContent = data["bmi_actual"][0]["bmi"];
       })
