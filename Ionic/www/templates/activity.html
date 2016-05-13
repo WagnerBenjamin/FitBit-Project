@@ -99,7 +99,7 @@
     </div>
     <!--<div class="row">-->
       <div ng-controller="ActivityGraphCtrl">
-        <div class="row padding">
+        <div class="row">
       <span class="button-graph">
         <button class="button button-small button-assertive" ng-click="onTouchDefaultGraph()">
           Lastweek
@@ -115,7 +115,6 @@
         </button>
       </span>
         </div>
-        <!--default Graph-->
         <div data-ng-if="defaultclicked">
           <div class="row padding responsive-sm" ng-controller="activityDefaultCtrl">
             <div class="chart-container" style="width: 100%;">
@@ -200,7 +199,6 @@
             </div>
           </div>
         </div>
-
         <!--meanyears Graph-->
         <div data-ng-if="meanyearsclicked">
           <div class="row padding responsive-sm" ng-controller="activityMeanYearsCtrl">
