@@ -16,7 +16,7 @@ class SleepController extends Controller
             ->getRepository('ApiBundle:Datasets')
             ->getsleepHistLastWeek();
 
-        $actual = $this->getDoctrine()
+        /*$actual = $this->getDoctrine()
             ->getManager()
             ->getRepository('ApiBundle:Datasets')
             ->getSleepHistLastDay();
@@ -31,8 +31,8 @@ class SleepController extends Controller
         $data = array(
             'sleep_hist' => $data,
             'sleep_lastday' => $actual
-        );
-        $data = json_encode($data);
+        );*/
+        $data = json_encode($sleep);
         return new Response($data);
     }
 
@@ -43,7 +43,7 @@ class SleepController extends Controller
             ->getRepository('ApiBundle:Datasets')
             ->getsleepHistLastMonth();
 
-        $arraysleep = array();
+        /*$arraysleep = array();
         foreach($sleep as $dataset){
             $tmp = $dataset["date"]->format("Y-m-d");
             $arraysleep[] = ["date" => $tmp, "sleep" => $dataset["sleeping"], "awake" => $dataset["awake"], "awakening" => $dataset["awakening"], "inBed" => $dataset["inBed"]];
@@ -52,8 +52,8 @@ class SleepController extends Controller
         $data = $arraysleep;
         $data = array(
             'sleep_hist' => $data,
-        );
-        $data = json_encode($data);
+        );*/
+        $data = json_encode($sleep);
         return new Response($data);
     }
 
@@ -64,7 +64,7 @@ class SleepController extends Controller
             ->getRepository('ApiBundle:Datasets')
             ->getSleepHistLastYear();
 
-        $arraysleep = array();
+        /*$arraysleep = array();
         $arraysleep2 = array();
         $arraysleep3 = array();
         foreach($sleep as $dataset){
@@ -127,8 +127,8 @@ class SleepController extends Controller
 
         $data = array(
             'lastyear' => $data,
-        );
-        $data = json_encode($data);
+        );*/
+        $data = json_encode($sleep);
         return new Response($data);
     }
 
@@ -138,7 +138,7 @@ class SleepController extends Controller
             ->getManager()
             ->getRepository('ApiBundle:Datasets')
             ->getMeanSleepYears();
-        $arraySleep = array();
+        /*$arraySleep = array();
         $arraySleep2 = array();
         $arraySleep3 = array();
         $arraySleep4 = array();
@@ -277,8 +277,8 @@ class SleepController extends Controller
 
         $data = array(
             'sleep_mean_years' => $data
-        );
-        $data = json_encode($data);
+        );*/
+        $data = json_encode($sleep);
         return new Response($data);
     }
 }

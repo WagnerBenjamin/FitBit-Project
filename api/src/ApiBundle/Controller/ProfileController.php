@@ -16,7 +16,7 @@ class ProfileController extends Controller
             ->getRepository('ApiBundle:Datasets')
             ->getWeightHistLastWeek();
 
-        $bmi = $this->getDoctrine()
+        /*$bmi = $this->getDoctrine()
             ->getManager()
             ->getRepository('ApiBundle:Datasets')
             ->getBMIActual();
@@ -37,8 +37,9 @@ class ProfileController extends Controller
         $data = array(
             'weight_hist' => $data,
             'bmi_actual' => $bmi
-        );
-        $data = json_encode($data);
+        );*/
+
+        $data = json_encode($weight);
         return new Response($data);
     }
 
@@ -49,7 +50,7 @@ class ProfileController extends Controller
             ->getRepository('ApiBundle:Datasets')
             ->getWeightHistLastMonth();
 
-        $arrayWeight = array();
+        /*$arrayWeight = array();
         foreach($weight as $dataset){
             $tmp = $dataset["date"]->format("Y-m-d");
             $arrayWeight[] = ["date" => $tmp, "weight" => $dataset["weight"]];
@@ -58,8 +59,9 @@ class ProfileController extends Controller
         $data = $arrayWeight;
         $data = array(
             'weight_hist' => $data,
-        );
-        $data = json_encode($data);
+        );*/
+
+        $data = json_encode($weight);
         return new Response($data);
     }
 
@@ -70,7 +72,7 @@ class ProfileController extends Controller
             ->getRepository('ApiBundle:Datasets')
             ->getWeightHistLastYear();
 
-        $arrayWeight = array();
+        /*$arrayWeight = array();
         $arrayWeight2 = array();
         $arrayWeight3 = array();
         foreach($weight as $dataset){
@@ -106,8 +108,7 @@ class ProfileController extends Controller
 
         $data = array(
             'lastyear' => $data,
-        );
-
+        );*/
         /*
          * C'est WTF les valeurs
          *
@@ -143,7 +144,7 @@ class ProfileController extends Controller
         }
         var_dump($arrweight);*/
 
-        $data = json_encode($data);
+        $data = json_encode($weight);
         return new Response($data);
     }
 
@@ -153,7 +154,7 @@ class ProfileController extends Controller
             ->getManager()
             ->getRepository('ApiBundle:Datasets')
             ->getMeanWeightYears();
-        $arrayWeight = array();
+        /*$arrayWeight = array();
         $arrayWeight2 = array();
         $arrayWeight3 = array();
         $arrayWeight4 = array();
@@ -229,8 +230,8 @@ class ProfileController extends Controller
 
         $data = array(
             'Mean_weight_years' => $data
-        );
-        $data = json_encode($data);
+        );*/
+        $data = json_encode($weight);
         return new Response($data);
     }
 }

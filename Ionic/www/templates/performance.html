@@ -97,8 +97,9 @@
         </div>
       </div>
     </div>
-    <div class="row">
-     <span class="button-graph" ng-controller="PerfGraphCtrl">
+    <div ng-controller="PerfGraphCtrl">
+      <div class="row padding">
+      <span class="button-graph">
         <button class="button button-small button-assertive" ng-click="onTouchDefaultGraph()">
           Lastweek
         </button>
@@ -112,33 +113,120 @@
           Mean_years
         </button>
       </span>
-    </div>
-    <div class="row padding responsive-sm" ng-controller="performanceDefaultCtrl">
-      <div class="chart-container" style="width: 100%;">
-        <canvas id="line" class="chart chart-line" chart-data="data"
-                chart-labels="labels" chart-legend="false" chart-series="series"
-                chart-click="onClick">
-        </canvas>
-        <chart-legend>
-          <ul class="line-legend">
-            <li>
-              <span class="line-legend-icon" style="background-color:#ef473a"></span>
-              <span class="line-legend-text">Steps</span>
-            </li>
-            <li>
-              <span class="line-legend-icon" style="background-color:#387ef5"></span>
-              <span class="line-legend-text">Floors</span>
-            </li>
-            <li>
-              <span class="line-legend-icon" style="background-color:#33cd5f"></span>
-              <span class="line-legend-text">Distance</span>
-            </li>
-            <li>
-              <span class="line-legend-icon" style="background-color:#ffc900"></span>
-              <span class="line-legend-text">Calories</span>
-            </li>
-          </ul>
-        </chart-legend>
+      </div>
+      <!--default Graph-->
+      <div data-ng-if="defaultclicked">
+        <div class="row padding responsive-sm" ng-controller="performanceDefaultCtrl">
+          <div class="chart-container" style="width: 100%;">
+            <canvas class="chart chart-line" chart-data="data" chart-labels="labels" chart-legend="false" chart-click="onClick" chart-hover="onHover" chart-series="series"></canvas>
+            <chart-legend>
+              <ul class="line-legend">
+                <li>
+                  <span class="line-legend-icon" style="background-color:#45ccce"></span>
+                  <span class="line-legend-text">Steps</span>
+                </li>
+                <li>
+                  <span class="line-legend-icon" style="background-color:#33cd5f"></span>
+                  <span class="line-legend-text">Floors</span>
+                </li>
+                <li>
+                  <span class="line-legend-icon" style="background-color:#ef473a"></span>
+                  <span class="line-legend-text">Distance</span>
+                </li>
+                <li>
+                  <span class="line-legend-icon" style="background-color:#ffc900"></span>
+                  <span class="line-legend-text">Calories</span>
+                </li>
+              </ul>
+            </chart-legend>
+          </div>
+        </div>
+      </div>
+      <!--lastyear Graph-->
+      <div data-ng-if="lastyearclicked">
+        <div class="row padding responsive-sm" ng-controller="performanceLastYearCtrl">
+          <div class="chart-container" style="width: 100%;">
+            <canvas class="chart chart-line ng-isolate-scope" chart-data="data" chart-labels="labels" chart-legend="false" chart-click="onClick" chart-hover="onHover" chart-series="series"></canvas>
+            <chart-legend>
+              <ul class="line-legend">
+                <li>
+                  <span class="line-legend-icon" style="background-color:#45ccce"></span>
+                  <span class="line-legend-text">Steps</span>
+                </li>
+                <li>
+                  <span class="line-legend-icon" style="background-color:#33cd5f"></span>
+                  <span class="line-legend-text">Floors</span>
+                </li>
+                <li>
+                  <span class="line-legend-icon" style="background-color:#ef473a"></span>
+                  <span class="line-legend-text">Distance</span>
+                </li>
+                <li>
+                  <span class="line-legend-icon" style="background-color:#ffc900"></span>
+                  <span class="line-legend-text">Calories</span>
+                </li>
+              </ul>
+            </chart-legend>
+          </div>
+        </div>
+      </div>
+
+      <!-- lastmonth Graph -->
+      <div data-ng-if="lastmonthclicked">
+        <div class="row padding responsive-sm" ng-controller="performanceLastMonthCtrl">
+          <div class="chart-container" style="width: 100%;">
+            <canvas class="chart chart-line ng-isolate-scope" chart-data="data" chart-labels="labels" chart-legend="false" chart-click="onClick" chart-hover="onHover" chart-series="series"></canvas>
+            <chart-legend>
+              <ul class="line-legend">
+                <li>
+                  <span class="line-legend-icon" style="background-color:#45ccce"></span>
+                  <span class="line-legend-text">Steps</span>
+                </li>
+                <li>
+                  <span class="line-legend-icon" style="background-color:#33cd5f"></span>
+                  <span class="line-legend-text">Floors</span>
+                </li>
+                <li>
+                  <span class="line-legend-icon" style="background-color:#ef473a"></span>
+                  <span class="line-legend-text">Distance</span>
+                </li>
+                <li>
+                  <span class="line-legend-icon" style="background-color:#ffc900"></span>
+                  <span class="line-legend-text">Calories</span>
+                </li>
+              </ul>
+            </chart-legend>
+          </div>
+        </div>
+      </div>
+
+      <!-- meanyears Graph -->
+      <div data-ng-if="meanyearsclicked">
+        <div class="row padding responsive-sm" ng-controller="performanceMeanYearsCtrl">
+          <div class="chart-container" style="width: 100%;">
+            <canvas class="chart chart-line ng-isolate-scope" chart-data="data" chart-labels="labels" chart-legend="false" chart-click="onClick" chart-hover="onHover" chart-series="series"></canvas>
+            <chart-legend>
+              <ul class="line-legend">
+                <li>
+                  <span class="line-legend-icon" style="background-color:#45ccce"></span>
+                  <span class="line-legend-text">Steps</span>
+                </li>
+                <li>
+                  <span class="line-legend-icon" style="background-color:#33cd5f"></span>
+                  <span class="line-legend-text">Floors</span>
+                </li>
+                <li>
+                  <span class="line-legend-icon" style="background-color:#ef473a"></span>
+                  <span class="line-legend-text">Distance</span>
+                </li>
+                <li>
+                  <span class="line-legend-icon" style="background-color:#ffc900"></span>
+                  <span class="line-legend-text">Calories</span>
+                </li>
+              </ul>
+            </chart-legend>
+          </div>
+        </div>
       </div>
     </div>
   </ion-content>

@@ -16,7 +16,6 @@
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
-
     <style type="text/css">
       .platform-ios .manual-ios-statusbar-padding{
         padding-top:20px;
@@ -28,6 +27,8 @@
         padding-top:0px !important;
       }
     </style>
+
+    <script src="../plugins/cordova-plugin-screen-orientation/www/screenorientation.js"></script>
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/angular-svg-round-progressbar/build/roundProgress.min.js"></script>
     <script src="lib/Chart.js/Chart.js"></script>
@@ -42,6 +43,7 @@
     <!-- Only required for Tab projects w/ pages in multiple tabs
     <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
     -->
+    <script>Chart.defaults.global.responsive = true;</script>
   </head>
   <body ng-app="app" animation="slide-left-right-ios7">
   <div ng-controller="settingCtrl">
