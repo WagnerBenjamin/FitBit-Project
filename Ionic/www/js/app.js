@@ -372,10 +372,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       sleepDefault.getData(function (data) {
 
         $scope.data = [];
-        var arrName= ["sleeping", "awake", "awakening", "inBed"];
+        var arrName= ["sleeping", "awake", "inBed"];
         var tmp = [];
         var tmpArr = [];
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 3; i++){
           for(var j = 0; j <= 6; j++){
             tmp.push(data["sleep_hist"][j][arrName[i]]);
           }
@@ -389,7 +389,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         $scope.series = [
           "Sleeping",
           "Awake",
-          "Awakening",
           "InBed"
         ];
         $scope.onClick = function (points, evt) {
@@ -407,10 +406,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       sleepLastMonth.getData(function (data) {
 
         $scope.data = [];
-        var arrName= ["sleeping", "awake", "awakening", "inBed"];
+        var arrName= ["sleeping", "awake", "inBed"];
         var tmp = [];
         var tmpArr = [];
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 3; i++){
           for(var j = 0; j <= data["sleep_hist"].length-1; j++){
             tmp.push(data["sleep_hist"][j][arrName[i]]);
           }
@@ -424,7 +423,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         $scope.series = [
           "Sleeping",
           "Awake",
-          "Awakening",
           "InBed"
         ];
         $scope.onClick = function (points, evt) {
@@ -436,10 +434,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     .controller("sleepLastYearCtrl",function ($scope,sleepLastYear) {
       sleepLastYear.getData(function (data) {
         $scope.data = [];
-        var arrName= ["mean_sleeping", "mean_awake", "mean_awakening", "mean_inBed"];
+        var arrName= ["mean_sleeping", "mean_awake", "mean_inBed"];
         var tmp = [];
         var tmpArr = [];
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 3; i++){
           for(var j = 0; j <= 2 ; j++){
             tmp.push(data["lastyear"][j][arrName[i]]);
           }
@@ -452,7 +450,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         $scope.series = [
           "Sleeping",
           "Awake",
-          "Awakening",
           "InBed"
         ];
 
@@ -469,10 +466,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     .controller("sleepMeanYearsCtrl",function ($scope,sleepMeanYears) {
       sleepMeanYears.getData(function (data) {
         $scope.data = [];
-        var arrName= ["mean_sleeping", "mean_awake", "mean_awakening", "mean_inBed"];
+        var arrName= ["mean_sleeping", "mean_awake", "mean_inBed"];
         var tmp = [];
         var tmpArr = [];
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 3; i++){
           for(var j = 0; j <= 6; j++){
             tmp.push(data["sleep_mean_years"][j][arrName[i]]);
           }
@@ -484,7 +481,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         $scope.series = [
           "Sleeping",
           "Awake",
-          "Awakening",
           "InBed"
         ];
 

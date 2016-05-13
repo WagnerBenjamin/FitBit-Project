@@ -48,7 +48,7 @@ class SleepController extends Controller
             ->getManager()
             ->getRepository('ApiBundle:Datasets')
             ->getMeanSleepYears();
-       
+
         $data = json_encode($sleep);
         return new Response($data);
     }
