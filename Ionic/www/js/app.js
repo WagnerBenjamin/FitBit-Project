@@ -10,47 +10,45 @@
 // TODO: améliorer le css
 angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives','chart.js','angular-svg-round-progressbar'])
 
-    .run(function($ionicPlatform) {
-      $ionicPlatform.ready(function() {
-        // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-        // for form inputs)
-        Chart.defaults.global.responsive = true;
-        if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
-          cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-          cordova.plugins.Keyboard.disableScroll(true);
-        }
-        if (window.StatusBar) {
-          // org.apache.cordova.statusbar required
-          StatusBar.styleDefault();
-        }
-      });
-    })
-    .config(['$ionicConfigProvider', function($ionicConfigProvider) {
+  .run(function($ionicPlatform) {
+  $ionicPlatform.ready(function() {
+    Chart.defaults.global.responsive = true;
+    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+    // for form inputs)
+    if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
+      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+      cordova.plugins.Keyboard.disableScroll(true);
+    }
+    if (window.StatusBar) {
+      // org.apache.cordova.statusbar required
+      StatusBar.styleDefault();
+    }
+  });
+})
+  .config(['$ionicConfigProvider', function($ionicConfigProvider) {
 
-      $ionicConfigProvider.tabs.position('bottom'); // other values: top
+  $ionicConfigProvider.tabs.position('bottom'); // other values: top
 
-    }])
+}])
 
-    .controller("profileDefaultCtrl",function (profileDefault,$scope) {
-      profileDefault.getData(function (data) {
-        $scope.data = [];
-        var tmp = [];
+  .controller("profileDefaultCtrl",function (profileDefault,$scope) {
+    profileDefault.getData(function (data) {
+      $scope.data = [];
+      var tmp = [];
 
-        for(var i = 0; i <= 6; i++){
-          tmp.push(data["weight_hist"][i]["weight"]);
-        }
-        $scope.data = [tmp];
-
-        $scope.labels = [
-          "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
-        ];
-        $scope.series = [
-          "weight"
-        ];
-        $scope.onClick = function (points, evt) {
-          console.log(points, evt);
-        };
-
+      for(var i = 0; i <= 6; i++){
+        tmp.push(data["weight_hist"][i]["weight"]);
+      }
+      $scope.data = [tmp];
+      $scope.labels = [
+        "03-25", "03-26", "03-27", "03-28", "03-29", "03-30", "03-31"
+      ];
+      $scope.series = [
+        "weight"
+      ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
         document.getElementById("weightWidget").textContent = data["weight_hist"][6]["weight"];
         document.getElementById("bmiWidget").textContent = data["bmi_actual"][0]["bmi"];
       })
@@ -374,10 +372,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       sleepDefault.getData(function (data) {
 
         $scope.data = [];
-        var arrName= ["sleeping", "awake", "awakening", "inBed"];
+        var arrName= ["sleeping", "awake", "inBed"];
         var tmp = [];
         var tmpArr = [];
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 3; i++){
           for(var j = 0; j <= 6; j++){
             tmp.push(data["sleep_hist"][j][arrName[i]]);
           }
@@ -391,7 +389,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         $scope.series = [
           "Sleeping",
           "Awake",
-          "Awakening",
           "InBed"
         ];
         $scope.onClick = function (points, evt) {
@@ -409,10 +406,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
       sleepLastMonth.getData(function (data) {
 
         $scope.data = [];
-        var arrName= ["sleeping", "awake", "awakening", "inBed"];
+        var arrName= ["sleeping", "awake", "inBed"];
         var tmp = [];
         var tmpArr = [];
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 3; i++){
           for(var j = 0; j <= data["sleep_hist"].length-1; j++){
             tmp.push(data["sleep_hist"][j][arrName[i]]);
           }
@@ -426,7 +423,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         $scope.series = [
           "Sleeping",
           "Awake",
-          "Awakening",
           "InBed"
         ];
         $scope.onClick = function (points, evt) {
@@ -438,10 +434,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     .controller("sleepLastYearCtrl",function ($scope,sleepLastYear) {
       sleepLastYear.getData(function (data) {
         $scope.data = [];
-        var arrName= ["mean_sleeping", "mean_awake", "mean_awakening", "mean_inBed"];
+        var arrName= ["mean_sleeping", "mean_awake", "mean_inBed"];
         var tmp = [];
         var tmpArr = [];
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 3; i++){
           for(var j = 0; j <= 2 ; j++){
             tmp.push(data["lastyear"][j][arrName[i]]);
           }
@@ -454,7 +450,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         $scope.series = [
           "Sleeping",
           "Awake",
-          "Awakening",
           "InBed"
         ];
 
@@ -471,10 +466,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     .controller("sleepMeanYearsCtrl",function ($scope,sleepMeanYears) {
       sleepMeanYears.getData(function (data) {
         $scope.data = [];
-        var arrName= ["mean_sleeping", "mean_awake", "mean_awakening", "mean_inBed"];
+        var arrName= ["mean_sleeping", "mean_awake", "mean_inBed"];
         var tmp = [];
         var tmpArr = [];
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 3; i++){
           for(var j = 0; j <= 6; j++){
             tmp.push(data["sleep_mean_years"][j][arrName[i]]);
           }
@@ -486,7 +481,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         $scope.series = [
           "Sleeping",
           "Awake",
-          "Awakening",
           "InBed"
         ];
 
