@@ -143,6 +143,7 @@ angular.module('app.services', [])
         $http.get('http://10.42.0.1/fitbit_api/api/web/profile').success(function(d) {
           callback(data = d);
         });
+
       }
     }
   };
@@ -215,7 +216,7 @@ angular.module('app.services', [])
         if(data) {
           callback(data);
         } else {
-          $http.get('http://10.42.0.1/fitbit_api/api/web/performance/lastmonth').success(function(d) {
+          $http.get('http://10.42.0.1/fitbit_api/api/web/perf/lastmonth').success(function(d) {
             callback(data = d);
           });
         }

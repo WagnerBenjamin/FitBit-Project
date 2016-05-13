@@ -40,7 +40,8 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "cordova-plugin-device-orientation": "1.0.3",
-    "cordova-plugin-screen-orientation": "1.4.0"
+    "cordova-plugin-screen-orientation": "1.4.0",
+    "cordova-plugin-whitelist": "1.2.2"
 };
 // BOTTOM OF METADATA
 });
