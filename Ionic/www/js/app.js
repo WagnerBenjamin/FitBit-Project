@@ -5,9 +5,6 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-// TODO: améliorer l'echelle des graphs
-// TODO: améliorer le code
-// TODO: améliorer le css
 angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services', 'app.directives','chart.js','angular-svg-round-progressbar'])
 
   .run(function($ionicPlatform) {
