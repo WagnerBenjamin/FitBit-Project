@@ -245,10 +245,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     .controller("performanceDefaultCtrl",function ($scope,performanceDefault) {
       performanceDefault.getData(function (data) {
         $scope.data = [];
-        var arrName= ["steps", "floors", "distance", "calories"];
+        var arrName= ["steps", "calories"];
         var tmp = [];
         var tmpArr = [];
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 2; i++){
           for(var j = 0; j <= 6; j++){
             tmp.push(data["perf_hist"][j][arrName[i]]);
 
@@ -278,10 +278,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     .controller("performanceLastMonthCtrl",function (performanceLastMonth,$scope) {
       performanceLastMonth.getData(function (data) {
         $scope.data = [];
-        arrName= ["steps", "floors", "distance", "calories"];
+        arrName= ["steps", "calories"];
         var tmp = [];
         var tmpArr = [];
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 2; i++){
           for(var j = 0; j <= data["perf_hist"].length-1; j++){
             tmp.push(data["perf_hist"][j][arrName[i]]);
           }
@@ -308,10 +308,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     .controller("performanceLastYearCtrl",function ($scope,performanceLastYear) {
       performanceLastYear.getData(function (data) {
         $scope.data = [];
-        arrName= ["steps", "floors", "distance", "calories"];
+        arrName= ["steps", "calories"];
         var tmp = [];
         var tmpArr = [];
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 2; i++){
           for(var j = 0; j <= 2; j++){
             tmp.push(data["lastyear"][j][arrName[i]]);
           }
@@ -339,10 +339,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     .controller("performanceMeanYearsCtrl",function ($scope,performanceMeanYears) {
       performanceMeanYears.getData(function (data) {
         $scope.data = [];
-        arrName= ["steps", "floors", "distance", "calories"];
+        arrName= ["steps", "calories"];
         var tmp = [];
         var tmpArr = [];
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 2; i++){
           for(var j = 0; j <= 6; j++){
             tmp.push(data["mean_perf_year"][j][arrName[i]]);
           }
