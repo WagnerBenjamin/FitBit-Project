@@ -242,10 +242,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     .controller("performanceDefaultCtrl",function ($scope,performanceDefault) {
       performanceDefault.getData(function (data) {
         $scope.data = [];
-        var arrName= ["steps", "floors", "distance", "calories"];
+        var arrName= ["steps", "calories"];
         var tmp = [];
         var tmpArr = [];
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 2; i++){
           for(var j = 0; j <= 6; j++){
             tmp.push(data["perf_hist"][j][arrName[i]]);
 
@@ -259,7 +259,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
           "2016-03-25", "2016-03-26", "2016-03-27", "2016-03-28", "2016-03-29", "2016-03-30", "2016-03-31"
         ];
         $scope.series = [
-          "Steps","Floors","Distance","Calories"
+          "Steps","Calories"
         ];
         $scope.onClick = function (points, evt) {
           console.log(points, evt);
@@ -275,10 +275,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     .controller("performanceLastMonthCtrl",function (performanceLastMonth,$scope) {
       performanceLastMonth.getData(function (data) {
         $scope.data = [];
-        arrName= ["steps", "floors", "distance", "calories"];
+        arrName= ["steps", "calories"];
         var tmp = [];
         var tmpArr = [];
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 2; i++){
           for(var j = 0; j <= data["perf_hist"].length-1; j++){
             tmp.push(data["perf_hist"][j][arrName[i]]);
           }
@@ -291,10 +291,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
           "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17","18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"
         ];
         $scope.series = [
-          "Steps",
-          "Floors",
-          "Distance",
-          "Calories"
+          "Steps","Calories"
         ];
         $scope.onClick = function (points, evt) {
           console.log(points, evt);
@@ -305,10 +302,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     .controller("performanceLastYearCtrl",function ($scope,performanceLastYear) {
       performanceLastYear.getData(function (data) {
         $scope.data = [];
-        arrName= ["steps", "floors", "distance", "calories"];
+        arrName= ["steps", "calories"];
         var tmp = [];
         var tmpArr = [];
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 2; i++){
           for(var j = 0; j <= 2; j++){
             tmp.push(data["lastyear"][j][arrName[i]]);
           }
@@ -318,10 +315,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         $scope.data = tmpArr;
 
         $scope.series = [
-          "Steps",
-          "Floors",
-          "Distance",
-          "Calories"
+          "Steps","Calories"
         ];
 
         $scope.labels = [
@@ -336,10 +330,10 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
     .controller("performanceMeanYearsCtrl",function ($scope,performanceMeanYears) {
       performanceMeanYears.getData(function (data) {
         $scope.data = [];
-        arrName= ["steps", "floors", "distance", "calories"];
+        arrName= ["steps", "calories"];
         var tmp = [];
         var tmpArr = [];
-        for(var i = 0; i < 4; i++){
+        for(var i = 0; i < 2; i++){
           for(var j = 0; j <= 6; j++){
             tmp.push(data["mean_perf_year"][j][arrName[i]]);
           }
@@ -349,10 +343,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         $scope.data = tmpArr;
 
         $scope.series = [
-          "Steps",
-          "Floors",
-          "Distance",
-          "Calories"
+          "Steps","Calories"
         ];
 
         $scope.labels = [
