@@ -262,7 +262,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
           "2016-03-25", "2016-03-26", "2016-03-27", "2016-03-28", "2016-03-29", "2016-03-30", "2016-03-31"
         ];
         $scope.series = [
-          "Steps","Floors","Distance","Calories"
+          "Steps","Calories"
         ];
         $scope.onClick = function (points, evt) {
           console.log(points, evt);
@@ -294,10 +294,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
           "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17","18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"
         ];
         $scope.series = [
-          "Steps",
-          "Floors",
-          "Distance",
-          "Calories"
+          "Steps","Calories"
         ];
         $scope.onClick = function (points, evt) {
           console.log(points, evt);
@@ -321,10 +318,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         $scope.data = tmpArr;
 
         $scope.series = [
-          "Steps",
-          "Floors",
-          "Distance",
-          "Calories"
+          "Steps","Calories"
         ];
 
         $scope.labels = [
@@ -352,10 +346,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.services',
         $scope.data = tmpArr;
 
         $scope.series = [
-          "Steps",
-          "Floors",
-          "Distance",
-          "Calories"
+          "Steps","Calories"
         ];
 
         $scope.labels = [
