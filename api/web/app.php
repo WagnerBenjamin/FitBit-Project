@@ -1,6 +1,7 @@
 <?php
 
 use Symfony\Component\HttpFoundation\Request;
+header("Access-Control-Allow-Origin: *");
 
 /**
  * @var Composer\Autoload\ClassLoader

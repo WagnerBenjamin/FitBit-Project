@@ -14,30 +14,54 @@ api_profile_lastYear:
     path:     /profile/lastyear
     defaults: { _controller: ApiBundle:Profile:lastYear, _format: json }
 
+api_profile_meanWeightYears:
+    path:     /profile/meanweightyears
+    defaults: { _controller: ApiBundle:Profile:meanWeightYears, _format: json }
+
 api_perf:
     path:     /perf
-    defaults: { _controller: ApiBundle:Perf:index }
+    defaults: { _controller: ApiBundle:Perf:index, _format: json }
 
-api_perf_month:
-    path:     /perf/month
-    defaults: { _controller: ApiBundle:Perf:thisMonth, _format: json }
+api_perf_lastMonth:
+    path:     /perf/lastmonth
+    defaults: { _controller: ApiBundle:Perf:lastMonth, _format: json }
 
-api_perf_year:
-    path:     /perf/year
-    defaults: { _controller: ApiBundle:Perf:thisYear, _format: json }
+api_perf_lastYear:
+    path:     /perf/lastyear
+    defaults: { _controller: ApiBundle:Perf:lastYear, _format: json }
 
-api_activity:
+api_perf_meanPerfYears:
+    path:     /perf/meanperfyears
+    defaults: { _controller: ApiBundle:Perf:perfMeanYear, _format: json }
+
+api_act:
     path:     /activity
-    defaults: { _controller: ApiBundle:Activity:index }
+    defaults: { _controller: ApiBundle:Activity:index, _format: json }
     
 api_act_month:
-    path:     /activity/month
-    defaults: { _controller: ApiBundle:Activity:thisMonth, _format: json }
+    path:     /activity/lastmonth
+    defaults: { _controller: ApiBundle:Activity:lastMonth, _format: json }
 
 api_act_year:
-    path:     /activity/year
-    defaults: { _controller: ApiBundle:Activity:thisYear, _format: json }
+    path:     /activity/lastyear
+    defaults: { _controller: ApiBundle:Activity:lastYear, _format: json }
+
+api_act_mean_year:
+    path:     /activity/actmeanyears
+    defaults: { _controller: ApiBundle:Activity:meanYear, _format: json }
 
 api_sleep:
     path:     /sleep
-    defaults: { _controller: ApiBundle:Sleep:index }
+    defaults: { _controller: ApiBundle:Sleep:index, _format: json }
+
+api_sleep_lastMonth:
+    path:     /sleep/lastmonth
+    defaults: { _controller: ApiBundle:Sleep:lastMonth, _format: json }
+
+api_sleep_lastYear:
+    path:     /sleep/lastyear
+    defaults: { _controller: ApiBundle:Sleep:lastYear, _format: json }
+
+api_sleep_meanSleepYears:
+    path:     /sleep/sleepmeanyears
+    defaults: { _controller: ApiBundle:Sleep:sleepMeanYears, _format: json }

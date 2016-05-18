@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>MyDashboard</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/angular-chart.js/dist/angular-chart.min.css">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <style type="text/css">
+      .platform-ios .manual-ios-statusbar-padding{
+        padding-top:20px;
+      }
+      .manual-remove-top-padding{
+        padding-top:0px;
+      }
+      .manual-remove-top-padding .scroll{
+        padding-top:0px !important;
+      }
+    </style>
+
+    <script src="../plugins/cordova-plugin-screen-orientation/www/screenorientation.js"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/angular-svg-round-progressbar/build/roundProgress.min.js"></script>
+    <script src="lib/Chart.js/Chart.js"></script>
+    <script src="lib/angular-chart.js/dist/angular-chart.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="templates/popover.html" type="text/ng-template"></script>
+
+    <!-- Only required for Tab projects w/ pages in multiple tabs
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+    -->
+    <script>Chart.defaults.global.responsive = true;</script>
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7" class="platform-android platform-cordova platform-webview">
+  <div ng-controller="settingCtrl">
+    <ion-side-menus>
+      <ion-pane ion-side-menu-content="">
+        <ion-nav-bar class="bar-assertive nav-title-slide-ios7" align-title="center">
+          <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+            </button>
+          </ion-nav-buttons>
+          <ion-nav-buttons side="right">
+            <button class="button icon ion-gear-a" ng-click="popover.show($event)"></button>
+          </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view></ion-nav-view>
+      </ion-pane>
+      <ion-side-menu side="left" width="170">
+        <ion-header-bar class="bar-assertive">
+          <h1 class="title">Friends</h1>
+        </ion-header-bar>
+        <ion-content has-header="true">
+          <ion-list>
+            <a class="item item-avatar" href="#">
+              <img src="img/person1.jpg">
+              <h2>Venkman</h2>
+              <p>Back off, man. I&apos;m a scientist.</p>
+            </a>
+            <a class="item item-avatar" href="#">
+              <img src="img/person2.jpg">
+              <h2>Venkman</h2>
+              <p>Back off, man. I&apos;m a scientist.</p>
+            </a>
+            <a class="item item-avatar" href="#">
+              <img src="img/person3.jpg">
+              <h2>Venkman</h2>
+              <p>Back off, man. I&apos;m a scientist.</p>
+            </a>
+            <a class="item item-avatar" href="#">
+              <img src="img/person1.jpg">
+              <h2>Venkman</h2>
+              <p>Back off, man. I&apos;m a scientist.</p>
+            </a>
+            <a class="item item-avatar" href="#">
+              <img src="img/person2.jpg">
+              <h2>Venkman</h2>
+              <p>Back off, man. I&apos;m a scientist.</p>
+            </a>
+            <a class="item item-avatar" href="#">
+              <img src="img/person3.jpg">
+              <h2>Venkman</h2>
+              <p>Back off, man. I&apos;m a scientist.</p>
+            </a>
+            <a class="item item-avatar" href="#">
+              <img src="img/person1.jpg">
+              <h2>Venkman</h2>
+              <p>Back off, man. I&apos;m a scientist.</p>
+            </a>
+            <a class="item item-avatar" href="#">
+              <img src="img/person2.jpg">
+              <h2>Venkman</h2>
+              <p>Back off, man. I&apos;m a scientist.</p>
+            </a>
+            <a class="item item-avatar" href="#">
+              <img src="img/person3.jpg">
+              <h2>Venkman</h2>
+              <p>Back off, man. I&apos;m a scientist.</p>
+            </a>
+            <a class="item item-avatar" href="#">
+              <img src="img/person1.jpg">
+              <h2>Venkman</h2>
+              <p>Back off, man. I&apos;m a scientist.</p>
+            </a>
+          </ion-list>
+        </ion-content>
+      </ion-side-menu>
+    </ion-side-menus>
+  </div>
+  </body>
+</html>
